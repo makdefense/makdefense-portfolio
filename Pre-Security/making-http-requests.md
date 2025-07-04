@@ -26,13 +26,11 @@
 
 ## 📸 Screenshots
 
-[Changing Parameters For HTTP Request] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/http%20requests.png)
+> [Changing Parameters For HTTP Request] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/http%20requests.png)
 
 ---
 
 ## 📊 Analysis
-
-Explain your process, findings, and any patterns you noticed.
 
 > After making a GET request to http://tryhackme.com/room page it successfully took me to that room, when making another GET request to /blog page I then set
 the parameter to 1 and it took me to the specific blog page, I then made a DELETE request to /user/1 page and it deleted the user,
