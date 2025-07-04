@@ -26,7 +26,7 @@
 
 ## 📸 Screenshots
 
-[Changing Parameters For HTTP Request] (/images/http requests.png)
+[Changing Parameters For HTTP Request] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/http%20requests.png)
 
 ---
 
