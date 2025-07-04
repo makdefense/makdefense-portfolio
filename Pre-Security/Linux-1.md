@@ -1,4 +1,4 @@
-# [How Website Work]
+# [Linux Fundamentals]
 
 **TryHackMe Path**: [Pre-Security]  
 **Lab Topic**: [Interacting With Linux-1]  
