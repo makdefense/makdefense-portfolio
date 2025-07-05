@@ -50,5 +50,4 @@ that folder 4 contained a note.txt file. Afterward i used the command "cat" to o
 
 ## Reflection
 
-> This lab taught me an introduction on how to input basic commands, find files, change the directory, output contents of a file, find the full path to a folder on the OS, and
-search for requested files in Ubuntu Linux.
+> This lab taught me an introduction on how to input basic commands, find files, change the directory, output contents of a file, find the full path to a folder on the OS, and search for requested files in Ubuntu Linux.
