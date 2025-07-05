@@ -53,5 +53,4 @@ to user2 and then displayed the contents of the file "important" which was the f
 
 ## Reflection
 
-> This lab taught me a step up in commmands like how to move files, find out file types, create files, contents of file, and see which users own certain files on the OS. Took handwritten
-notes on commands to revise on my off time.
+> This lab taught me a step up in commmands like how to move files, find out file types, create files, contents of file, and see which users own certain files on the OS. Took handwritten notes on commands to revise on my off time.
