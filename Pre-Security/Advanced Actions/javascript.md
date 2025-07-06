@@ -8,7 +8,9 @@
 
 ## 🧠 Summary
 
-> In this lab, I used TryHackMe JavaScript Editor to change the rendered html code to "Hack The Planet" and added a click me button to the HTML page.
+> In this lab, I used the TryHackMe JavaScript Editor to modify the rendered HTML code to "Hack The Planet" and added a "Click Me" button to the HTML page. The importance of my doing so was to learn the DevTool
+JavaScript Editor and be able to inspect, test, and manipulate how a webpage behaves in real-time.
+
 ---
 
 ## 🎯 Objectives
@@ -33,9 +35,10 @@
 
 ## 📊 Analysis
 
-> To Change the rendered html code to "Hack The Planet" i first added the javascript of document.getElementById("demo").innerHTML = "Hack the Planet"; in line 9 then clicked
-render HTML and javascript code to display "Hack The Planet" and to add the click me button to the HTML page i added <button onclick='document.getElementById("demo").innerHTML = "Hack the Planet";'>Click Me!</button>
+> To change the rendered HTML code to "Hack The Planet," I first added the JavaScript to the document.getElementById("demo").innerHTML = "Hack the Planet"; in line 9 then clicked
+Render HTML and JavaScript code to display "Hack The Planet" and add the "Click Me" button to the HTML page. I added "<button onclick='document.getElementById("demo").innerHTML = "Hack the Planet";'>Click Me!</button>"
 between lines 7 and 8.
+
 ---
 
 ## Reflection
