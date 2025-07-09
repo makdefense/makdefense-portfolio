@@ -20,7 +20,7 @@
 - [ ] Navigate through "System Information"
 - [ ] Navigate through "Resource Monitor"
 - [ ] Navigate through "Command Prompt"
-- [ ] 
+- [ ] Navigate through "Registry Editor"
       
 ---
 
@@ -48,27 +48,30 @@
 > [Windows Launch "cmd"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20launch%20cmd.png)
 > [Windows "ipconfig" command] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20ipconfig%20cmd.png)
 > [Windows "ipconfig" full info] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20ipconfig%20info.png)
-> 
+> [Windows Launch "Registry Editor"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20registry%20editor%20app.png)
+> [Windows "Registry Editor" command] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20registry%20editor%20command.png)
 
 ---
 
 ## 📊 Analysis
 
-> After launching Windows for the second time i started the system configuration by clicking the "start" button then the "search" icon and searched for
-"MSconfig" and clicked it to launch the system configuration app. Afterwards i searched through the different services to figure out with manufacture was for the
-service titled "PsShutdown" which was manufactured by System Internals. I then navigated to find who the windows license was registered to by clicking the tab
-titled "Tools" then selecting "About Windows" then clicked launch which showed it licensed under "Windows User." I then figured out the command for Windows
-Troubleshooting which was "C:\Windows\System32\control.exe /name Microsoft.Troubleshooting" by clicking "Windows Troubleshooting" in the "Tools" tab. I then figured
-out the command that would open the "Control Panel" by clicking on the "Tools" tab and clicking on "System Properties" what was displayed was "control.exe." After navigating
-through the system configurations i learned the command to change the "UAC Settings" by clicking the "Tools" tab. Next figured out the command to open "Computer Management"
-which was "compmgmt" by inputting it in the search bar by clicking the "start" button. I then checked what time the "GoogleUpdateTaskMachineUA" task was configured to run every day
-by loading up the Computer Management App and clicking "Task Scheduler" Tab and scrolled through the different task names and found it updates at 6:15am everyday. Following I discovered
-the name of a hidden folder that is shared which was called "sh4redF0Ld3r" by clicking the "Shared Folders" tab then the sub tab titled "Shares." After launch the "System Information" app
-by searching the command "msinfo32" in search bar after clicking the "Start" button i checked to see what was listed under "System Name" which was "THM-WINFUN2" by navigating to the
-"System Summary" tab. From there i then figured out the value for the "CompSec" which was under the "Environment Variables" which was "SystemRoot%\system32\cmd.exe." Then i launched
-"Resource Monitor" by searching the command "resmon" in search bar after clicking "Start" button. After launching the "Command Prompt" with the command "cmd" i displayed detail
+> After launching Windows for the second time, I started the system configuration by clicking the "start" button, then the "search" icon, and searched for
+I clicked "MSConfig" to launch the System Configuration app. Afterwards, I searched through the different services to figure out which manufacturer was for the
+service titled "PsShutdown," which was manufactured by System Internals. I then navigated to find who the Windows license was registered to by clicking the tab
+titled "Tools," then selecting "About Windows," then clicking Launch, which showed it was licensed under "Windows User." I then figured out the command for Windows
+Troubleshooting, which was "C:\Windows\System32\control.exe /name Microsoft.Troubleshooting" by clicking "Windows Troubleshooting" in the "Tools" tab. I then figured
+out the command that would open the "Control Panel" by clicking on the "Tools" tab and clicking on "System Properties." What was displayed was "control.exe." After navigating
+through the system configurations, I learned the command to change the "UAC Settings" by clicking the "Tools" tab. Next, figured out the command to open "Computer Management"
+which was "compmgmt" by inputting it into the search bar and clicking the "Start" button. I then checked what time the "GoogleUpdateTaskMachineUA" task was configured to run every day
+by loading up the Computer Management App and clicking the "Task Scheduler" Tab. I scrolled through the different task names and found that it updates at 6:15 am every day. Following, I discovered
+the name of a hidden folder that is shared, which was called "sh4redF0Ld3r" by clicking the "Shared Folders" tab, then the sub-tab titled "Shares." After launching the "System Information" app
+by searching for the command "msinfo32" in the search bar after clicking the "Start" button, I checked to see what was listed under "System Name," which was "THM-WINFUN2" by navigating to the
+"System Summary" tab. From there, I then figured out the value for "CompSec," which was located under "Environment Variables" and was set to "SystemRoot%\system32\cmd.exe." Then I launched
+"Resource Monitor" by searching for the command "resmon" in the search bar after clicking the "Start" button. After launching the "Command Prompt" with the command "cmd" i displayed detail
 information by inputting the command of "ipconfig /all," then to figure out the full command for the Internet Protocol Configuration" i searched "System Configuration" in the search
-bar and selected the "Tools" tab and scrolled then selected "Internet Protocol Configuration," the command was "C:\Windows\System32\cmd.exe /k %windir%\system32\ipconfig.exe." 
+bar and selected the "Tools" tab and scrolled then selected "Internet Protocol Configuration," the command was "C:\Windows\System32\cmd.exe /k %windir%\system32\ipconfig.exe." Finally,
+I figured out the command to launch the "Registry Editor" by searching "msconfig" in the search bar, launching the "System Configuration" app, selecting the "Tools" tab, and navigating to
+"Registry Editor," the command was "C:\Windows\System32\regedt32.exe."
 
 ---
 
