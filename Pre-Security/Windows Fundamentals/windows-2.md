@@ -20,6 +20,7 @@
 - [ ] Navigate through "System Information"
 - [ ] Navigate through "Resource Monitor"
 - [ ] Navigate through "Command Prompt"
+- [ ] 
       
 ---
 
@@ -44,6 +45,9 @@
 > [Windows "System Name"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20system%20name.png)
 > [Windows "Compsec" variable value] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20compsec%20value.png)
 > [Windows Launch "Resource Monitor"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20launch%20resmon.png)
+> [Windows Launch "cmd"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20launch%20cmd.png)
+> [Windows "ipconfig" command] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20ipconfig%20cmd.png)
+> [Windows "ipconfig" full info] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20ipconfig%20info.png)
 > 
 
 ---
@@ -64,7 +68,7 @@ by searching the command "msinfo32" in search bar after clicking the "Start" but
 "System Summary" tab. From there i then figured out the value for the "CompSec" which was under the "Environment Variables" which was "SystemRoot%\system32\cmd.exe." Then i launched
 "Resource Monitor" by searching the command "resmon" in search bar after clicking "Start" button. After launching the "Command Prompt" with the command "cmd" i displayed detail
 information by inputting the command of "ipconfig /all," then to figure out the full command for the Internet Protocol Configuration" i searched "System Configuration" in the search
-bar
+bar and selected the "Tools" tab and scrolled then selected "Internet Protocol Configuration," the command was "C:\Windows\System32\cmd.exe /k %windir%\system32\ipconfig.exe." 
 
 ---
 
