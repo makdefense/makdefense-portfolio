@@ -8,8 +8,10 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned how to 
-
+> In this lab, I learned about the System Configuration, the importance of which was to be able to grasp user and resource management, performance optimization, troubleshooting,
+problem solving, system security, and just foundational tech skills. Additionally, learn about adjusting the UAC setting. The importance of this is to know about controlling access, preventing
+threats, and protecting the system. Learned about the Windows Registry, the importance being that it will help me to control how Windows behaves, secures itself, or fails. Lastly,
+I learned about Resource Monitoring. This is important because it will help me to secure and optimize my system.
 ---
 
 ## 🎯 Objectives
@@ -79,4 +81,4 @@ I figured out the command to launch the "Registry Editor" by searching "msconfig
 
 ## Reflection
 
-> This lab provided 
+> This lab provided knowledge on System Configuration, Adjustment of UAC settings, Computer Management, System Information, Resource Monitoring, the Command Prompt, and the Registry Editor.
