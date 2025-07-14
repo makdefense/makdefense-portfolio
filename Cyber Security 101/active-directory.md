@@ -44,7 +44,8 @@ After clicking "Next," i searched "phillip" as the delegated user and selected h
 to then signed in as "phillip" by clicking the drop down "show options" and inputted the computer as "10.10.89.79" and the user name "phillip" and clicked the "connect" button. I was then
 signed in to the user "phillip" and launched "powershell" app, i then inputted the code "Set-ADAccountPassowrd sophie -Reset -Newpassword (ReadHost -AsSecureString -Prompt 'NewPassword')
 -Verbose" press "enter and was prompted to create a new password to sophie. After changing the password for the user "sophie" i then logged into the user and captured the Flag that was on the
-desktop, which was "THM{thanks_for_contacting_support}"
+desktop, which was "THM{thanks_for_contacting_support}."
+
 ---
 
 ## Reflection
