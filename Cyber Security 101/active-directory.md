@@ -39,7 +39,15 @@
 > [Organizing Workstations] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20organizing%20workstations.png)
 > ["Workstations" OU] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20workstations%20list.png)
 > ["Servers" OU] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20servers%20list.png)
-> []
+> ["Group Policy Management launch"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20GPM%20launch.png)
+> ["Default Domain Policy"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20default%20domain%20policy.png)
+> ["Password length change"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20password%20length%20change.png)
+> ["Restrict Control Panel Access" created] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/window%20New%20GPO.png)
+> ["GPM Editor for GPO created] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20gpm%20editor%20launch.png)
+> [Search for policy to apply to created GPO] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20search%20for%20policy%20for%20gpo.png)
+> [Enabling policy to GPO] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20enabling%20policy%20to%20GPO.png)
+> [Applying GPO to departments] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20applying%20GPO%20to%20departments.png)
+> 
 
 ---
 
@@ -60,6 +68,14 @@ and SVR-WEB01 and dragged them into that unit.
 right-clicking on "default domain policy" then selecting "edit" option, then clicked the dropdown of the folder titled "Policies" under "Computer Configuration" then the dropdown of the
 folder "Windows Settings" then the dropdown of utility "Security Settings," then "Account Policies," then finally selected "Password Policy" and selected "Minimum password length" and changed
 the value from 7 to 10.
+>
+> After launching "Group Policy Management" i went ahead and created a new policy called "Restrict Control Panel Access" because i want to restrict access to the control panel across all
+machines to only users part of the IT department. I did this by right clicking "Group Policy Object" and selecting "New." I then click on the new policy that was created, right clicked
+on it clicked "edit," to open the Group Policy Management Editor," then navigated to "Policies" then clicked the drop down menu to then opened up "Administrative Templates" under the "Policies"
+folder. Then clicked on "Control Panel," then right clicked on "Prohibit Access to Control Panel and PC Settings," clicked on "edit" then "enabled," then "apply," then "ok" to save the GPO's
+settings. After closing the "Group Policy Management Editor" i then dragged the "Restrict Control Panel Access" to "Management," "Marketing," and "Sales" to restrict access to the control
+panel to only the IT department.
+
 
 ---
 
