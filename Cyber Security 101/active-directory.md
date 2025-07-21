@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [Active Diretory Basics]  
-**Date Completed**: [07//2025]
+**Date Completed**: [07/21/2025]
 
 ---
 
@@ -25,7 +25,7 @@ and can spot unusual login activity or abuse of auth tokens.
 - [ ] Learn about Windows Domains
 - [ ] Learn about Active Directory
 - [ ] Learn how to manage users in AD
-- [ ] Learn how to manager computer in AD
+- [ ] Learn how to manage computers in AD
 - [ ] Learn about Group Policies
 - [ ] Learn about Authentication Methods
 - [ ] Learn about Trees, Forests, and Trusts
@@ -94,4 +94,5 @@ panel to only the IT department.
 
 ## Reflection
 
-> This lab provided me 
+> This lab provided me with knowledge about Windows Domains, Active Directory, how to manage users and computers in AD, about Group Policies and how to create them, and about Authentication
+Methods, and about Trees, Forests, and Trusts.
