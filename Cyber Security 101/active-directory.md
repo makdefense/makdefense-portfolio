@@ -51,7 +51,7 @@
 > [Search for policy to apply to created GPO] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20search%20for%20policy%20for%20gpo.png)
 > [Enabling policy to GPO] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20enabling%20policy%20to%20GPO.png)
 > [Applying GPO to departments] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20applying%20GPO%20to%20departments.png)
-> 
+
 
 ---
 
@@ -80,8 +80,6 @@ folder. Then clicked on "Control Panel," then right clicked on "Prohibit Access 
 settings. After closing the "Group Policy Management Editor," I then dragged the "Restrict Control Panel Access" to "Management," "Marketing," and "Sales" to restrict access to the control
 panel to only the IT department.
 >
-> 
-
 
 ---
 
