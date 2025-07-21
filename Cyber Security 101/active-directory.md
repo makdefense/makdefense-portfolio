@@ -8,7 +8,16 @@
 
 ## 🧠 Summary
 
-> In this lab, 
+> In this lab, I learned about the importance of Windows Domains, which is that most businesses, government agencies, and organizations use Windows Domains to manage computers, users, and
+resources centrally through Active Directory (AD). Understanding domains means understanding how most corporate networks function.
+> I also learned about the importance of Active Directory, which is that it helps to manage users, devices, and resources, detect and prevent identity-based attacks, understand how to simulate
+real-world attacks, and, finally, it is required for most IT/cyber jobs that require AD knowledge.
+> I then learned about the importance of Group Policy, which was that it helps to enforce password, lockout, and device polices accross the organization, set up hundreds of systems from one
+central location, understand what settings were pushed and when, limit who can do what on which machines, and finally reduce manual misconfiguration or policy drift.
+Next, I learned about the importance of Authentication Methods, which help protect accounts and systems from unauthorized access. Almost all IT and cyber roles require it daily,
+and can spot unusual login activity or abuse of auth tokens.
+> Finally, I learned about the importance of trees, forests, and trusts, which is that trees organize domains with a shared namespace, forests define security boundaries, and trusts allow cross
+-domain or cross forest access (can be exploited if misconfigured).
 
 
 ## 🎯 Objectives
