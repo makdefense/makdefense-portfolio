@@ -16,8 +16,8 @@
 - [ ] Launch THM AttackBox
 - [ ] Learn Basic System Information
 - [ ] Learn about Network Troubleshooting by using different commands
-- [ ] 
-
+- [ ] Learn about File and Disk Management
+- [ ] Learn about Task and Process Management
 
 ---
 
@@ -46,8 +46,6 @@ out the name of the process listening on port 3389 by inputting "netstat -abon",
 to view all child directories and located the cd called "Treasure." Next i inputted "cd Treasure" then typed enter after locating the Treasure directory. Next i inputted "dir" to view what was
 in the "Treasure's" directory, the child directory "Hunt" popped up so i then inputted "cd Hunt" then "dir" to view what flag was in the directory and saw "18 flag.txt" pop up. So to display the
 flag i typed "type flag.txt" which displayed the flag details "THM{CLI_POWER}."
-
-
 
 ---
 
