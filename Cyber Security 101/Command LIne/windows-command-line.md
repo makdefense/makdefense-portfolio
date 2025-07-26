@@ -2,15 +2,22 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [Windows Command Line]  
-**Date Completed**: [07//2025]
+**Date Completed**: [07/26/2025]
 
 ---
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance
+> In this lab, I learned about the importance of learning basic system information, which is that it helps to fix problems faster, detect threats and protect the system, prevent crashes
+and errors, improve performance and efficiency, build skills employers expect, and speak the language of IT. Next i learned about the importance of network troubleshooting by using different
+commands, which is that it helps to diagnose problems fast by fixing connection and DNS issues in minutes, it is required for IT, security, and SOC roles, boost security awareness by spotting
+suspicious activity and weak configs, helps to understand network architecture by learning how systems communicate at all levels, and save time with quick commandline tools. Following, I learned
+the importance of file and disk management, which is that it prevents data loss by backing up and restoring files with confidence, boosts system performance by keeping drives clean and fast, enhances
+security by detecting shady files or access permissions issues, enables automation by scripting tasks to save time, and improves organization. Finally, I learned about the importance of task and
+process management, which is that it helps with troubleshooting by fixing crashes, freezes, and slowness, helps with cybersecurity by detecting unauthorized or malicious activity, and helps with performance optimization by closing resource hogs and speeding up your system.
 
 
+---
 
 ## 🎯 Objectives
 - [ ] Launch THM AttackBox
@@ -23,15 +30,21 @@
 
 ## 🧰 Tools Used
 - THM AttackBox
-- 
+- Windows CommandLine
 
-
+  
 ---
 
 ## 📸 Screenshots
 
-> 
-
+> [Windows version] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20command%20line%20OS%20version.png)
+> [Windows System Info] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20command%20line%20sysinfo.png)
+> [Windows Subnet Mask] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20command%20line%20subnet%20mask.png)
+> [Windows MAC address] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20command%20MAC%20addy.png)
+> [Windows directories] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20command%20all%20cds.png)
+> [Windows process listening on port 3389] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20name%20of%20process%20listening.png)
+> [Windows Treasure directory] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20Treasure%20directory.png)
+> [Windows Flag] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/windows%20command%20line%20flag.png)
 
 ---
 
@@ -51,4 +64,4 @@ flag i typed "type flag.txt" which displayed the flag details "THM{CLI_POWER}."
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about Basic System Information, network troubleshooting using different commands, File and Disk Management, and Task and Process Management.
