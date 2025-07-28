@@ -45,7 +45,10 @@
 > [Selecting "captain-cabin" directory] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/selecting%20captain-cabin%20directory.png)
 > [Retrieving contents of "captain-hat.txt" file] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/getting%20contents%20of%20file.png)
 > [Retrieving items in directory "captain-cabin" greater than 100] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/powershell%20retrieving%20content%20greater%20than%20100.png)
-> 
+> [Locating hidden user "p1r4t3"] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/powershell%20finding%20hidden%20user.png)
+> [Display the contents of C:\Users\p1r4t3 directory] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/powershell%20display%20p1r4t3%20directory.png)
+> [Selecting "big-treasure-chest" directory and displaying its content] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/selecting%20hidden%20flag%20directory.png)
+> [Display the contents of the hidden flag] (https://github.com/makdefense/makdefense-portfolio/blob/main/images/flag%20in%20big-treasure-chest.png)
 
 ---
 
@@ -64,7 +67,13 @@ all the folders for that user. I then selected the specific file titled "Documen
 "Copy-Item -Path .\captain-cabin\captain-hat.txt -Destination .\captain-cabin\captain-hat2.txt and clicking enter. Followed by typing "Get-ChildItem -Path ".captain-cabin\"." To display what was moved to that directory.
 Next i then selected that directory by typing "Set-Location -Path .\captain-cabin" then clicked enter, followed by typing Get-Content -Path ".\captain-hat.txt" to display the contents of the .txt file.
 > Next i practiced piping, filtering, and sorting data within specific child directories. I figured out how to retrieve the items in the directory "captain-cabin" with a greater size that 100 by inputting the
-script "Get-ChildItem | Where-Object -Property "Length" -gt "100"." This displayed 3 items. 
+script "Get-ChildItem | Where-Object -Property "Length" -gt "100"." This displayed 3 items.
+> I was then tasked with figuring out a hidden flag within a hidden user's directories. First i had to identify the hidden user by inputting "Get-LocalUser" and clicking enter which displayed 6 items and out of the 6
+was the hidden user called "p1r4t3." After figuring out the hidden user i then figured out all of his child directories by inputting "Get-ChildItem -Path ".\p1r4t3"." and clicking enter which display a directory
+called "hidden-treasure-chest." Upon discovering that directory i then selected the directory by inputting "Set-Location -Path ".\hidden-treasure-chest" and clicking enter, then inputting "Get-ChildItem" and clicking enter to
+display the files that were in that directory. The file that was in the directory was "big-treasure.txt," and to display the hidden flag i inputted "Get-Content -Path ".\big-treasure-chest.txt" and clicked enter. The flag
+"THM{p34rlInAsh3ll}" was displayed.
+
 
 
 ---
