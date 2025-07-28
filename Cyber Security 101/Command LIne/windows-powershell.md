@@ -16,7 +16,7 @@
 ## 🎯 Objectives
 - [ ] Launch THM AttackBox
 - [ ] Learn PowerShell Basics
-- [ ] 
+- [ ] Learn to Navigate the File System and Work with Files
 
 ---
 
@@ -39,7 +39,8 @@ i signed into the client with the creditianls of "captain" for the username and 
 and clicking enter. Next i figured out how to retrieve a list of commands that start with the verb "Remove" by inputting the commmand "Get-Command -Name "Remove*"" into PowerShell. I then inputted the
 command "Get-Alias" to list all aliases available to find the alias with the counterpart of "echo" which was the command "Write-Output." Following i then figured out the command to retrieve some example usage
 for the cmdlet "New-LocalUser" by using the "Get-Help" command which provides detailed information about cmdlets. The entire command i inputted to display it was "Get-Help New-LocalUser -examples."
-> 
+> Next i practiced navigating through the system with powershell using command "Get-ChildItem," i specifically used that command to display the content of the "C:\Users" directory by inputting "Get-ChildItem
+-Path C:\Users" and clicking enter. What was displayed was 4 items for that specific directory.
 
 ---
 
