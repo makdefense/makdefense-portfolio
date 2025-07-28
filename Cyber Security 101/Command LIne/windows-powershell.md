@@ -17,6 +17,7 @@
 - [ ] Launch THM AttackBox
 - [ ] Learn PowerShell Basics
 - [ ] Learn to Navigate the File System and Work with Files
+- [ ] Learn about Piping, Filtering, and Sorting Data
 
 ---
 
