@@ -42,6 +42,7 @@ command "Get-Alias" to list all aliases available to find the alias with the cou
 for the cmdlet "New-LocalUser" by using the "Get-Help" command which provides detailed information about cmdlets. The entire command i inputted to display it was "Get-Help New-LocalUser -examples."
 > Next i practiced navigating through the system with powershell using command "Get-ChildItem," i specifically used that command to display the content of the "C:\Users" directory by inputting "Get-ChildItem
 -Path C:\Users" and clicking enter. What was displayed was 4 items for that specific directory.
+> 
 
 ---
 
