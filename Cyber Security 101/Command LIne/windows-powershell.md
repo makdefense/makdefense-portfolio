@@ -73,6 +73,10 @@ was the hidden user called "p1r4t3." After figuring out the hidden user i then f
 called "hidden-treasure-chest." Upon discovering that directory i then selected the directory by inputting "Set-Location -Path ".\hidden-treasure-chest" and clicking enter, then inputting "Get-ChildItem" and clicking enter to
 display the files that were in that directory. The file that was in the directory was "big-treasure.txt," and to display the hidden flag i inputted "Get-Content -Path ".\big-treasure-chest.txt" and clicked enter. The flag
 "THM{p34rlInAsh3ll}" was displayed.
+> I then wanted to figure out the hash of the flag that i discovered so i inputted "Get-FileHash -Path .\big-treasure.txt" and clicked enter which then generate the hash "71FC5EC11C2497A32F8F08E61399687D90ABE6E204D2964DF589543A613F3E08."
+I then was tasked to find a modified display name of a service which was done by the hidden user "p1r4t3." To do this i first inputted "Set-Location -Path ".\captain"." to select it to the "captain" directory then after clicking enter
+i inputted "Get-Service" then clicked enter and scrolled down to find the motto of the hidden user "p1r4t3" and found that the service was "p1r4t3-s-compass" that had a modified display name.
+> Finally 
 
 
 
