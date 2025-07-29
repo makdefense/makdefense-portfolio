@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [Windows PowerShell]  
-**Date Completed**: [07//2025]
+**Date Completed**: [07/28/2025]
 
 ---
 
@@ -94,4 +94,5 @@ I typed "Get-Service" and then clicked Enter, scrolling down to find the motto o
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about PowerShell basics, how to navigate the file system and work with files in PowerShell, about Piping, Filtering, and Sorting Data, how to identify System and Network Information,
+about Real-Time System Analysis when using PowerShell, and Scripting with PowerShell.
