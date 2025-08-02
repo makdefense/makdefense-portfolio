@@ -36,9 +36,11 @@
 > [Linux display the type of Shell being used in the OS] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20see%20type%20of%20shell%20used.png"
 > [Linux "cat" to display all available Shells] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20cat%20display%20all%20frei%20Shells.png"
 > [Linux command "zsh" to switch between Shells] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20zsh%20switching%20Shells.png"
-> [Linux creating and saaving new Script File] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20saving%20modified%20script.png"
+> [Linux creating and saving new Script File] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20saving%20modified%20script.png"
 > [Linux running the modified script] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20running%20the%20modified%20script.png"
-> 
+> [Linux creating a Loop file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20creating%20loop%20file.png"
+> [Linux creating and saving new Loop Script File] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20modifying%20and%20saving%20loop%20script.png"
+> [Linux running the modified script] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20running%20modified%20loop%20file.png"
 
 
 ---
