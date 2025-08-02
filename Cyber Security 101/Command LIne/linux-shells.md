@@ -63,9 +63,6 @@ variable to iterate the numbers 1 through 10 when the script is executed, then "
 will indicate the end of the loop script. I then saved the loop script by pressing "control+X" and then "Y," and finally pressing enter button. Afterwards i gave the script a go by inputting "chmod +x loop_script.sh,"
 then pressing "enter" button, then "./loop_script.sh," then "pressing "button" which iterated the numbers 1 through 10.
 
- 
-
-
 
 ---
 
