@@ -58,7 +58,8 @@ the variable will be stored, then finally "echo" executes "Welcome" and the name
 command. Next i decided to give the Script file a go by inputting "chmod +x first_script.sh," then pressing "enter" button to give execution permission to the script and then unputting "./first_script.sh" to execute.
 Afterwards i then created a loop file by inputting "nano loop_script.sh," then pressing the "enter" button. Next i inputted "#!/bin/bash" to start the script, then "enter" button, then "for i in {1..10}" to set the "i"
 variable to iterate the numbers 1 through 10 when the script is executed, then "do" to indicate the start of the loop script, then "echo $i" to display the variables value for every iteration, then finally "done" which
-will indicate the end of the loop script.
+will indicate the end of the loop script. I then saved the loop script by pressing "control+X" and then "Y," and finally pressing enter button. Afterwards i gave the script a go by inputting "chmod +x loop_script.sh,"
+then pressing "enter" button, then "./loop_script.sh," then "pressing "button" which iterated the numbers 1 through 10.
 
  
 
