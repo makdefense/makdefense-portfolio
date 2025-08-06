@@ -2,24 +2,25 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [Linux Shells]  
-**Date Completed**: [08/06/2025]
+**Date Completed**: [08/07/2025]
 
 ---
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of 
+> In this lab, I learned about the importance of interacting with a Shell, as it enables me to have control, speed, flexibility, and is often the only option available when managing or securing systems. Next, I learned
+about the importance of knowing about the types of Linux Shells, which is that it helps to write better scripts, debug faster, work more efficiently, and avoid compatibility or security issues. Lastly, I learned the
+importance of knowing about Shell scripting and components, which makes you a powerful, efficient, and valuable tech professional. It unlocks automation, boosts productivity, and sharpens your system understanding.
 
 ---
 
 ## 🎯 Objectives
 - [ ] Launch THM AttackBox
 - [ ] Learn how to interact with a Shell
-- [ ] Learn about the type of Linux Shells
+- [ ] Learn about the types of Linux Shells
 - [ ] Learn about Shell scripting and Components
 - [ ] Do Locker Script Exercise
 - [ ] Find Hidden Flag within ".log" file
-
 
 ---
 
@@ -102,4 +103,4 @@ the directory. To then find out where the cat was sleeping, I inputted "cat /var
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about the interaction with Shells in Linux, the different types of Shells within the OS, Shell scripting, and their components, along with two hands-on examples relevant to Shell scripting.
