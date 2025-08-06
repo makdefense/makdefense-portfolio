@@ -41,7 +41,11 @@
 > [Linux creating a Loop file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20creating%20loop%20file.png"
 > [Linux creating and saving new Loop Script File] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20modifying%20and%20saving%20loop%20script.png"
 > [Linux running the modified script] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20running%20modified%20loop%20file.png"
-
+> [] ""
+> [] ""
+> [] ""
+> [] ""
+>
 
 ---
 
@@ -52,7 +56,7 @@ and the IP address "10.201.40.223." I then inputted command "pwd," then "enter" 
 "ls" then "enter" button to list the contents of that working directory and displayed "flag_hunt.sh." I then inputted "cat flag_hunt.sh" and then enter button to display the contents of the file.
 > 
 > Next i decided the run a new command that displays the type of Shell that is currently being used for operating system, so i inputted "echo $SHELL," then "enter" button and "/bin/bash" was displayed
-afterwards. I then wanted to figure out the list of all available Shells that were in the system, so i inputted "cat/etc/shells," then "enter" and the list of every Shell in the Linux OS was displayed.
+afterwards. I then wanted to figure out the list of all available Shells that were in the system, so i inputted "cat /etc/shells," then "enter" and the list of every Shell in the Linux OS was displayed.
 I then inputted command "zsh," then enter to switch to the "zsh" Shell in the OS.
 > 
 > Following i then created a Script file within the bash Shell using the command "nano" then "first_script.sh" for name of the script file. Next within the script flie i inputted "!#/bin/bash" which is
@@ -64,7 +68,13 @@ command. Next i decided to give the Script file a go by inputting "chmod +x firs
 > Afterwards i then created a loop file by inputting "nano loop_script.sh," then pressing the "enter" button. Next i inputted "#!/bin/bash" to start the script, then "enter" button, then "for i in {1..10}" to set the "i"
 variable to iterate the numbers 1 through 10 when the script is executed, then "do" to indicate the start of the loop script, then "echo $i" to display the variables value for every iteration, then finally "done" which
 will indicate the end of the loop script. I then saved the loop script by pressing "control+X" and then "Y," and finally pressing enter button. Afterwards i gave the script a go by inputting "chmod +x loop_script.sh,"
-then pressing "enter" button, then "./loop_script.sh," then "pressing "button" which iterated the numbers 1 through 10.
+then pressing "enter" button, then "./loop_script.sh," then "pressing "button" which iterated the numbers 1 through 10. Next i implemented conditional statements by first creating a new file called "conditional_script.sh"
+by inputting "nano conditional_script.sh," then pressing the "enter" button. Then within the script file i inputted "#!/bin/bash," then pressed "enter" button to start writting script that took a user's name and stored it
+into a variable. So on first line of the script i inputted 'echo "Please enter your name first:'," then "read name" on the second line, then "if [ "$name" = "Makonenn" ]; then" on the third, then on the fourth line "echo
+'Welcome Makonenn! Here is the secret: THM_Script'," then "else" on the fifth, then on the sixth line "echo 'Sorry! You are not authorized to access the secret.'," and finally "fi" on the last line of the script. To save and
+close out the script i pressed "control+X," then Y to save the script. Next i inputted "chmod +x conditional_script.sh," then pressed "enter" button to implement execution permissions to the conditional statment. Then gave the
+script a go by inputting "./conditional_script.sh," then pressing "enter" button. I then added comments into the script of the conditional statement by inputting "nano conditional_script.sh," entered the comments so that the
+code can be comprehended by others easily since the code is lengthy.
 
 
 ---
