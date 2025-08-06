@@ -17,7 +17,8 @@
 - [ ] Learn how to interact with a Shell
 - [ ] Learn about the type of Linux Shells
 - [ ] Learn about Shell scripting and Components
-- [ ] 
+- [ ] Do Locker Script Exercise
+- [ ] Find Hidden Flag within ".log" file
 
 
 ---
@@ -41,12 +42,18 @@
 > [Linux creating a Loop file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20creating%20loop%20file.png"
 > [Linux creating and saving new Loop Script File] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20modifying%20and%20saving%20loop%20script.png"
 > [Linux running the modified script] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20running%20modified%20loop%20file.png"
-> [] ""
-> [] ""
-> [] ""
-> [] ""
+> [Linux creating conditional statement script file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20creating%20conditional%20statement.png"
+> [Linux creating script code for conditional statement] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20creating%20script%20for%20conditional%20statement.png"
+> [Linux add commments to code of the conditional statement script file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20adding%20comments%20to%20conditional%20statement.png"
+> [Linux running conditional statement script file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20running%20conditional%20statement.png"
+> [Linux creating Locker script file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20creating%20locker%20script.png"
+> [Linux creating locker script code] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20locker%20script%20code.png"
+> [Linux running locker script file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20running%20locker%20script%20file.png"
+> [Linux editing "flag_hunt.sh" code] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20editing%20flag_hunt.png"
+> [Linux running "flag_hunt.sh" script] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20running%20flag_hunt%20script%20file.png"
+> [Linux displaying the flag for the .log file "authentication.log"] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/cat%20authetication%20file%20for%20flag_hunt.png"
 >
-
+ 
 ---
 
 ## 📊 Analysis
