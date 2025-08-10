@@ -32,7 +32,7 @@
 > [Linux retrieving hidden flag after downloading file using FTP] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20ftp%20hidden%20flag.png"
 > [Linux authenticating POP3's server to retrieve hidden flag] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/liniux%20POP3%20recieving%20emails.png"
 > [Linux retrieving hidden flag from the fourth message] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/linux%20using%20POP3%20to%20display%20flag.png"
-> []
+> 
 
  
 ---
