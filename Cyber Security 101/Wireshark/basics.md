@@ -48,9 +48,8 @@
 > [Wireshark total number of warnings] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20total%20number%20of%20warnings.png"
 > [Wireshark acquiring alien's name by exporting] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20getting%20alien%20name%20by%20exporting%20.png"
 > [Wireshark getting note.txt alien file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20saving%20alien%20note_txt%20file.png"
-> [Wireshark saving alien note_txt file to Desktop] https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20saving%20alien%20file%20to%20desktop.png
-> [Wireshark ] ""
-> [] ""
+> [Wireshark saving alien note_txt file to Desktop] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20saving%20alien%20file%20to%20desktop.png"
+> [Wireshark opening alien note.txt file to get alien's name] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20aliens%20name.png"
 
 
 ---
@@ -77,7 +76,8 @@ box in the botton left, then saw i had to go to packet "39765" to get the MD5 ha
 left clicked all the way to "digests," selected "MD5," clicked "hash" button and got the value of "911cd574a42865a956ccde2d04495ebf." Next, i had to find an alien's name within the capture file, to do this i
 clicked "Flie" at the top, then "Export Objects," then sleected "HTTP," then within the "Text Filter" bar i inputted "txt" to narrow the files down to txt files. I then selected the "txt" file and saved it to
 the Desktop, i then open the "note.txt" file and scrolled to find the alien's name which was "packetmaster." I then had to find the number of warning for the capture file, to do this i clicked the "Analyze" at
-the top, then clicked "Expert Information," and saw that the total warning labelled in yellow were "1636." 
+the top, then clicked "Expert Information," and saw that the total warning labelled in yellow were "1636."
+> 
  ---
 
 ## Reflection
