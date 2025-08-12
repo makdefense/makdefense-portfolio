@@ -50,6 +50,11 @@
 > [Wireshark getting note.txt alien file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20saving%20alien%20note_txt%20file.png"
 > [Wireshark saving alien note_txt file to Desktop] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20saving%20alien%20file%20to%20desktop.png"
 > [Wireshark opening alien note.txt file to get alien's name] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20aliens%20name.png"
+> [Wireshark navigating to packet 4 in exercise.pcapng file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20navigating%20to%20packet%204.png"
+> [Wireshark packet 4 "Hypertext Transfer Protocol" filter query] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20packet%204%20HTTP%20filter%20query.png"
+> [Wireshark navigating to packet number 33790 in exercise.pcapng file] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20navigating%20to%20packet%2033790.png"
+> [Wireshark following HTTP stream of packet 33790] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20following%20http%20stream%20of%20packet%2033790.png"
+> [Wireshark displaying second artist name along with total number of artists in HTTP stream] "https://github.com/makdefense/makdefense-portfolio/blob/main/images/wireshark%20displaying%20second%20artist%20name%20along%20with%20total%20number%20of%20artists.png"
 
 
 ---
@@ -77,7 +82,14 @@ left clicked all the way to "digests," selected "MD5," clicked "hash" button and
 clicked "Flie" at the top, then "Export Objects," then sleected "HTTP," then within the "Text Filter" bar i inputted "txt" to narrow the files down to txt files. I then selected the "txt" file and saved it to
 the Desktop, i then open the "note.txt" file and scrolled to find the alien's name which was "packetmaster." I then had to find the number of warning for the capture file, to do this i clicked the "Analyze" at
 the top, then clicked "Expert Information," and saw that the total warning labelled in yellow were "1636."
-> 
+> Moving on, i had to implement packet filtering in the next practical, i had to figure out a filter query for packet number 4. To do this i first clicked the "Go" tab at the top of the application, then "Go
+to Packet," i then inputted "4" to go to that specific packet. I then went to the left bottom corner and right-clicked on "Hypertext Transfer Protocol," then clicked "Apply as Filter," then "Selected," and saw
+that the filter query was "http" in the filter pane. I also had to figure out the number packets for http which was "1089" when i look down at the bottom right corner. I then had to look for the total number of
+artists within packet number "33790" HTTP stream, i did this by clicking the "Go" tab at the top of the application, then "Go to Packet," then inputting "33790" to go that specific packet. I then went to the left
+bottom corner and right-clicked on "Hypertext Transfer Protocol," then "Follow," then "HTTP Stream," this then brought up HTML code where i had to scroll through to find both artist 2 name and total number of
+artists. The total number of artists were 3 and the name of the second artist was "Blad3."
+
+
  ---
 
 ## Reflection
