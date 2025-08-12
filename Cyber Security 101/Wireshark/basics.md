@@ -8,13 +8,20 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding the basics of using Wireshark, which is a widely used tool for network packet analysis, and knowing how to use it can make you far more
+effective in cybersecurity, networking, and troubleshooting. The importance of learning about Packet Dissection is that it is like reading an autopsy report for network traffic - it tells you exactly what happened,
+without relying on assumptions, and that skill makes you far more effective in both prevention and investigation. Next, I learn about the importance of understanding Packet Navigation, which is like knowing how to
+use the "search and map" features in Google Maps - without it, you wander around. With it, you can get from raw capture to clear answers quickly. Finally, I learned the importance of understanding
+packet filtering, which is that it turns a chaotic ocean of network data into a clear, targeted view - without it, finding useful information is slow, frustrating, and often impossible.
 
 
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] Learn the basics about Wireshark
+- [ ] Learn about Packet Dissection
+- [ ] Learn about Packet Navigation
+- [ ] Learn about Packet Filtering 
       
 
 ---
