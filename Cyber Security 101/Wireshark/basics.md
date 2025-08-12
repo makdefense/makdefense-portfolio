@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [Wireshark: The Basics]  
-**Date Completed**: [08//2025]
+**Date Completed**: [08/12/2025]
 
 ---
 
@@ -100,4 +100,4 @@ name and the total number of artists. The total number of artists was 3, and the
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about the basics of using Wireshark, Packet Dissection, Packet Navigation, and Packet Filtering.
