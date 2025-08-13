@@ -2,21 +2,30 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [Tcpdump: The Basics]  
-**Date Completed**: [08//2025]
+**Date Completed**: [08/12/2025]
 
 ---
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding TCPdump basics, which is that it is like the "microscope" for your network - learning to use it lets you see what's happening under the
+hood, which is essential for any network engineer, sysadmin, or cybersecurity professional. Next, I learned about the importance of understanding basic packet capture in tcpdump, which is that it is a
+fundamental skill that empowers you to see and analyze the exact data moving through a network, making you more effective in troubleshooting, securing, and understanding networks. Following, I learned the importance
+of understanding filtering expressions in tcpdump, which is that you will be able to capture exactly what you need, ignore what you don't, and analyze network traffic faster and smarter. I then learned about the
+importance of knowing about advanced filtering in tcpdump, which is that if mastered, you can become a surgical network analyst - cutting through noise with laser-focused captures, improving your troubleshooting
+speed, security insight, and overall network visibility. Finally, I learned the importance of understanding how to display packets, which is that it transforms raw network captures into clear, actionable insights -
+making you a more effective troubleshooter and analyst.
 
 
 ---
 
 ## 🎯 Objectives
-- [ ] 
-      
-
+- [ ] Learn about Tcpdump basics
+- [ ] Learn about Basic Packet Capture
+- [ ] Learn about Filtering Expressions
+- [ ] Learn about Advanced Filtering
+- [ ] Learn about Displaying Packets
+     
 ---
 
 ## 🧰 Tools Used
@@ -56,6 +65,6 @@ The MAC address displayed is "52:54:00:7c:d3:5b." I added the command "-e" at th
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about TCPdump basics, Basic Packet Capture, Filtering Expressions, Advanced Filtering,  and Displaying Packets.
 
 
