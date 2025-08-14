@@ -21,7 +21,8 @@
 
 ## 🧰 Tools Used
 - THM AttackBox
-- THM 
+- THM Linux
+- THM FireFox
   
 ---
 
@@ -37,7 +38,17 @@
 This then displayed 6 open TCP ports.
 > <img width="735" height="289" alt="nmap2" src="https://github.com/user-attachments/assets/553f5346-acbe-4b72-92f2-8e8f48f6df55" />
 
+> Next i then had to find a flag by finding the listening web server on IP address: 10.201.25.77 and access it with my browser. To do this i launch FireFox within the THM AttackBox, then inputted
+"http://10.201.25.77:8008," then pressed the "enter" button. This displayed the main page along with the flag "THM{SECRET_PAGE_38B9P6}."
+> <img width="659" height="399" alt="nmap3" src="https://github.com/user-attachments/assets/a454c0c6-7a88-4a6d-8c0e-6d6fa51b74f7" />
+
+> I then had to find the name and detected version of the web server running on "10.201.25.77." To do this i inputted the command "nmap -sV 10.201.25.77," then pressed "enter," this displayed
+the detected version name as "lighttpd 1.4.74."
+> <img width="725" height="294" alt="nmap4" src="https://github.com/user-attachments/assets/438d20da-876a-4f2d-9fbb-ed8fff2f9034" />
+
 >
+
+
 
 
 
