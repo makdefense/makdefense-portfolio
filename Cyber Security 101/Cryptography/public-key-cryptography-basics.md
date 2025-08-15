@@ -2,21 +2,32 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [Public Key Cryptography Basics]  
-**Date Completed**: [08//2025]
+**Date Completed**: [08/15/2025]
 
 ---
 
 ## 🧠 Summary
 
 > In this lab, I learned about the importance of understanding the basics of public key cryptography (PKC), which is the foundation for the most secure communication, authentication, and digital trust in
-today's world. I also learned the importance of understanding the common uses of asymmetric encryption in PKC, which is that it gives you context - so it's not just "math with keys," but a practical too you
-know when and how to apply. Then i learn the importance of understanding RSA in PKC, which is like the "alphabet" of asymmetric encryption. Even if you later move on to more advanced or modern algorithms,
-knowing RSA gives you the solid base to understand the rest.
+today's world. I also learned the importance of understanding the common uses of asymmetric encryption in PKC, which is that it gives you context - so it's not just "math with keys," but a practical tool you
+know when and how to apply. Then I learn the importance of understanding RSA in PKC, which is like the "alphabet" of asymmetric encryption. Even if you later move on to more advanced or modern algorithms,
+knowing RSA gives you a solid base to understand the rest. The importance of understanding DH in PKC is that it is a foundational method for securely agreeing on a shared secret over an insecure channel,
+which is something you can't do with symmetric encryption alone. Following this, I then learned about the importance of understanding SSH in the context of PKC, which is that SSH is the day-to-day workhorse of secure
+system access, and PKC is the engine that makes it secure. Without understanding SSH in a PKC context, you can't confidently manage or secure remote systems. Next, I learned about the importance of understanding
+digital signatures and certificates in PKC, which is that digital signatures prove "who" sent something and that it wasn't altered; certificates prove that the "who" is legitimate. Without them, secure communi-
+cation and online trust would collapse. Finally, the importance of understanding PGP and GPG in PKC is that they are the "hands-on workshop" for PKC. They take the theory of PKC and put it into practice for
+secure communication, signatures, and file encryption in a way you'll use in the field.
 
 ---
 
 ## 🎯 Objectives
-- [ ] Learn about
+- [ ] Learn about PKC: Basics
+- [ ] Learn about Common Use of Asymmetric Encryption
+- [ ] Learn about RSA
+- [ ] Learn about Diffie-Hellman Key Exchange
+- [ ] Learn about SSH
+- [ ] Learn about Digital Signatures and Certificates
+- [ ] PGP and GPG
      
 ---
 
@@ -26,7 +37,6 @@ knowing RSA gives you the solid base to understand the rest.
   
 ---
 
----
 
 ## 📊 Analysis & Screenshots
 
@@ -44,4 +54,4 @@ secret word was "Pineapple."
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about the basics of PKC, RSA, Common Use of Asymmetric Encryption, DH Key Exchange, SSH, Digital Signatures & Certificates, and PGP & GPG.
