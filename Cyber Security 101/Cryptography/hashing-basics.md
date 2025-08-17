@@ -8,7 +8,13 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding about Hash functions and collisions, which is that it teaches you secure data verification works, why some algorithms (MD5, SHA-1) are no longer
+considered safe, how modern algorithms (SHA-256, SHA-3, BLAKE3) are designed to resist collisions, and how to choose and implement hashing safely in systems you'll work on. I then learned about the importance
+of understanding the role of hashing in authentication systems, which is that hashing is the foundation of secure authentication. Without it, password systems would be unsafe, easy to break, and trust in digital
+identity would collapse. Following, I learned about the importance of understanding how to recognize stored hash values, which gives you visibility into whether data is secure, whether a system is
+outdated, and how attackers might exploit it. Furthermore, I learned about the importance of understanding how to crack hash values, which is that it shows you why weak algorithms fail, helps you assess real-
+world risk, and strengthens your ability to think like an attacker so you can defend better. Finally, learning about the importance of understanding the use of hashing for integrity protection ensures
+that "what you send is what is received" and "what you store is what you retrieve." Without it, you'd have no way to trust data in digital systems.
 
 ---
 
@@ -86,4 +92,4 @@ the directory to make sure "decode-this.txt" file was in the directory. To decod
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about all the basics of using hashing within Linux.
