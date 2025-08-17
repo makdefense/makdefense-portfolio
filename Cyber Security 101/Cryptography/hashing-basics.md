@@ -44,6 +44,7 @@ The 20th password is "qwerty."
 
 > Next, I was given a practical to crack the hash of "5b31f93c09ad1d065c0491b764d04933" using an online tool. To do this, I used "hashes.com" and entered the "5b31f93c09ad1d065c0491b764d04933" hash into
 the input field, and the hash that was given was "tryhackme."
+
 > <img width="507" height="378" alt="hash_basic3" src="https://github.com/user-attachments/assets/e4f54ba9-efd0-40df-a001-0fa2a6732470" />
 
 > I then had to use hashcat to crack the hash "$2a$06$7yoU3Ng8dHTXphAg913cyO6Bjs3K5lBnwq5FJyA6d01pMSrddr1ZG" within Linux, which was saved in the directory "~/Hashing-Basics/Task-6/hash1.txt." To do this, I
