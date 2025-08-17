@@ -61,3 +61,4 @@ did this by clicking the "start" button, then the "search" button, searching "th
 > This lab provided me with knowledge on "Update Information" in the Operating System, the different areas in Windows Security, Virus & Threat Protection, Firewall & network protection, App & browser, and device
 security, BitLocker, and VSS.
 
+
