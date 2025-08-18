@@ -19,7 +19,7 @@
 
 ## 🧰 Tools Used
 - THM AttackBox
-- 
+- THM JohnTheRipper
   
 ---
 
@@ -58,12 +58,14 @@ displayed "kangeroo" as the cracked value of "hash2.txt."
 > <img width="1328" height="418" alt="jtr7" src="https://github.com/user-attachments/assets/d0537452-7a8f-4db0-b375-d0c085324fc8" />
 > <img width="1427" height="224" alt="jtr8" src="https://github.com/user-attachments/assets/4c6272df-6d92-4c11-a696-e1d65e8a64fd" />
 
->
+> Following, i was given a Cracking Windows Authentication Hashes practical, i had to first figure out the format in order to crack the hash value of the file: "ntlm.txt." So first i had to navigate to the directory
+in which the file was in so i inputted "cd Task05," then pressed "enter," the "ls" to see if the file was actually in the directory in which it was. I then inputted "john --list=formats | grep -iF "NT" to see
+if the format was "NT" to crack the file's hash of "5460C85BD858A11475115D2DD3A82333," and it was.
+> <img width="945" height="230" alt="jtr9" src="https://github.com/user-attachments/assets/5046ef3b-60d1-49d6-af26-a00f521bf4dc" />
 
-
-
-
-
+> Next i had to find the cracked value of the password file "ntml.txt." To do this i inputted "john --format=NT --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt," then pressed "enter," and was given the
+cracked value of "mushroom."
+> <img width="1268" height="231" alt="jtr10" src="https://github.com/user-attachments/assets/d6770f1d-81cf-4a99-8baf-ece666c4d254" />
 
 ---
 
