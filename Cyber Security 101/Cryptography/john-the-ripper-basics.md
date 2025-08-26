@@ -69,7 +69,7 @@ cracked value of "mushroom."
 
 > I was then given a practical to crack a /etc/shadow Hash. I had to try and crack the password hash of the root user provided in the "etchashes.txt" file which was located in directory "Task06." To do this
 i first inputted "cd Task06," to navigate to the directory, then inputted the command "unshadow local_passwd local_shadow > etchashes.txt," which combines /etc/shadow passwords with the /etc/passwd file so
-JTR can understand the data that needs to be cracked. Next i inputted the command used for cracking the output that with fed to JTR using unshadowing which was
+JTR can understand the data that needs to be cracked. Next i inputted the command used for cracking the output that I fed to JTR using unshadowing which was
 "john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt etchashes.txt," then pressed "enter" button to load the password hash which was "1234."
 > <img width="1365" height="319" alt="jtr11" src="https://github.com/user-attachments/assets/61cb74c4-5d88-40da-9e3e-0e2d4a60c760" />
 
