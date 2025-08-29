@@ -41,7 +41,7 @@ displayed "biscuit" as the cracked value of "hash1.txt."
 inputted "python3 hash-id.py," then pressed "enter," then copied and pasted the hash: "1A732667F3917C0F4AA98BB13011B9090C6F8065," then pressed "enter" and got the hash type of "SHA-1."
 > <img width="1000" height="410" alt="jtr3" src="https://github.com/user-attachments/assets/d6f7b0ec-9003-43f4-8ce8-da3f6c234000" />
 
-> Next i had to figure out the cracked value of "hash2.txt" file, i did this by inputting "john --format=Raw-SHA1  --wordlist=/usr/share/wordlists/rockyou.txt hash2.txt," then pressing "enter." This then
+> Next i had to figure out the cracked value of "hash2.txt" file, i did this by inputting "john --format=Raw-SHA1 --wordlist=/usr/share/wordlists/rockyou.txt hash2.txt," then pressing "enter." This then
 displayed "kangeroo" as the cracked value of "hash2.txt."
 > <img width="1333" height="224" alt="jtr4" src="https://github.com/user-attachments/assets/18367d67-284f-4268-804b-495d61d8c549" />
 
@@ -72,6 +72,16 @@ i first inputted "cd Task06," to navigate to the directory, then inputted the co
 JTR can understand the data that needs to be cracked. Next i inputted the command used for cracking the output that I fed to JTR using unshadowing which was
 "john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt etchashes.txt," then pressed "enter" button to load the password hash which was "1234."
 > <img width="1365" height="319" alt="jtr11" src="https://github.com/user-attachments/assets/61cb74c4-5d88-40da-9e3e-0e2d4a60c760" />
+
+> Next, I was given a practical to use John's Single Crack Mode to access a hash and crack it in directory "/John-the-Ripper-The-Basics/Task07/," i had to assume the password belonged to the user "Joker." To do this
+i first navigated to the directory where the "hash07.txt" file was in by inputting "cd John-the-Ripper-The-Basics," then "enter," then "cd Task07," then "enter" again. I then inputted "ls" to list all files and saw
+the "hash07.txt" file. Next i inputted "cat hash07.txt," then "enter" to display the file's hash which was "7bf6d9bb82bed1302f331fc6b816aada," then inputted "nano hash07.txt," then "enter" to edit the file's hash
+by adding "joker:" because i had to assume the hash belonged to the user "Joker." After exiting nano mode i then inputted "cat hash07.txt" to make sure that the file displayed "joker:7bf6d9bb82bed1302f331fc6b816aada,"
+and it did. So i then proceed with John's single crack mode by inputting "john --single --format=raw-md5 hash07.txt," then "enter" which displayed the cracked hash "Jok3r."
+> <img width="528" height="83" alt="jtr12" src="https://github.com/user-attachments/assets/011d65fc-1a45-4cbd-ab8f-4494c12d760a" />
+> <img width="961" height="350" alt="jtr13" src="https://github.com/user-attachments/assets/9b052280-0067-497a-819e-ca9dceed37bd" />
+
+>
 
 ---
 
