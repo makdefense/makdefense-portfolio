@@ -81,7 +81,7 @@ and it did. So i then proceed with John's single crack mode by inputting "john -
 > <img width="528" height="83" alt="jtr12" src="https://github.com/user-attachments/assets/011d65fc-1a45-4cbd-ab8f-4494c12d760a" />
 > <img width="961" height="350" alt="jtr13" src="https://github.com/user-attachments/assets/9b052280-0067-497a-819e-ca9dceed37bd" />
 
->
+> 
 
 ---
 
