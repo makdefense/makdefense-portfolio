@@ -81,7 +81,16 @@ and it did. So i then proceed with John's single crack mode by inputting "john -
 > <img width="528" height="83" alt="jtr12" src="https://github.com/user-attachments/assets/011d65fc-1a45-4cbd-ab8f-4494c12d760a" />
 > <img width="961" height="350" alt="jtr13" src="https://github.com/user-attachments/assets/9b052280-0067-497a-819e-ca9dceed37bd" />
 
-> 
+> Next, i was given a practical to crack a secured zip file and figure out its password within the directory: "~/John-the-Ripper-The-Basics/Task09/." To do this i first navigated to "Task09" by inputting "cd Task09,"
+then "enter," then "ls" to view all the files in the directory and saw the "secure.zip" file, i then had to convert it into hash format so i did this by inputting "zip2john secure.zip > zip_hash.txt," then "enter," then
+cracked the hash by inputting "john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt" and got the password: "pass123."
+> <img width="1170" height="243" alt="jtr14" src="https://github.com/user-attachments/assets/37fdf0b7-c513-4d7f-a77c-7a0db0649f13" />
+> I then had to figure out the contents of the flag that was in the zip file. I did this by inputting "unzip secure.zip," then "enter," then "ls" to confirm the extracted sub-directory was within the directory and it
+was. The directory was called "zippy." I then inputted "cd zippy," then "enter," to navigate to the directory, then "ls" to see the contents of the directory and saw a "flag.txt" file, then finally "cat flag.txt" to
+display the flag which was "THM{w3ll_d0n3_h4sh_r0y4l}."
+> <img width="754" height="173" alt="jtr15" src="https://github.com/user-attachments/assets/200ac6a1-c780-4380-bcc6-550999fc25ff" />
+
+
 
 ---
 
