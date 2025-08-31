@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [John the Ripper: The Basics]  
-**Date Completed**: [08//2025]
+**Date Completed**: [08/30/2025]
 
 ---
 
@@ -126,4 +126,4 @@ directory where the SSH file was located, then "enter," then "ls" to make sure t
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about John the Ripper and how to crack different types of passwords using the program.
