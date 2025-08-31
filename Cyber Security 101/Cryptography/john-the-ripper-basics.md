@@ -8,12 +8,29 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding
+> In this lab, I learned about the importance of understanding how to crack basic hashes with JTR, which involves gaining a practical, defender's understanding of password security and attacker techniques. I then
+learned about the importance of understanding cracking Windows authentication hashes with JTR, which is that it connects theory (password security) with the real enterprise environment you'll be defending. It's not 
+about hacking a hash - it's about understanding how attackers break into Windows domains so that you can stop them. Following, I learned the importance of understanding cracking /etc/shadow Hashes, which is that it
+gives you a deep, hands-on understanding of Linux password security, attacker methods, and defensive strategies. I also learned the importance of understanding single crack mode with JTR, which is that it teaches you
+that attackers don't always need brute force - they exploit human predictability first, and defenders need to account for that. Next, I learned about the importance of custom rules with JTR, which is that it bridges
+the gap between raw brute force and human behavior-driven cracking - making you far more effective at simulating real-world attacks and auditing password strength. I then learned the importance of understanding
+cracking password-protected zip files with JTR, which is that it combines practical password auditing, forensic skills, and real-world attacker techniques, helping you understand the risks of weak encryption and
+improve security practices. I learned the importance of understanding cracking protected RAR archives, which gives you hands-on experience with stronger encryption, realistic attacker techniques, forensic
+investigation, and security auditing. It bridges the gap between theory (encryption strength) and practice (password cracking limits). Finally, I learned the importance of understanding cracking SSH keys with John,
+which is that it shows you how attackers turn stolen private keys into unauthorized access, and it prepares you to defend, audit, and investigate systems that rely heavily on SSH for authentication.
 
 ---
 
 ## 🎯 Objectives
-- [ ] Learn about 
+- [ ] Learn about JTR Basic Terms
+- [ ] Learn about Cracking Basic Hashes
+- [ ] Learn about Cracking Windows Authentication Hashes
+- [ ] Learn about Cracking /etc/shadow Hashes
+- [ ] Learn about Single Crack Mode
+- [ ] Learn about Custom Rules
+- [ ] Learn about Cracking Password Protected Zip Files
+- [ ] Learn about Cracking-Protected RAR Archives
+- [ ] Learn about Cracking SSH Keys with John
      
 ---
 
