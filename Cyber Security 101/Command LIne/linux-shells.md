@@ -104,3 +104,4 @@ the directory. To then find out where the cat was sleeping, I inputted "cat /var
 ## Reflection
 
 > This lab provided me with knowledge about the interaction with Shells in Linux, the different types of Shells within the OS, Shell scripting, and their components, along with two hands-on examples relevant to Shell scripting.
+
