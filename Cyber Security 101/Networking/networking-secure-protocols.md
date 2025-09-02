@@ -59,3 +59,4 @@ Next, I double-clicked on packet 366, then selected the "Decrypted TLS (141 byte
 > This lab provided me with knowledge about TLS, HTTPS, SMTPS, POP3S, IMAPS, SSH, SFTP, FTPS, VPN, and how to go about decrypting log files using the Wireshark application.
 
 
+
