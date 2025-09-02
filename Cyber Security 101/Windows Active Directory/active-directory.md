@@ -96,3 +96,4 @@ panel to only the IT department.
 
 > This lab provided me with knowledge about Windows Domains, Active Directory, how to manage users and computers in AD, about Group Policies and how to create them, and about Authentication
 Methods, and about Trees, Forests, and Trusts.
+
