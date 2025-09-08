@@ -36,6 +36,7 @@ In secure environments, passwords shouldn't be in a page's source code.
 > To find the hidden Password within the source code of https://static-labs.tryhackme.cloud/sites/howwebsiteswork/html_data_exposure/, I first click on the website, then right
 clicked on the general page and clicked on View Page Source, where I then was able to find the Password hidden in the code, which was Password: testpasswd
 
+
 ---
 
 ## Reflection
