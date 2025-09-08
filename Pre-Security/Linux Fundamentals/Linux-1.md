@@ -47,6 +47,7 @@ Afterwards, I used the "ls" command to see all the files and folders that exist 
 that folder 4 contained a note.txt file. Afterward, I used the command "cat" to output the contents of the exact note.txt file. Then, I used the "pwd" to find the full path of the
 "folder4" folder. Finally, I started searching for files using the "find" command, then specifically used the "Grep" command on the access.log to find a flag.
 
+
 ---
 
 ## Reflection
