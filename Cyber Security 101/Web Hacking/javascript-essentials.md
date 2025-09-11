@@ -89,7 +89,33 @@ used external JS.
 
 *** Abusing Dialouge Functions ***
 
->
+> I was then given a few exercises within the Abusing Dialouge Functions section. My first task was to get Google Chrome to display the alert "Hello THM." To do this i first launched Google Chrome, then opened
+the console tab and inputted the code "alert("Hello THM")," then pressed "enter."
+
+> <img width="1045" height="619" alt="java18" src="https://github.com/user-attachments/assets/c063a345-df70-4023-9b40-02ca916e96fc" />
+> <img width="1085" height="549" alt="java19" src="https://github.com/user-attachments/assets/f414a839-e8ae-458f-88d9-70bae923da43" />
+
+> For the next exercise i had to get Google Chrome to display the prompt "What is your name?" To do this i first lauched Google Chrome, then opened the console tab and inputted the code
+"name = prompt("What is your name?");," followed by " alert("Hello " + name);," then pressed "enter."
+
+> <img width="1081" height="774" alt="java20" src="https://github.com/user-attachments/assets/76811a8f-a5b1-48d1-a9c1-1e9851165f20" />
+
+> After entering my name within the prompt i pressed the "ok" button and got the alert "Hello Makonenn."
+
+> <img width="979" height="395" alt="java21" src="https://github.com/user-attachments/assets/c5af8b0d-11bd-484f-94fb-01c08509bfee" />
+
+> For the next exercise i had to get Google Chrome to display the confirm dialouge "Do you want to proceed?" To do this i inputted the code "confirm("Do you want to proceed?")," then pressed "enter."
+
+> <img width="1010" height="657" alt="java22" src="https://github.com/user-attachments/assets/829f7f20-a5b9-474c-9ccd-fd658a3fe00a" />
+
+> After pressing the "ok" button on the confirm dialouge i got the message "true."
+
+> <img width="291" height="251" alt="java23" src="https://github.com/user-attachments/assets/5311175a-82a5-44e3-960c-bd8bf080de90" />
+
+
+
+
+
 
 ---
 
