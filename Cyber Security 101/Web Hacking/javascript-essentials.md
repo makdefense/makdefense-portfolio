@@ -112,6 +112,21 @@ the console tab and inputted the code "alert("Hello THM")," then pressed "enter.
 
 > <img width="291" height="251" alt="java23" src="https://github.com/user-attachments/assets/5311175a-82a5-44e3-960c-bd8bf080de90" />
 
+> I then did an exercise where i had to exploit the functionality so that when a user used Google Chrome JS disrupts their browsing experience. I had to get an html file to prompt the alert "hacked" three
+times when a user would open the file. To go about this i first created a file called "invoice.html" on the desktop.
+
+> <img width="341" height="221" alt="java24" src="https://github.com/user-attachments/assets/6836bd2b-8246-419c-88c0-ce2570da38e4" />
+
+> I then right-clicked on the "invoice.html" file and selected open with "Pluma" and inputted specific code that included the hacked alert to be displayed three times when a user would open it.
+
+> <img width="886" height="614" alt="java25" src="https://github.com/user-attachments/assets/6a036f5c-fa2b-4f61-833e-062faf37a6b9" />
+
+*** Bypassing Control Flow Statements ***
+
+> 
+
+
+
 
 
 
