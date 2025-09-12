@@ -123,15 +123,57 @@ times when a user would open the file. To go about this i first created a file c
 
 *** Bypassing Control Flow Statements ***
 
-> 
+> For this section i was given an exercise to figure out what message was displayed after entering an age that was less than 18 within a conditional statement prompt. So firstly i had to create a file on the Desktop and
+titled it "age.html."
 
+> <img width="432" height="238" alt="java26" src="https://github.com/user-attachments/assets/aaaed8c0-e455-4aa7-bb1e-3bbec8ecd1cd" />
 
+> Next i had to input specific if-else code statements that would allow me to execute different blocks of code depending on whether a condition evaluates to true or false. So all i did was opened the "age.html" file
+with "Pluma" and copied and pasted the code within the text editor and saved it.
 
+> <img width="867" height="607" alt="java27" src="https://github.com/user-attachments/assets/e2c1fa6e-5e88-4520-9e7b-690e2a750d19" />
 
+> Then i double-clicked on the file to open it with Google Chrome. After opening it with Chrome i inputted the age of 17 within the prompt and got the message "You are a minor."
 
+> <img width="619" height="383" alt="java30" src="https://github.com/user-attachments/assets/c2b01f50-ed93-416c-8faa-125eaee731e7" />
 
+> For my next exercise i had to figure out the password of the user admin. To do this i first had to locate a file called "login.html" within the "exercise" folder on the Desktop. After locating it i right-clicked the
+file and selected "open with Pluma." This then displayed the password "ComplexPassword" within the code for the username "admin."
 
+> <img width="854" height="636" alt="java31" src="https://github.com/user-attachments/assets/98dba5f7-4b83-4067-a5f2-cecc0639fc8b" />
 
+*** Exploring Minified Files ***
+
+> For my next exercise i had to implement Obfuscation within an html file. I first had to create a file called "hello.html" and save it on the Desktop.
+
+> <img width="501" height="155" alt="java34" src="https://github.com/user-attachments/assets/97973fe7-9eff-40d2-826c-c76b0ef08ed4" />
+
+> I then had to right-click on the "hello.html" file and select "open with Pluma," then copy and paste the obfuscated code within the text editor area and save it.
+
+> <img width="727" height="484" alt="java35" src="https://github.com/user-attachments/assets/0446d543-38a0-4e2b-8497-255c1d197f63" />
+
+> I then had to create and save another file on the Desktop titled "hello.js"
+
+> <img width="389" height="135" alt="java36" src="https://github.com/user-attachments/assets/226ac80d-2ea9-4093-8770-1e376355c2a7" />
+
+> After saving the file i had to right-click on the file and select "open with Pluma," then copy and paste "function" code within the text editor area and save it.
+
+> <img width="458" height="177" alt="java37" src="https://github.com/user-attachments/assets/16bc5915-7fa7-4c12-b11b-61f8dd37f87a" />
+
+> After closing Pluma i went back and double-clicked on the "hello.html" file that was saved on the Desktop to open it with Google Chrome and was prompted with the alert "Welcome to THM."
+
+> <img width="1055" height="397" alt="java38" src="https://github.com/user-attachments/assets/b75a6f61-2a29-4d9d-bed2-a65a9e1597f9" />
+
+> After clicking "OK" to close out the message i right-clicked on the page and selected "insepct," then clicked on "sources" tab, then to obfuscate the code i just selected all the code within the text area, copied it
+and pasted it within the text field of the "https://codebeautify.org/javascript-obfuscator" website and clicked "JS Obfuscator" to retrieve the obfuscated code.
+
+> <img width="619" height="423" alt="java39" src="https://github.com/user-attachments/assets/17df80e8-0cff-4371-aff9-d93ae019d610" />
+> <img width="1203" height="692" alt="java40" src="https://github.com/user-attachments/assets/dd305231-24fe-43d1-8f4d-aa7cb8e3e46a" />
+
+> For my next exercise i had to deobfuscate the following obfuscated code snippet "age=0x1*0x247e+0x35*-0x2e+-0x1ae3;" using the website "https://obf-io.deobfuscate.io/." After opening the website, copying and pasting
+the obfuscated code within the text field i clicked deobfuscate and got the age value of "21."
+
+> <img width="1464" height="161" alt="java41" src="https://github.com/user-attachments/assets/9efbef82-122f-4df5-85db-544ce15c92fa" />
 ---
 
 ## Reflection
