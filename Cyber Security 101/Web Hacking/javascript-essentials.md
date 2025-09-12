@@ -2,18 +2,29 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [JavaScript Essentials]  
-**Date Completed**: [09//2025]
+**Date Completed**: [09/12/2025]
 
 ---
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding JavaScript essential concepts, which are that it is the backbone of modern web applications, central to web vulnerabilities, critical for analyzing apps, and
+APIs are necessary for both offensive and defensive cybersecurity work. Next, I learned about the importance of understanding how to integrate JavaScript in HTML, which is that it is the foundation of how the web works,
+is vulnerable to many attacks (like XSS), critical for debugging and exploit development, and essential knowledge for both offensive and defensive cybersecurity roles. Following, I learned the importance of understanding
+how to abuse dialogue functions, which is that they are the safest, most straightforward way to prove XSS and JavaScript execution in a target. They teach you how browsers execute injected code and form the foundation
+for more advanced payloads - while keeping tests non-destructive. I then learn the importance of understanding how to bypass control flow statements, which teaches you how attackers exploit weak logic, how to defend
+against those flaws, how to debug malicious/obfuscated code, and how to analyze vulnerabilities that go beyond traditional exploits. Finally, I learned about the importance of understanding how to explore minified files,
+as both attackers and defenders need to uncover hidden secrets, analyze malicious code, understand app logic, and detect misconfigurations or leaks that aren't obvious in plain sight.
+
 ---
 
 ## 🎯 Objectives
-- [ ] Learn
-      
+- [ ] Learn about Javascript Essential Concepts
+- [ ] Learn how to integrate JavaScript in HTML
+- [ ] Learn how to Abuse Dialouge Functions
+- [ ] Learn how to Bypassing Control Flow Statements
+- [ ] Learn how to Explore Minified Files
+   
 ---
 
 ## 🧰 Tools Used
@@ -178,4 +189,4 @@ I clicked "deobfuscate" on the obfuscated code snippet within the text field, an
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about how to use JavaScript to add interactivity to a website and understand associated vulnerabilities.
