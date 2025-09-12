@@ -171,7 +171,7 @@ and pasted it within the text field of the "https://codebeautify.org/javascript-
 > <img width="1203" height="692" alt="java40" src="https://github.com/user-attachments/assets/dd305231-24fe-43d1-8f4d-aa7cb8e3e46a" />
 
 > For my next exercise i had to deobfuscate the following obfuscated code snippet "age=0x1*0x247e+0x35*-0x2e+-0x1ae3;" using the website "https://obf-io.deobfuscate.io/." After opening the website, copying and pasting
-the obfuscated code within the text field i clicked deobfuscate and got the age value of "21."
+the obfuscated code snippet within the text field i clicked deobfuscate and got the age value of "21."
 
 > <img width="1464" height="161" alt="java41" src="https://github.com/user-attachments/assets/9efbef82-122f-4df5-85db-544ce15c92fa" />
 ---
