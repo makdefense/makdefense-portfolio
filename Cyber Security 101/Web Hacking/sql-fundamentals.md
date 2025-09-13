@@ -8,12 +8,26 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding what databases are, which is that they hold valuable information, are a prime target for attackers, and form the backbone of modern
+applications. Without this knowledge, it's hard to exploit, defend, or even understand most real-world systems. I then learned about the importance of understanding the different types of databases, which
+is that each has unique strengths, weaknesses, and attack surfaces. It makes you a better defender, a smarter pentester, and more valuable in real-world IT and security roles. Next, I learned
+about the importance of understanding what SQL is, which is the language of data storage, the foundation of significant vulnerabilities, and an essential skill for both exploiting (in labs) and defending
+(in the real world) critical systems. Following, I learned the importance of understanding why you should be able to use SQL CRUD operations, which are the building blocks of how apps interact with
+data, the basis for many common vulnerabilities, essential for defending databases, and valuable for investigations and career prep. Learning about the importance of understanding why you should be able
+to use SQL Clauses operations is that they transform simple CRUD into powerful database operations, reveal how applications truly work, form the basis of SQL injection attacks, and are critical for
+secure coding, defense, and investigations. I learned about the importance of understanding why you should be able to use SQL operators.
 
 ---
 
 ## 🎯 Objectives
-- [ ] Learn 
+- [ ] Learn what databases are, as well as key terms and concepts
+- [ ] Learn about the different types of databases
+- [ ] Learn about what SQL is
+- [ ] Learn and be able to use SQL CRUD Operations
+- [ ] Learn and be able to use SQL Clauses Operations
+- [ ] Learn and be able to use SQL operations
+- [ ] Learn and be able to use SQL operators
+- [ ] Learn and be able to use SQL functions
    
 ---
 
@@ -169,9 +183,10 @@ then returned the total amount of "1444."
 > Finally, I had to determine the tool names for amounts that do not end in 0 and group them by concatenating the tool names with "&." To do this, I input the command
 "SELECT GROUP_CONCAT(name SEPARATOR' & ')
 FROM hacking_tools
-WHERE amount % 10 != 0;" and pressed "enter." This then returned the tool names of "Flipper Zero & iCopy-XS." 
+WHERE amount % 10 != 0;" and pressed "enter." This then returned the tool names of "Flipper Zero & iCopy-XS."
+
 ---
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge and hands-on experience about how to perform basic SQL queries to retrieve and manage data in a database.
