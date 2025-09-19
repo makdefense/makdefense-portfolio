@@ -155,6 +155,74 @@ So i went ahead and just inputted the command "import os; print(os.popen("cat ap
 
 > <img width="747" height="224" alt="owasp28" src="https://github.com/user-attachments/assets/92f7f70d-a372-438f-b463-254abfbdb4bf" />
 
+*** Vulnerable and Outdated Components *** 
+
+> After going through the readings of Vulnerable and Outdated Components i waas given a lab where i had to go to a website and exploit it to capture a flag. I first had to navigate to
+"http://10.201.6.90:84" by searching it in Mozilla FireFox.
+
+> <img width="926" height="705" alt="owasp29" src="https://github.com/user-attachments/assets/f598d150-e62e-4d86-a2bd-b5890fdf01ae" />
+
+> After launching the website i had to go online to "exploit.db" to find specific code to exploit the "CSE online bookstore" site. I did this by just googling "cse bookstore exploit," then clicked the
+first result to retrieve the code for the exploit.
+
+> <img width="697" height="258" alt="owasp30" src="https://github.com/user-attachments/assets/81a2021f-290a-4cb0-b52e-92cefc0db12f" />
+> <img width="1623" height="297" alt="owasp31" src="https://github.com/user-attachments/assets/4a3ed80c-12a3-4295-acdb-c552c718ec02" />
+> <img width="1853" height="899" alt="owasp32" src="https://github.com/user-attachments/assets/7fe6e573-ceda-4254-a7f9-882e4ea43b5b" />
+
+> To carry out the exploit i went back to my Linux terminal and inputted the command "nano exploit.py" to add the exploit code to the "exploit.py" file.
+
+> <img width="770" height="518" alt="owasp33" src="https://github.com/user-attachments/assets/016b100f-77bb-44ec-834c-2b157ec9a9d3" />
+
+> After saving the code within the "exploit.py" file and exiting nano i then gave the file permission by inputting the command "chmod +x exploit.py," then "enter," then retrieved the shell by
+inputting the command "python3 exploit.py http://10.201.6.90:84/," then "enter," then "y" to launch the shell.
+
+> <img width="725" height="210" alt="owasp34" src="https://github.com/user-attachments/assets/5a65bab3-efef-4284-8938-09d5b533a91f" />
+
+> To then capture the flag i had to input the command "cat /opt/flag.txt," then "enter," which retrieved the flag "THM{But_1ts_n0t_my_f4ult!}."
+
+> <img width="345" height="95" alt="owasp35" src="https://github.com/user-attachments/assets/86ba08d8-81f1-44b3-becd-be34ff6924f4" />
+
+*** Identification and Authentication Failures ***
+
+> For the next section "Identification and Authentication Failures" after reading through the info i was given a practical to go to website "http://10.201.6.90:8088" to retrieve flags from two users
+"darren" & "arthur" by re-creating their accounts starting with an additional space. Firstly, i navigated to the website "http://10.201.6.90:8088" on Mozilla FireFox.
+
+> <img width="1096" height="638" alt="owasp36" src="https://github.com/user-attachments/assets/1fb15e03-5552-4a88-a79a-54684990caa0" />
+
+> After trying to register "darren" without the additional space at the beginning i ran into an issue.
+
+> <img width="873" height="742" alt="owasp37" src="https://github.com/user-attachments/assets/48581206-283d-44c9-a9c7-c3aff7602caa" />
+> <img width="954" height="405" alt="owasp38" src="https://github.com/user-attachments/assets/d7aa659b-f258-4dac-ba17-84950c4f01da" />
+
+> I then tried re-registering "darren" with the additional space at the beginning and was successful.
+
+> <img width="716" height="660" alt="owasp39" src="https://github.com/user-attachments/assets/3e3c3598-da21-4f15-ab49-e5149c3ee05d" />
+
+> After using the credentials i used to re-create the "darren" account and logged in, i retrieved the first flag which was "fe86079416a21a3c99937fea8874b667"
+
+> <img width="603" height="333" alt="owasp40" src="https://github.com/user-attachments/assets/9b84d0d8-5f70-4386-992b-65d8e8c6e89f" />
+
+> I repeated the same actions for the user account "arthur."
+
+> <img width="892" height="341" alt="owasp41" src="https://github.com/user-attachments/assets/0581f9fa-6909-489a-ad48-3e55417fa967" />
+
+> After logging into the "arthur" account with the credentials i used to re-register the account i retrieved the flag "d9ac0f7db4fda460ac3edeb75d75e16e"
+
+> <img width="660" height="326" alt="owasp42" src="https://github.com/user-attachments/assets/55bb1ead-903f-4e20-8884-d704a747f206" />
+
+*** Software and Data Integrity Failure ***
+
+> For the next section "Software and Data Integrity Failure" after reading through the info i was given a practical under "Software Integrity Failures" to go to figure out the SHA-256 hash of
+"https://code.jquery.com/jquery-1.12.4.min.js." To do this i went on a SRI Hash Generator website and inputted the website "https://code.jquery.com/jquery-1.12.4.min.js" into the text field, selected SHA-
+256, and clicked "Hash!" This retrieved the SHA-256 hash value of "sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+>
+> <img width="1248" height="392" alt="owasp43" src="https://github.com/user-attachments/assets/49532f14-090a-43d3-bd88-bc8224dffe89" />
+> <img width="1316" height="534" alt="owasp44" src="https://github.com/user-attachments/assets/434c13eb-74b1-4007-bc2e-6c9afe2d95fb" />
+
+> 
+
+
+
 ---
 
 
