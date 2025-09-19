@@ -215,14 +215,90 @@ inputting the command "python3 exploit.py http://10.201.6.90:84/," then "enter,"
 > For the next section "Software and Data Integrity Failure" after reading through the info i was given a practical under "Software Integrity Failures" to go to figure out the SHA-256 hash of
 "https://code.jquery.com/jquery-1.12.4.min.js." To do this i went on a SRI Hash Generator website and inputted the website "https://code.jquery.com/jquery-1.12.4.min.js" into the text field, selected SHA-
 256, and clicked "Hash!" This retrieved the SHA-256 hash value of "sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
->
+
 > <img width="1248" height="392" alt="owasp43" src="https://github.com/user-attachments/assets/49532f14-090a-43d3-bd88-bc8224dffe89" />
 > <img width="1316" height="534" alt="owasp44" src="https://github.com/user-attachments/assets/434c13eb-74b1-4007-bc2e-6c9afe2d95fb" />
 
-> 
+> Moving on to the practical given under "Data Integrity Failures," i had to retrieve a flag from a website by modifying the JWT Token so the site thinks im the user "admin." So first i navigated to
+the website "http://10.201.6.90:8089/," tried to log in as a guest first but was given a prompt to use "guest" for the password after entering no password.
 
+> <img width="530" height="665" alt="owasp45" src="https://github.com/user-attachments/assets/991c035b-b108-45c4-8e08-04cbbfab2fee" />
 
+> After entering the credentials "guest" for the username and "guest" for the password, i was able to log into the guest user but was given another prompt in terms of retrieving the flag.
 
+> <img width="700" height="272" alt="owasp46" src="https://github.com/user-attachments/assets/9bca7e1c-bef7-49ec-a532-0c5c20995663" />
+
+> So my next step to try and retrieve the flag was to right-click on the website and click "inspect," then select the "cookies" tab to then get the JWT that was stored as a cookie in my browser.
+
+> <img width="866" height="477" alt="owasp47" src="https://github.com/user-attachments/assets/85a70dea-9394-4a27-b060-1a4be292a12e" />
+
+> After retrieving the JWT i went to an online JWT encoder, copied and pasted the token into the text field to retrieve the "header" and "payload."
+
+> <img width="1037" height="720" alt="owasp48" src="https://github.com/user-attachments/assets/d5b0a005-42ca-4b25-90f3-afd7a440ce90" />
+
+> After retrieving this i then went to the "header" box and changed the "alg" value to "none" so i could be able to delete the JWT's signature. I then also changed the "username" value from "guest"
+to "admin" so that the JWT could change to reflect that i am an admin user when i go back to the cookies4all site and replace the JWT.
+
+> <img width="1021" height="702" alt="owasp49" src="https://github.com/user-attachments/assets/e397a705-d59e-44b1-b326-21daa9fbd096" />
+
+> After switching the JWT to "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNzU4Mjk5NTE2fQ." within the JWT-session in the website i refreshed the page and retrieved
+the flag "THM{Dont_take_cookies_from_strangers}"
+
+> <img width="1584" height="689" alt="owasp50" src="https://github.com/user-attachments/assets/cfb1944c-1a86-4749-b927-254319800c55" />
+
+*** Security Logging and Monitoring Failures ***
+
+> After going through the information within "Security Logging and Monitoring Failures" section i had to analyze a provided sample log file. I had t first figure out the IP address of the attacker.
+To figure this out i first downloaded the log file onto my computer, then opened it. After examining the log file i saw the attacker's IP address to be "49.99.13.16" because the attacker tried to
+login as  the admin and was flagged as unauthorized.
+
+> <img width="618" height="284" alt="owasp51" src="https://github.com/user-attachments/assets/6c9ec143-721e-4397-9f16-dab5d9c91ff6" />
+
+> After seeing numerous attempts to login to the system i came to the conclusion that the attacker used the "brute-force" method to attack the system.
+
+*** Server-Side Request Forgery (SSRF) *** 
+
+> For the final vulnerability in OWASP which was SSRF, after reading through the information i was given a practical to navigate to a website and answer a few questions. For the first question i had
+to figure out the only host that was allowed to access the admin area. To do this i first opened Mozilla FireFox and navigated to the website "http://10.201.6.219:8087/"
+
+> <img width="1156" height="726" alt="owasp52" src="https://github.com/user-attachments/assets/1fc89c9c-f47d-4726-9009-4111aea422b6" />
+
+> I then navigated to the "admin" tab and clicked it and saw that only the "localhost" can access it.
+
+> <img width="592" height="246" alt="owasp53" src="https://github.com/user-attachments/assets/0494d3fb-3d16-4776-9217-b72ec5371b58" />
+
+> I then had to figure out where does the server parameter point to after checking the "Download Resume" button. After clicking the button i saw that it pointed to "secure-file-storage.com."
+
+> <img width="992" height="593" alt="owasp54" src="https://github.com/user-attachments/assets/5b7887fd-9d63-4493-a0b0-5e28ac07bb82" />
+> <img width="649" height="158" alt="owasp55" src="https://github.com/user-attachments/assets/222d0227-f529-494d-a203-7a96a70757c4" />
+
+> Next i had to SSRF to get the application to send the request to my AttackBox Terminal instead of the "secure file storage" to see if there were any API keys in the intercepted request. To do this
+i first had to open the terminal and input the command "nc -lvp 4444" to begin listening on porrt 4444 to recieve the request.
+
+> <img width="553" height="222" alt="owasp56" src="https://github.com/user-attachments/assets/f70b7520-6465-4dc5-bafa-70b194c6f2c2" />
+
+> I then opened another tab within the terminal and inputted the command "ip a," then "enter" to figure out my IP address for the AttackBox terminal. I saw that the IP address was "10.201.44.115"
+
+> <img width="582" height="519" alt="owasp57" src="https://github.com/user-attachments/assets/9ad040c8-dc17-4fbb-a254-21343a8c72ab" />
+
+> I then went back to Mozilla FireFox opened up the application and changed "secure-file-storage.com:8087" to "10.201.44.115:4444," pressed "enter," and went back to the AttackBox Terminal and saw that
+the intercepted API key was "THM{Hello_Im_just_an_API_key}."
+
+> <img width="1018" height="557" alt="owasp59" src="https://github.com/user-attachments/assets/4c1e3d80-15f1-4d30-89e7-708dce4053fc" />
+
+> I then went ahead and completed the extra final task which was to use SSRF to gain access to the admin area. To do this i opened up a new tab on my AttackBox Terminal and inputted the command
+"nc -lvp 4444," pressed "enter," and begain listening on port 4444.
+
+> <img width="530" height="107" alt="owasp60" src="https://github.com/user-attachments/assets/f7c23ebb-ed98-417f-8634-a657e92a255b" />
+
+> I then went back to Mozilla Fox, opened the application into the searchbar and changed "10.201.44.115:4444" to "localhost:8087/admin%23." The reason why i added "%23" at the end was because this is
+the url encoding for the has symbol and it directs you to a specific portion of a webpage and in this case we needed to be redirected to the admin portion of the webpage.
+
+> <img width="855" height="277" alt="owasp61" src="https://github.com/user-attachments/assets/fa57ea46-934b-45c7-8223-7eda2fd2aeee" />
+
+> After pressing "enter" i retrieved the flag shown in the screenshot below.
+
+> <img width="870" height="697" alt="owasp62" src="https://github.com/user-attachments/assets/4ab24ba4-3bb2-43d8-8bb1-83806f6b1cad" />
 ---
 
 
