@@ -2,22 +2,35 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [OWASP Top 10 - 2021]  
-**Date Completed**: [09//2025]
+**Date Completed**: [09/19/2025]
 
 ---
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding OWASP vulnerability: Broken Access Control, which teaches you where apps fail worst - and how to stop attackers from quietly
+turning small mistakes into full compromises. Next, I learned about the importance of understanding OWASP vulnerability: Cryptographic Failures, which is that it breaks the entire trust model of an
+application - when crypto is used wrong (or not at all), attackers can read, modify, impersonate, or replay sensitive data with little effort. Knowing the failures teaches you how to prevent data breaches,
+tampering, and account takeover. I then learned about the importance of understanding OWASP vulnerability: Injection, which teaches you how apps fail, how to test safely, and how to fix the
+problem so your systems aren't trivially taken over. Following, I learned the importance of understanding the OWASP vulnerability: Insecure Design, which is that it lets you stop vulnerabilities before
+they exist, saving time, money, and user data. I then learned about the importance of the OWASP vulnerability: Security Misconfiguration, which is that it helps you find the critical but straightforward
+holes defenders often miss and fix them before they're abused. I learned about the importance of the OWASP vulnerability: Vulnerable and Outdated Components, which protects you from a considerable portion
+of real-world breaches - it turns reactive firefighting into proactive risk reduction. Also, learned the importance of the OWASP Vulnerability: Identification and Authentication Failures, which is that it
+helps you protect themost valuable gate in any system - user identity - and prevents attackers from turning stolen or weak credentials into full compromise. I then learned about the importance of OWASP
+vulnerability: Software and Data Integrity Failures enable you to prevent supply-chain compromise, detect tampering, and stop attacks before they reach users. Next, I learned the importance of
+understanding Security Logging and Monitoring Failures, which reduces detection time, speeds response, and turns isolated incidents into manageable events. Finally, I learned the importance of
+understanding Server-Side Request Forgery, which is that it teaches you how web inputs become network requests, how attackers abuse that, and how to stop it before it becomes a catastrophic foothold.
+After pressing "enter," I retrieved the flag shown in the screenshot below.
 
 ## 🎯 Objectives
-- [ ] Learn about 
+- [ ] Learn about the OWASP Top 10 vulnerabilities
+- [ ] Learn how to exploit the OWASP Top 10 vulnerabilities
    
 ---
 
 ## 🧰 Tools Used
 - THM Machine
-- 
+- THM Mozilla Firefox
 
 ---
 
@@ -300,10 +313,9 @@ the URL encoding for the hashtag symbol, which directs you to a specific part of
 > After pressing "enter," I retrieved the flag shown in the screenshot below.
 
 > <img width="870" height="697" alt="owasp62" src="https://github.com/user-attachments/assets/4ab24ba4-3bb2-43d8-8bb1-83806f6b1cad" />
----
 
+---
 
 ## Reflection
 
-> This lab provided me with knowledge and hands-on experience with Burp Suite for web application pentesting.
-
+> This lab provided me with knowledge about the Top 10 OWASP vulnerabilities and how to exploit each of them through safe practicals.
