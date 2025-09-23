@@ -38,8 +38,8 @@ learning to pick, build, order, and tune them makes your attacks (in labs) and d
 
 *** Setting Up Envioronment ***
 
-> After launching the THM Machine, I first had to ensure I could resolve domains used throughout the room, so I had to change the "/etc/resolv-dnsmasq" file. To do so, I first had to enter the
-type "sudo nano /etc/resolv-dnsmasq" and press "enter" to start editing the file with nano.
+> After launching the THM Machine, I first had to ensure I could resolve domains used throughout the room, so I had to change the "/etc/resolv-dnsmasq" file. To do so, I first had to input the
+command "sudo nano /etc/resolv-dnsmasq" and press "enter" to start editing the file with nano.
 
 > <img width="633" height="52" alt="gb0" src="https://github.com/user-attachments/assets/5e7031cd-9b76-401a-ab1a-0185c7eb1396" />
 
