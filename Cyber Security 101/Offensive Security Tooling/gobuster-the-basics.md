@@ -15,7 +15,7 @@ far more effective, and teaches you how defenders can spot automated discovery. 
 quickly find forgotten apps, admin panels, API endpoints, and staging instances that attackers love. Following, I learned the importance of understanding how to use Gobuster to enumerate virtual hosts,
 which is that many apps, admin panels, APIs, or staging sites live under different hostnames on the same IP. Knowing the vhost mode lets you discover those hidden hosts quickly, turning invisible attack
 surface into actionable findings. Finally, I learned the importance of understanding how to use a wordlist, which is that they are the fuel for much of practical recon, brute-forcing, and discovery -
-learningto pick, build, order, and tune them makes your attacks (in labs) and defenses (in production) far more effective and efficient.
+learning to pick, build, order, and tune them makes your attacks (in labs) and defenses (in production) far more effective and efficient.
  
 ---
 
