@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [Cyber Security 101]  
 **Lab Topic**: [SOC Fundamentals]  
-**Date Completed**: [09//2025]
+**Date Completed**: [09/26/2025]
 
 ---
 
