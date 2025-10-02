@@ -1,7 +1,7 @@
 # [Defensive Security Tooling]
 
 **TryHackMe Path**: [Cyber Security 101]  
-**Lab Topic**: [CAPA: The Basics]  
+**Lab Topic**: [REMnux: Getting Started]  
 **Date Completed**: [10//2025]
 
 ---
@@ -18,7 +18,7 @@
 ---
 
 ## 🧰 Tools Used
-- THM CyberChef
+- THM 
   
 ---
 
