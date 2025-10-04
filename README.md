@@ -31,15 +31,6 @@ This repository is a collection of my **projects, labs, and research** as I deve
 
 ---
 
-## 📈 Current Learning Path
-- [x] TryHackMe: Pre-Security, Cyber Security 101  
-- [ ] SOC Level 1 Training  
-- [ ] Security+ (In Progress)  
-- [ ] Advanced Endpoint Investigations  
-- [ ] Cloud Security (Azure & AWS Defense)  
-
----
-
 ## 🤝 Connect with Me
 - 💼 [LinkedIn](https://linkedin.com/in/makonenn)  
 - 🏆 [TryHackMe](https://tryhackme.com/p/makonenn)  
