@@ -1,6 +1,6 @@
 # [Cyber Defence Frameworks]
 
-**TryHackMe Path**: [Cyber Security 101]  
+**TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Pyramid Of Pain]  
 **Date Completed**: [10/09/2025]
 
