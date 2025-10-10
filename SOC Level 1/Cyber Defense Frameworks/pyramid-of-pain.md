@@ -8,7 +8,7 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding the Pyramid of Pain which is that it teaches you which indicators usually hurt an attacker when you detect or block them - and it shows you how
+> In this lab, I learned about the importance of understanding the Pyramid of Pain, which teaches you which indicators usually hurt an attacker when you detect or block them, and it shows you how
 to prioritize detection, hunting, and remediation so your defensive effort gives the biggest payoff.
 
 ---
