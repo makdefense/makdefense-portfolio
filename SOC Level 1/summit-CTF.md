@@ -81,10 +81,11 @@ Category which was "Malware," the Domain Name which was "emudyn.bresonicz.info,"
 > After saving the new DNS Rule i retrieved the third flag.
 >
 > <img width="1194" height="321" alt="s15" src="https://github.com/user-attachments/assets/f18effad-de36-4a67-ab57-1257efc2e597" />
-> <img width="4096" height="2560" alt="s16" src="https://github.com/user-attachments/assets/63b7782b-d734-4da5-90ee-379432520b33" />
+> <img width="1136" height="583" alt="s16" src="https://github.com/user-attachments/assets/8263b149-33d7-408d-ab1e-e3962576cf86" />
 
 *** Flag #4 ***
 
+> To capture the 4th flag i had 
 
 
 
