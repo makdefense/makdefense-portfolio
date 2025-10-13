@@ -8,17 +8,29 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding the basics of threat intelligence & its classifications which is that it gives you context and confidence - it turns noisy alerts into
+actionable decisions, hels you prioritize defenses, reduces mean-time-to-detect/response, and lets you anticipate attacker behavior instead of just reacting. Next, i learned about the importance of
+understanding how to use UrlScan.io to scan for malicious URLs which is that it gives you a fast, safe, and richly instrumented way to inspect live web pages and extract high-value indicators - so you
+can triage phishing/malicious links, feed intel into detection workflows, and automate checks accross you org.
 
 ---
 
 ## 🎯 Objectives
-- [ ] Learn about 
+- [ ] Learn about the basics of threat intelligence & its classifications
+- [ ] Learn how to use UrlScan.io to scan for malicious URLs
+- [ ] Learn how to use Abuse.ch to track malware and botnet indicators
+- [ ] Learn how to investigate phishing emails using PhishTool
+- [ ] Learn how to use Cisco's Talos Intelligence platform for intel gathering
 
 ---
 
 ## 🧰 Tools Used
-- THM 
+- THM AttackBox
+- Cisco Talos Intelligence
+- Virus Total
+- Whois.com
+- Abuse.ch
+- UrlScan.io
   
 ---
 
