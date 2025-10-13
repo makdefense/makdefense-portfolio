@@ -97,8 +97,8 @@ saw that the recipient's email address was "chris.lyons@supercarcenterdetroit.co
 > For the last question for this scenario i had to figure out which Detection Alias can the email file "Email2.eml" be identified by, from the information given by VirusTotal. To figure this out i first
 went back to the VM on THM, launched the Terminal application, inputted the command "ls," then "enter" to list all directories. After locating the Desktop directory, i then inputted the command "cd
 Desktop," then "Enter," then "ls," then "Enter" to list all files within the Desktop directory. After locating the "Emails" directory i inputted the command "cd Emails," then "Enter," then "ls," then
-"Enter" to list all files with the "Emails" directory. After locating the file "Email2.eml," i then inputted the command "sha256sum Email2.eml," then enter to retrieve the hash of the email file which
-was "97028b1b198af6da1043b78e40e1efe519fe3def754cd9d1f29380ca11e5c361."
+"Enter" to list all files within the "Emails" directory. After locating the file "Email2.eml," i then inputted the command "sha256sum Email2.eml," then "enter" to retrieve the hash of the email file
+which was "97028b1b198af6da1043b78e40e1efe519fe3def754cd9d1f29380ca11e5c361."
 >
 > <img width="739" height="347" alt="tit21" src="https://github.com/user-attachments/assets/60775c41-a540-4861-9ce8-c7e8447e9598" />
 
@@ -107,11 +107,37 @@ field above.
 >
 > <img width="670" height="166" alt="tit22" src="https://github.com/user-attachments/assets/0166d5b0-7c1f-4b1d-95ad-1e1abf087665" />
 
-> After pressing the "Enter" key on keyboard i navigated through the information given by "Virus Total" and saw the Detection Alias to be "HIDDENEXT/Worm.Gen."
+> After pressing the "Enter" key on the keyboard i navigated through the information given by "Virus Total" and saw the Detection Alias to be "HIDDENEXT/Worm.Gen."
 >
 > <img width="750" height="702" alt="tit23" src="https://github.com/user-attachments/assets/321c80c5-a42b-48ac-856b-b479b6e2a463" />
 
+*** Scenario 2 ***
 
+> For my next scenario i had to analyze another suspicious email called "Email3.eml" which was located on the THM AttackBox Desktop in the Emails folder and answer a few questions.
+>
+> <img width="715" height="374" alt="tit24" src="https://github.com/user-attachments/assets/a9eff8b9-98dd-4fa0-b0bd-7605800ec4d7" />
+
+> For the first question i had to figure out the name of the attachment that was on the "Email3.eml." To figure this out i just double-clicked on the email file to open up the file with ThunderBird,
+clicked on the attached file at the bottom of the email, and saw that the name of the file was "Sales_Receipt 5606.xls."
+>
+> <img width="812" height="601" alt="tit25" src="https://github.com/user-attachments/assets/1719c96f-7f9e-429c-8279-eaeb12c9a67b" />
+
+> For the last question i had to figure out the malware family that was associated with the "Email3.eml" file. To figure this out i had to retrieve the SHA256 hash. To get this i launched the
+"Terminal" application that was on the THM AttackBox, then inputted the command "ls," then "enter" to list all the directories. After locating the Desktop directory, i then inputted the command "cd
+Desktop," then "Enter," then "ls," then "Enter" to list all the files within the Desktop directory. After locating the "Emails" directory i inputted the command "cd Emails," then "Enter," then "ls,"
+then "Enter" to list all files within the "Emails" directory. After locating the file "Email3.eml," i then inputted the command "sha256sum Email3.eml," then "enter" to retrieve the hash of the email
+file which was "f4d97603256a36e81bfe7ef5e0ccaee44f77de6bb041fa41f0b3a0db53f4aba9."
+>
+> <img width="756" height="393" alt="tit27" src="https://github.com/user-attachments/assets/2f93f628-3d32-484a-a04e-fef90001d3e7" />
+
+> I then went to Google Chrome and navigated to "https://www.virustotal.com/gui/home/upload," copied and pasted the hash "f4d97603256a36e81bfe7ef5e0ccaee44f77de6bb041fa41f0b3a0db53f4aba9," into the
+input field above.
+>
+> <img width="688" height="192" alt="tit28" src="https://github.com/user-attachments/assets/f67a031b-99be-4136-a333-d2214ea00961" />
+
+> After pressing the "Enter" key on the keyboard i navigated through the information given by "Virus Total" and saw the malware family associated with the attachment on "Email3.eml" to be "Dridex."
+>
+> <img width="650" height="253" alt="tit29" src="https://github.com/user-attachments/assets/c6728e0b-1f35-4795-99b3-67d00ace13ba" />
 
 ---
 
