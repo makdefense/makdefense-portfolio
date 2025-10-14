@@ -11,7 +11,12 @@
 > In this lab, I learned about the importance of understanding the basics of threat intelligence & its classifications which is that it gives you context and confidence - it turns noisy alerts into
 actionable decisions, hels you prioritize defenses, reduces mean-time-to-detect/response, and lets you anticipate attacker behavior instead of just reacting. Next, i learned about the importance of
 understanding how to use UrlScan.io to scan for malicious URLs which is that it gives you a fast, safe, and richly instrumented way to inspect live web pages and extract high-value indicators - so you
-can triage phishing/malicious links, feed intel into detection workflows, and automate checks accross you org.
+can triage phishing/malicious links, feed intel into detection workflows, and automate checks accross you org. I then learned about the importance of understanding how to use Abuse.ch to track malware
+and botnet indicators which is that abuse.ch gives you free, community-driven, production-quality threat data (malicious URLs, malware samples, botnet IPs and feeds) that you can use to triage hunt,
+block, and analyze threats faster and safer - and learning how to use it turns raw alerts into actionable defenses. Following, i learned about the importance of understanding how to investigate
+phishing emails using PhishTool which is that PhishTool accelerates safe, repeatable, and evidence-quality phishing investigations, and learning it teaches you the exact steps, signals, and automation
+that turn a suspicious email into actionable intelligence and containment. Finally i learned about the importance of understanding how to use Cisco's Talos Intelligence platform for intel gathering
+which is that Cisco Talos gives you massive, vetted telemetry plus expert research you can use to triage, enrich, block, and respond to real threats - fast.
 
 ---
 
@@ -155,5 +160,5 @@ input field above.
 
 ## Reflection
 
-> This lab provided me with knowledge about the 
+> This lab provided me with knowledge about the different OSINT tools used to conduct security threat assessments and investigations.
 
