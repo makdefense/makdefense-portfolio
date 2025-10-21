@@ -74,9 +74,52 @@ then "more cat 1ndex.php," then "enter." This then returned the name and version
 
 *** Creating Yara rules with yarGen *** 
 
+> For my next task in first had to generate a rule for "file2" that was in the "suspicious-files" directory. To do so i had to first navigate to the directory "/tools/yarGen," then input the command
+"python3_yarGen.py -m /home/cmnatic/suspicious-files/file2 --excludegood -o /home/cmnatic/suspicious-files/file2.yar," then "enter." 
+>
+> <img width="1108" height="51" alt="yara13" src="https://github.com/user-attachments/assets/f25bdade-d703-4223-95a0-502fa0724cd5" />
 
+> This then created the rule for "file2."
+>
+> <img width="743" height="69" alt="yara14" src="https://github.com/user-attachments/assets/9dcae51f-52da-4452-9de7-0e092fa0f146" />
 
+> Moving on to the first question of this practical i had to figure out what command i would use to test Yara and my rule against file 2 from within the root of the suspicious files directory.
+To carry out the test i had to first navigate to the "suspicious-files" directory, then input the command syntax
+"yara file2.yar file2/1ndex.php home_cmnatic_suspicious_files_file2_1ndex file2/1ndex. php," then "enter."
+>
+> <img width="778" height="65" alt="yara15" src="https://github.com/user-attachments/assets/03327b6c-04d7-46ef-ac59-c117736992ad" />
 
+> I then had to copy the rule i created into the Loki signatures directory. To do so i navigated back to the main root directory then inputted the command
+"mv /home/cmnatic/suspicious-files/files2.yar /home/cmnatic/tools/Loki/signature-base/yara/," then "enter."
+>
+> <img width="1213" height="62" alt="yara16" src="https://github.com/user-attachments/assets/31017356-ca74-413b-864f-1ce2ab1c225e" />
+
+> I then had to test the rule with Loki to see if it flags file 2. After running the test it was confirmed that it does flag file 2.
+>
+> <img width="1110" height="189" alt="yara17" src="https://github.com/user-attachments/assets/b5d0e2ef-0c17-46ba-8dcd-654dde1c86c1" />
+
+> For the next question i had to figure out the name of the variable for the string that it matched on. To figure this out i simply scrolled down to the scan results and saw that the variable name
+was "Zepto."
+>
+> <img width="895" height="179" alt="yara18" src="https://github.com/user-attachments/assets/5b08ea06-763d-4c11-b0ee-8b12c76e7e8c" />
+
+> I then had to figure out how many strings were generated. To figure this out i exited the Loki scan, then navigated to the directory "signature-base" that was in the "tools" directory, inputted the
+command "nano file2.yar," then "enter."
+>
+> <img width="786" height="38" alt="yara19" src="https://github.com/user-attachments/assets/9c22d080-e40a-42b8-bccc-9075c64cf3ed" />
+
+> After entering the nano editor for "file2.yar" it was discovered that they were a total of 20 strings.
+>
+> <img width="288" height="125" alt="yara20" src="https://github.com/user-attachments/assets/bc452d82-80c6-4d2f-9343-51146f9d4e5c" />
+
+> For the final question of this practical i had to figure out one of the conditions to match on the Yara rule which was specifically a the file size. After scrolling through the nano editor for
+"file2.yar" it was discovered that the file has to be less that 700KB to match on the yara rule.
+>
+> <img width="519" height="70" alt="yara21" src="https://github.com/user-attachments/assets/219a7dac-5dab-409b-bfec-9e3a9f768ca3" />
+
+*** Valhalla *** 
+
+> 
 
 ---
 
