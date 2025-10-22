@@ -119,7 +119,44 @@ command "nano file2.yar," then "enter."
 
 *** Valhalla *** 
 
-> 
+> For the final practical for this room i had to use an online program called "Valhalla." For the first question i had to figure out if "file 1" attributed to an APT group by entering its SHA256
+hash into "Valhalla." So i first ran a scan on "file 1" using the command synthax "python ../../tools/Loki/loki.py -p ." to grab the SHA256 hash value of
+"5479f8cd1375364770df36e5a18262480a8f9d311e8eedb2c2390ecb233852ad."
+>
+> <img width="755" height="191" alt="v1" src="https://github.com/user-attachments/assets/80738e96-0421-476e-a3fa-b8058d219d6e" />
+
+> After running the scan and retrieving the SHA256 hash value for "file 1," i then copied and pasted it into "Valhalla," clicked "search," and saw that in fact it is attributed to an APT group.
+>
+> <img width="1251" height="740" alt="v2" src="https://github.com/user-attachments/assets/d2823b1b-4388-4861-8eaf-54041563a3e5" />
+> <img width="1159" height="682" alt="v3" src="https://github.com/user-attachments/assets/0f0b68f6-a89f-4c04-ba83-1f73bbf76f33" />
+
+> For the next question i had to then figure out the name of the first Yara rule to detect "file 2." To figure this out i did the same thing i did for "file 1," i retrieved the SHA256 hash value of
+"53fe44b4753874f079a936325d1fdc9b1691956a29c3aaf8643cdbd49f5984bf."
+>
+> <img width="848" height="144" alt="v4" src="https://github.com/user-attachments/assets/58131d75-eb88-4a6d-a282-e9fb822242c5" />
+
+> After retrieving the SHA256 hash value i then copied and pasted it into "Valhalla," clicked the search button, and retrieved the name of the first Yara rule of "Webshell_b374k_rule1."
+>
+> <img width="1189" height="655" alt="v5" src="https://github.com/user-attachments/assets/296d52fe-2e2d-4494-8eb4-b7c36182aa4d" />
+
+> Moving on to the next question i had to figure out what scanner the Yara Signature Match was from by examining the information for "file 2" on Virus Total. So after examining the information
+on Virus Total for "file 2" i saw the Yara Signature Match to be from "THOR APT Scanner."
+>
+> <img width="831" height="432" alt="v6" src="https://github.com/user-attachments/assets/6fbc45b6-bb39-4980-b493-fd9f6ac2975d" />
+
+> I then had to see if every AV detected the SHA256 hash of "file 2" as malicious. After scanning the info i saw that every AV did not detect the SHA256 hash of "file 2" as malicious.
+>
+> <img width="828" height="505" alt="v7" src="https://github.com/user-attachments/assets/d9314b96-51e6-4fdb-9cac-af2a4c87c293" />
+
+> I then had to figure out what other extension was recorded for "file 2" other than ".PHP." To figure this out i scanned through the information provided by Virus Total and saw that the other
+extension recorded was "EXE."
+>
+> <img width="612" height="75" alt="v8" src="https://github.com/user-attachments/assets/7fc40996-7b96-44a1-a0d4-b8c5a0d9d3d9" />
+
+> Next question i had to figure out what Javascript library was used by "file 2." To figure this out i simply went back to the search results of "file 2" SHA256 hash value on "Valhalla" and saw
+the first github link, clicked it, scrolled through the info within the "index.php" file and saw the library used by "file 2" to be Zepto.
+>
+> <img width="827" height="193" alt="v10" src="https://github.com/user-attachments/assets/9b509328-0ed1-4081-97d6-b3a2920b0726" />
 
 ---
 
