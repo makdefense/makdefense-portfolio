@@ -2,24 +2,27 @@
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Yara]  
-**Date Completed**: [10//2025]
+**Date Completed**: [10/22/2025]
 
 ---
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding YARA, which is that it is the defender's swiss-army knife for identifying, classifying, and hunting malware, learning that it can turn raw
+artifacts into reliable, reusable detections that scale across your lab, SOC, and IR tooling.
 
 ---
 
 ## 🎯 Objectives
-- [ ] Learn about 
+- [ ] Learn about YARA
 
 ---
 
 ## 🧰 Tools Used
 - THM AttackBox
-- 
+- THM Linux
+- THM YARA
+- THM Loki
   
 ---
 
@@ -163,4 +166,4 @@ the first GitHub link, clicked it, scrolled through the info within the "index.p
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about YARA and its application for threat intelligence, forensics, and threat hunting.
