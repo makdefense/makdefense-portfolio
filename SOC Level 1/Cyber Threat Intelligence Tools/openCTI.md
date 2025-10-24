@@ -2,13 +2,18 @@
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [OpenCTI]  
-**Date Completed**: [10/23/2025]
+**Date Completed**: [10//2025]
 
 ---
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding OpenCTI and how is it used which is that OpenCTI is an open-source Threat intelligence Platform (TIP) that centralizes, structures,
+and operationalizes CTI (STIX/TAXII, sightings, feeds, reports) so your SOC/IR/CTI teams can enrich alerts, hunt on actor/TTP context, automate sharing, and feed detections - all from one knowledge graph.
+Next i learned about the importance of understanding how to navigate through the platform which is that knowing how to move fast and confidently in OpenCTI turns raw threat data into real decisions -
+faster triage, clearer context, better hunts, and reliable automation. Navigation skills let you get the right intel to the right playbook at the right time. Finally i learned about the importance of
+understanding what functionalities will be important during a security threat analysis which is that knowing which platform functionalities matter - and how to use them - is what turns raw alerts into
+accurate, fast, and defensible decisions. Those capabilities let you detect, contain, and learn from attacks instead of just reacting to noise.
 
 ---
 
@@ -21,6 +26,7 @@
 
 ## 🧰 Tools Used
 - THM AttackBox
+- THM Mozilla FireFox
 - THM OpenCTI
   
 ---
@@ -116,4 +122,4 @@ scrolled down to where it said "initial-access," and saw the two techniques to b
 
 ## Reflection
 
-> This lab provided me with knowledge about YARA and its application for threat intelligence, forensics, and threat hunting.
+> This lab provided me with knowledge about the OpenCTI Project, by giving me hands-on experience with the web application to analyze malware and APT groups.
