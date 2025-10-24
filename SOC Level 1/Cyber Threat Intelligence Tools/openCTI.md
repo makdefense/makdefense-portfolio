@@ -13,7 +13,7 @@
 ---
 
 ## 🎯 Objectives
-- [ ] Learn about what is OpenCTI and how is it used
+- [ ] Learn about OpenCTI and how is it used
 - [ ] Learn how to navigate through the platform
 - [ ] Learn about what functionalities will be important during a security threat analysis
 
