@@ -1,7 +1,7 @@
 # [Cyber Defence Frameworks]
 
 **TryHackMe Path**: [SOC Level 1]  
-**Lab Topic**: [Summit]  
+**Lab Topic**: [Summit-CTF]  
 **Date Completed**: [10/11/2025]
 
 ---
