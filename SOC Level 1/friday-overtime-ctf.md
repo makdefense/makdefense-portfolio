@@ -84,7 +84,13 @@ framework," then clicked on the first link that popped up which was by "WeLiveSe
 >
 > <img width="871" height="402" alt="fot14" src="https://github.com/user-attachments/assets/d99afc71-2781-4da8-9d8b-3bf7cb524936" />
 
-> 
+> Moving onto the fourth question i had to figure out which MITRE ATT&CK Technique was linked to using pRsm.dll in within the "MgBot" framework. To figure this out i just scrolled down and saw that the
+Technique was "T1123."
+>
+> <img width="847" height="314" alt="fot15" src="https://github.com/user-attachments/assets/e647c50f-58c1-4de1-a0cf-f928c265e307" />
+
+> For the fifth question,
+
 
 
 ---
