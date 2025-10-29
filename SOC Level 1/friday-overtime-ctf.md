@@ -89,7 +89,7 @@ Technique was "T1123."
 >
 > <img width="847" height="314" alt="fot15" src="https://github.com/user-attachments/assets/e647c50f-58c1-4de1-a0cf-f928c265e307" />
 
-> For the fifth question,
+> For the fifth question, 
 
 
 
