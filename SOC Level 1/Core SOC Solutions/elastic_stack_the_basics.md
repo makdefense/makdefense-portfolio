@@ -1,0 +1,34 @@
+# [Core SOC Solutions]
+
+**TryHackMe Path**: [SOC Level 1]  
+**Lab Topic**: [Elastic Stack: The Basics]  
+**Date Completed**: [12//2025]
+
+---
+
+## 🧠 Summary
+
+> In this lab, I learned about the importance of understanding 
+---
+
+## 🎯 Objectives
+- [ ] 
+
+---
+
+## 🧰 Tools Used
+- THM 
+  
+---
+
+## 📊 Analysis & Screenshots
+
+*** Lab Connection ***
+
+> For this room,
+
+---
+
+## Reflection
+
+> This lab provided me with knowledge about how SOC analysts use the Elastic Stack (ELK) for log investigations.
