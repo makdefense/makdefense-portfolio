@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Phishing Analysis Fundamentals]  
-**Date Completed**: [12//142025]
+**Date Completed**: [12/14/2025]
 
 ---
 
