@@ -8,7 +8,8 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding 
+> In this lab, I learned about the importance of understanding
+> 
 ---
 
 ## 🎯 Objectives
