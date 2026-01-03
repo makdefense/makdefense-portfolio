@@ -71,6 +71,37 @@ retrieved the IP address to be "188.246.82.7" with "Blicnet" AS Organisation.
 
 *** Statistics | Protocol Details ***
 
+> Moving onto the next section of this lab for the first question of this exercise i had to figure out the most used IPv4 destination address. To figure this out i navigated to the
+top of the Wireshark application, clicked "Statistics" header, then "Source and Destination Addresses," then clicked "Destination IPv4 Addresses" dropdown menu to expand it, then
+hovered over to the "Count" dropdown menu, clicked it, which then retrieved the most used IPv4 address of "10.100.1.33."
+>
+> <img width="907" height="853" alt="13" src="https://github.com/user-attachments/assets/f87de3fc-ca34-47b2-bebb-6e7de686da81" />
+> <img width="992" height="609" alt="14" src="https://github.com/user-attachments/assets/bb1d1d3f-d8f8-4480-8d26-dff84e2ebe17" />
+
+> For the next question i had to figure out the max service request-response time of the DNS packets. To figure this out i navigated to the top of the Wireshark application,
+selected "Statistics," then clicked on "DNS," then hovered over to the "Service Stats" dropdown header under the "Total Packets" header, after clicking it to expand it i
+retrieved the max service request-response to be "0.467897."
+>
+> <img width="674" height="812" alt="15" src="https://github.com/user-attachments/assets/3f654fdc-a02d-4b61-8f76-b6f47bc8e977" />
+> <img width="933" height="592" alt="16" src="https://github.com/user-attachments/assets/b23351f4-7995-471e-a97e-e7950b4be43b" />
+
+> For the last question of this exercise i had to figure out the total number of HTTP requests accomplished by "rad[.]msn[.]com." To figure this out i navigated to the top of the
+Wireshark applicaton, clicked "Statistics," then "HTTP," then "Requests," then under "HTTP Requests by HTTP HOST" i selected the domain "rad.msn.com," scrolled right to see
+that the total number of HTTP Requests accomplished were "39."
+>
+> <img width="688" height="763" alt="17" src="https://github.com/user-attachments/assets/bcdcc2e0-1561-4e81-b543-11996462f2bb" />
+> <img width="863" height="568" alt="19" src="https://github.com/user-attachments/assets/13493819-fe53-4cf4-80dc-6d9f3a47b15d" />
+> <img width="919" height="595" alt="18" src="https://github.com/user-attachments/assets/6254caeb-b66e-45d1-b5fd-e5b4cdd43c08" />
+
+*** Packet Filtering | Protocol Filters ***
+
+> Moving onto the next section of this lab for the first question of this exercise i had to 
+
+
+
+
+
+
 
 
 
