@@ -95,7 +95,65 @@ that the total number of HTTP Requests accomplished were "39."
 
 *** Packet Filtering | Protocol Filters ***
 
-> Moving onto the next section of this lab for the first question of this exercise i had to 
+> Moving onto the next section of this lab for the first question of this exercise i had to figure out the total number of IP packets. To figure this out i navigated to the
+"Current filter" search bar, inputted "IP," then navigated to the right, and clicked the green arrow. After doing this i retrieved the total number of IP packets to be
+"81420."
+>
+> <img width="438" height="180" alt="20" src="https://github.com/user-attachments/assets/688227df-a9f6-4f0c-9339-00a6f76b7970" />
+> <img width="540" height="249" alt="21" src="https://github.com/user-attachments/assets/d1aae2f3-6ee3-4176-abb0-db2d2e87df0f" />
+
+> For the next question i had to figure out the number of packets with a "TTL value less than 10." To figure this out i navigated to the "Current filter" search bar, inputted
+"ip.ttl <= 10," then navigated to the right, and clicked the green arrow. After doing this i retrieved the total number of packets to be "66."
+>
+> <img width="486" height="208" alt="22" src="https://github.com/user-attachments/assets/102b6b5e-fab4-4885-bbf6-355033e3ec16" />
+> <img width="460" height="143" alt="23" src="https://github.com/user-attachments/assets/2369b61d-4fbf-44cf-b87e-c3d71992189d" />
+
+> For the next question i had to figure out the number of packets which uses "TCP port 4444." To figure this out i navigated to the "Current filter" search bar, inputted
+"tcp.port == 4444," then navigated to the right, and clicked the green arrow. After doing this i retrieved the total number of packets to be "632."
+>
+> <img width="400" height="215" alt="24" src="https://github.com/user-attachments/assets/81c3f431-6e71-4b9b-a599-0044ed535851" />
+> <img width="518" height="239" alt="25" src="https://github.com/user-attachments/assets/3f6913d4-5760-4989-b642-33b5f3ec817d" />
+
+> For the next question i had to figure out the number of "HTTP GET" requests sent to port 80. To figure this out i navigated to the "Current filter" search bar, inputted
+"http.request.method == "GET" && tcp.port == 80," then navigated to the right, and clicked the green arrow. After doing this i retrieved the total number requests to be
+"527."
+>
+> <img width="564" height="211" alt="26" src="https://github.com/user-attachments/assets/361305a3-c41e-4a88-bc25-e90f9ff58346" />
+> <img width="516" height="150" alt="27" src="https://github.com/user-attachments/assets/f09c1129-012b-48e2-be8f-323ada13e4b8" />
+
+> For the last question in this section i had to figure out the number of type A DNS Queries. To figure this out i navigated to the top of the Wireshark application, clicked
+"Analyze" tab, then "Display Filter Expression," then scrolled down to the "DNS . Domain Name System" dropdown menu, then selected "dns.qry.type . Type," then selected "A" for
+"predefined values," clicked ok, then navigated back to the search bar and inputted "&&" to add the next filter. After adding "&&" i navigated back to the top of the Wireshark
+application, clicked "Analyze" tab, then "Display Filter Expression," then scrolled down to the "DNS . Domain Name System" dropdown menu, then selected
+"dns.flags.response . Response," then "OK," then navigated back to the search bar, navigated to the right, clicked the green arrow. After doing all of this i retrieved the total
+number of type A DNS Queries to be "51."
+>
+> <img width="671" height="313" alt="28" src="https://github.com/user-attachments/assets/0fafcd53-6c09-4f61-b54f-51295ca7dc2e" />
+> <img width="637" height="277" alt="29" src="https://github.com/user-attachments/assets/724a8cbb-285f-443f-a994-8754dfcbc0eb" />
+> <img width="1046" height="1027" alt="30" src="https://github.com/user-attachments/assets/852819c0-ecdb-4508-aec7-702b1b5ef3ba" />
+> <img width="595" height="326" alt="31" src="https://github.com/user-attachments/assets/5629833d-63e1-4237-81de-500635f0a418" />
+> <img width="1083" height="1093" alt="32" src="https://github.com/user-attachments/assets/c80b0200-aeb0-4489-a718-cc27de36bbd3" />
+> <img width="663" height="200" alt="33" src="https://github.com/user-attachments/assets/e42bec9f-613b-447b-ac5f-d3cfdaf0f8cc" />
+> <img width="559" height="170" alt="34" src="https://github.com/user-attachments/assets/ffb4f077-6056-4a71-96c6-116001a25db9" />
+
+*** Advanced Filtering ***
+
+> Moving onto the last section of the lab for the first question i had to find all Microsoft IIS servers, then figure out the number of packets that did not originate from
+"port 80." To figure this out 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
