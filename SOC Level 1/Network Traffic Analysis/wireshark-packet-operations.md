@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Wireshark: Packet Operations]  
-**Date Completed**: [01//2026]
+**Date Completed**: [01/03/2026]
 
 ---
 
@@ -13,14 +13,17 @@
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] Investigate network traffic captures
+- [ ] View statistics including summary and protocol details
+- [ ] Uncover and apply packet filtering principles
+- [ ] Apply protocol filters
+- [ ] Apply advanced filtering
 
 ---
 
 ## 🧰 Tools Used
 - THM AttackBox
 - THM Wireshark
-- THM 
   
 ---
 
@@ -139,40 +142,54 @@ number of type A DNS Queries to be "51."
 *** Advanced Filtering ***
 
 > Moving onto the last section of the lab for the first question i had to find all Microsoft IIS servers, then figure out the number of packets that did not originate from
-"port 80." To figure this out 
+"port 80." To figure this out i navigated to the search bar and inputted "http.server contains "IIS" && tcp.srcport != 80," then navigated to the right, clicked the green arrow.
+After doing this i retrieved the total number of packets to be "21."
+>
+> <img width="480" height="168" alt="35" src="https://github.com/user-attachments/assets/35181642-4172-4a9f-b9f8-1fd829ca2c76" />
+> <img width="490" height="136" alt="36" src="https://github.com/user-attachments/assets/73460b84-5709-4d05-b731-a51e9b2c32a1" />
 
+> For the next question i had to figure out the number of packets that have version "7.5." To figure this out i navigated to the search bar, inputted
+'http.server contains "IIS" && http.server matches "7.5",' then navigated to the right, and clicked the green arrow. After doing this i retrieved the total number of packets
+to be "71."
+>
+> <img width="542" height="214" alt="37" src="https://github.com/user-attachments/assets/0fe1ad67-e276-42a3-bec0-33c620c93509" />
+> <img width="607" height="140" alt="38" src="https://github.com/user-attachments/assets/a3b0fc5a-3184-4cf8-86a3-d06087fb3ee4" />
 
+> For the next question i had to figure out the total number of packets that use port numbers 3333, 4444, or 9999. To figure this out i navigated to the top of the search bar,
+inputted "tcp.port in {3333 4444 9999}," then navigated to the right, clicked the green arrow. After doing this i retrieved the total number of packets of "2235."
+>
+> <img width="601" height="266" alt="39" src="https://github.com/user-attachments/assets/107e7e25-2167-4748-a621-bcc911335138" />
+> <img width="602" height="158" alt="40" src="https://github.com/user-attachments/assets/782c9ada-5551-4a22-a3a8-36dd2a6746ca" />
 
+> For the next question i had to figure out the total number of packets with "even TTL numbers." To figure this out i had to convert all ip.ttl fields to string values by
+navigating to the top of the search bar, then inputting "string(ip.ttl) matches '[02468]$'," then navigating to the right, and clicking the green arrow. After doing this i
+retrieved the total number of packets to be "77289."
+>
+> <img width="400" height="180" alt="41" src="https://github.com/user-attachments/assets/5572e647-4a5d-4438-a609-67e6b5fa7c75" />
+> <img width="523" height="179" alt="42" src="https://github.com/user-attachments/assets/47557447-781d-426e-88ad-1cf17ca48ec0" />
 
+> For the next question i had to figure out the number of "Bad TCP Checksum packets." To figure this out i had to first change the profile configuration to "Checksum Control" by
+navigating to the top of the application, selecting "Edit," then "Configuration Profiles," then selecting "Checksum Control" on the pop-up. After clicking "Ok" i then
+navigated to the top of the application, selected "Analyze," then "Display Filter Expression," then selecting "tcp.checksum.status . Checksum Status," then "Bad" for the
+predefined values. I then navigated to the top-right of the application, and clicked on the green arrow. After doing this i retrieved the total number of packets to be
+"34185."
+>
+> <img width="596" height="675" alt="43" src="https://github.com/user-attachments/assets/b94efc78-675c-42d0-bb6f-32f05652c41d" />
+> <img width="792" height="615" alt="44" src="https://github.com/user-attachments/assets/5c4f566a-4efe-488e-972f-0cb89afdc5be" />
+> <img width="547" height="484" alt="45" src="https://github.com/user-attachments/assets/9b4065d7-9d1f-41bf-b1a7-3ce00d9989b8" />
+> <img width="1103" height="1117" alt="46" src="https://github.com/user-attachments/assets/854af01b-9b36-4008-8659-9b1914e65248" />
+> <img width="357" height="239" alt="47" src="https://github.com/user-attachments/assets/67f80c73-2659-47a7-845a-e3bdb906ffd0" />
+> <img width="658" height="207" alt="48" src="https://github.com/user-attachments/assets/19e64c88-bee8-4ec5-8354-6a1767359f63" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> For the last question of this section i had to figure out the number of displayed packets using the same existing filtering button to filter traffic. To figure this out
+i navigated to the right, clicked on "gif/jpeg with http-200," then navigated to the right, and clicked on the green arrow. After doing this the total number of packets returned
+was "261."
+>
+> <img width="817" height="234" alt="49" src="https://github.com/user-attachments/assets/eca18afa-178a-4894-88e9-d9ff306ab6b9" />
+> <img width="659" height="190" alt="50" src="https://github.com/user-attachments/assets/96a3ab86-a3b1-4b26-a430-9343a8205d73" />
+> <img width="591" height="181" alt="51" src="https://github.com/user-attachments/assets/a4f14890-80f5-42d7-97ad-a36d41ca9d95" />
 ---
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about the fundamentals of packet analysis with Wireshark.
