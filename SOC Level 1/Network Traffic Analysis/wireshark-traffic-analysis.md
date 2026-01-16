@@ -133,6 +133,61 @@ i retrieved a total of 16 registration requests.
 > <img width="551" height="214" alt="34" src="https://github.com/user-attachments/assets/a58997ba-37e9-490c-a183-335dc7228ad4" />
 > <img width="431" height="189" alt="35" src="https://github.com/user-attachments/assets/c820df13-672a-45ca-939c-31f5c87d9998" />
 
+> Moving onto the next question, i had to figure out which host requested the IP address "172.16.13.85." To figure this out i navigated to the top of the Wireshark application,
+inputted "dhcp," then pressed "enter." After all dhcp packets loaded i navigated to packet number 18413 which was a request type dhcp packet. After selecting the specific packet
+i navigated to the bottom left, selected "Option: 50" drop-down header under the "DHCP (Request)" header, selected the requested IP, dragged it into the input field above, and
+selected "...and Selected." After adding the filter in addition to the filter i already had the entire filter expression became
+"(dhcp ) && (dhcp.option.requested_ip_address == 192.168.0.53." I then replaced the IP address from within the filter expression to "172.16.13.85" so the filter expression became
+"(dhcp ) && (dhcp.option.requested_ip_address == 172.16.13.85)." I then pressed "enter," which retrieved packet number 72529. I then selected the packet, then navigated to the
+bottom left, clicked on the drop-down menu "Option: 12" to retrieve the host name "Galaxy-A12."
+>
+> <img width="298" height="200" alt="36" src="https://github.com/user-attachments/assets/1f80d1f9-6895-4b02-a9fc-7e045e759edf" />
+> <img width="1200" height="125" alt="37" src="https://github.com/user-attachments/assets/68a9ae2d-abdb-413c-b1b6-c7392247d3a4" />
+> <img width="633" height="207" alt="38" src="https://github.com/user-attachments/assets/53778328-d79a-4594-8974-5193663df1e3" />
+> <img width="578" height="265" alt="39" src="https://github.com/user-attachments/assets/777ece2a-8634-4c6d-ab5a-db0fa98f58be" />
+> <img width="543" height="109" alt="40" src="https://github.com/user-attachments/assets/d39e03ef-ab0d-4b2b-af95-d4ba6ec984bb" />
+> <img width="588" height="205" alt="41" src="https://github.com/user-attachments/assets/ffef9ce3-a2a2-40aa-b9dc-54295a86255c" />
+
+> For the next question i had to investigate the pcap file titled "kerberos.pcap" which was in the "~/Desktop/exercise-pcaps/dhcp-netbios-kerberos/**kerberos.pcap" directory.
+I had to figure out the IP address of the user "u5" and enter it in defanged format. To figure this out i first selected a packet within the "pcap" file then navigated to the
+bottom left, selected "CNameString: des," right clicked it, then selected "Apply as Column," then selected "Kerberos," then dragged it to the input field "Apply a display filter,"
+which then retrieved the user "u5." I then selected a packet that contained the user "u5," navigated back to the bottom left, selected Internet Protocol Version 4 drop-down menu
+which also had the IP address of the "u5" user. I was asked to enter it in defanged format so the defanged IP address turned out to be "10[.]1[.]12[.]2"
+>
+> <img width="309" height="242" alt="42" src="https://github.com/user-attachments/assets/b8355f49-143e-442b-a08c-7be04abc93f2" />
+> <img width="568" height="216" alt="43" src="https://github.com/user-attachments/assets/6481263b-ce69-4420-8890-41779c97d219" />
+> <img width="592" height="224" alt="44" src="https://github.com/user-attachments/assets/01e34f86-5bf8-48a8-bf3b-e9edb6434be1" />
+> <img width="674" height="257" alt="45" src="https://github.com/user-attachments/assets/907fcac0-6044-4291-907d-be313cbd2639" />
+> <img width="646" height="523" alt="46" src="https://github.com/user-attachments/assets/b3f34431-0733-4d49-834a-2d6ade5e25b0" />
+> <img width="1170" height="540" alt="47" src="https://github.com/user-attachments/assets/7a214ba9-c322-4de9-aea4-1958ec55690c" />
+
+> Moving onto the last question for this section in had to figure out the hostname of the available host in the Kerberos packets. To figure this out i simply scrolled down to
+packet number 8 within the pcap file and saw that the available host name was "xp1$"
+>
+> <img width="994" height="594" alt="48" src="https://github.com/user-attachments/assets/5aa8a358-835f-4377-9794-494d3cc9095d" />
+
+*** Tunneling Traffic: DNS and ICMP ***
+
+> For this section, i had to investigate the anomalous packets within the pcap file "icmp-tunnel.pcap" which was located within the directory "Desktop/exercise-pcaps/dns-icmp/."
+For the first question i had to figure out which protocol is used in ICMP tunneling. To figure this out i simply just scrolled to packet number 42, selected it, then navigated to
+the bottom-right and saw the protocol was SSH.
+>
+> <img width="323" height="204" alt="49" src="https://github.com/user-attachments/assets/cdc0bdf8-d782-45c2-8fd8-2cedae49e18c" />
+> <img width="565" height="299" alt="50" src="https://github.com/user-attachments/assets/f0013b6e-494e-484d-8197-4652415c2514" />
+> <img width="1435" height="127" alt="51" src="https://github.com/user-attachments/assets/c64b72ce-44a3-4b45-a5b4-397b2075e086" />
+> <img width="595" height="344" alt="52" src="https://github.com/user-attachments/assets/b9f55c30-0231-4714-a6ca-d22329d3ca80" />
+
+> Moving on to the next question i had to investigate the anomalous packets with the pcap file "dns.pcap" which was located within the directory "Desktop/exercise-pcaps/dns-icmp/."
+I had to figure out the suspicious domain address that receives anomalous DNS queries. To figure this out i first inputted "dns" in the input field above, pressed "enter," then
+selected packet 49 within the pcap file, navigated to the bottom-left, selected "v10.events.data.microsoft.com," right clicked it then selected "Apply as column," then scrolled to
+packet number 2621, then navigated to the bottom left, and saw the suspicious domain address defanged to be "dataexfil[.]com."
+>
+> <img width="339" height="310" alt="53" src="https://github.com/user-attachments/assets/6a677310-216e-4bb5-b83c-fc7ecbbb414f" />
+> <img width="834" height="677" alt="54" src="https://github.com/user-attachments/assets/1aebf59b-87ea-4a03-9de5-2efdbf0a0039" />
+> <img width="614" height="691" alt="55" src="https://github.com/user-attachments/assets/c9ac5e61-8cae-4a95-8470-f780b04fc55b" />
+> <img width="820" height="424" alt="56" src="https://github.com/user-attachments/assets/bb14d8ab-61b0-4ab2-86c5-adb884991958" />
+
+
 ---
 
 ## Reflection
