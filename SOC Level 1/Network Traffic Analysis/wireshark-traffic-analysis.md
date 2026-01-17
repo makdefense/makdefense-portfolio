@@ -187,6 +187,35 @@ packet number 2621, then navigated to the bottom left, and saw the suspicious do
 > <img width="614" height="691" alt="55" src="https://github.com/user-attachments/assets/c9ac5e61-8cae-4a95-8470-f780b04fc55b" />
 > <img width="820" height="424" alt="56" src="https://github.com/user-attachments/assets/bb14d8ab-61b0-4ab2-86c5-adb884991958" />
 
+*** Cleartext Protocol Analysis: FTP ***
+
+> For this section, i had to investigate the "~/Desktop/exercise-pcaps/ftp/ftp.pcap" file, for the first question i had to figure out how many incorrect login attempts there were.
+To figure this out, i first launched the file from the Desktop, then i selected the 4th packet within the file, navigated to the bottom left, selected the drop-down menu "FTP,"
+then selected the drop-down menu "530 Login incorrect," then selected "Response arg: Login incorrect," dragged it to the top of the Wireshark input filter, and retrieved the
+total number of incorrect login attempts to be 737.
+>
+> <img width="385" height="227" alt="57" src="https://github.com/user-attachments/assets/95c78941-9871-41db-859c-7fb02c24121d" />
+> <img width="430" height="256" alt="58" src="https://github.com/user-attachments/assets/7310afe4-0a79-4f05-902c-58c4a2b098a5" />
+> <img width="932" height="647" alt="59" src="https://github.com/user-attachments/assets/2bf91ccb-22c8-4db0-9249-06ba886962f7" />
+> <img width="491" height="210" alt="60" src="https://github.com/user-attachments/assets/c526e63a-5375-4a46-b093-063bb42af07a" />
+> <img width="435" height="199" alt="61" src="https://github.com/user-attachments/assets/9d4d6b79-3958-4514-8ec4-c475baf592cb" />
+
+> Moving on to the next question, i had to figure out the size of the file accessed by the "ftp" account. To figure this out, i navigated to the top of the input field, inputted
+"ftp contains 'ftp'", then clicked "enter," selected packet number "19736," right-clicked, then selected the option "Conversation Filter," then "TCP," then scrolled down to packet
+19770 and saw the size of the resume.doc to be 39424.
+>
+> <img width="448" height="213" alt="62" src="https://github.com/user-attachments/assets/acc451b4-2a1d-4b1f-ba9f-d6849f48a6fa" />
+> <img width="836" height="585" alt="63" src="https://github.com/user-attachments/assets/2a36da43-e23b-4fa2-a1ea-cdf671d7b107" />
+> <img width="1056" height="387" alt="64" src="https://github.com/user-attachments/assets/730d1202-b370-4483-8528-6530b0b7858e" />
+
+> Moving on to the next question, i had to figure out the filename of the document the adversary uploaded to the FTP server. To figure this out,
+
+
+
+
+
+
+
 
 ---
 
