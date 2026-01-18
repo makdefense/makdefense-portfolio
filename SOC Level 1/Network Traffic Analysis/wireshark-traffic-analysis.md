@@ -8,18 +8,23 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned about the importance of understanding
+> In this lab, I learned about the importance of understanding traffic analysis with Wireshark and finding anomalies on your network, which is that knowing Wireshark traffic
+analysis is critical because almost every cyberattack leaves network evidence. By understanding what "normal" traffic looks like, you can quickly spot anomalies like malware
+beaconing, data exfiltration, port scans, or suspicious foreign connections. This skill is essential for SOC analysts, helps validate SIEM alerts, and separates real cybersecurity
+professionals from tool-dependent beginners. Mastering Wireshark gives you a major advantage in investigations, certificationsm, and job interviews.
 
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] Investigate packet-level details
+- [ ] Detect anomalies and odd situtions
 
 ---
 
 ## 🧰 Tools Used
 - THM AttackBox
 - THM Wireshark
+- CyberChef
   
 ---
 
@@ -350,4 +355,4 @@ the "Deny" checkbox, and saw that the rule for "allowing destination MAC address
 
 ## Reflection
 
-> This lab provided me with knowledge about 
+> This lab provided me with knowledge about the basics of traffic analysis with Wireshark and how to find anomalies on the network.
