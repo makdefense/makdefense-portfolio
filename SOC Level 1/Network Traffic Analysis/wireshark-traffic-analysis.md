@@ -309,7 +309,43 @@ After doing this i was able to retrieve the flag of "FLAG{THM-PACKETMASTER}" whi
 
 > For this section, i had to investigate the "Desktop/exercise-pcaps/bonus/Bonus-exercise.pcap" file to answer the following questions. For the first question i had to figure out
 the packet number of the credentials using "HTTP Basic Auth." To figure this out, i first launched the "Desktop/exercise-pcaps/bonus/Bonus-exercise.pcap" file from the Desktop,
-then 
+then navigated to the top of the Wireshark application, selected "Tools," then "Credentials," scrolled through the results and saw that packet number 237 was using the
+credentials of "HTTP Basic Auth."
+> 
+> <img width="418" height="263" alt="104" src="https://github.com/user-attachments/assets/e5697985-3c95-4641-9fbe-c7d61f1b06f1" />
+> <img width="469" height="292" alt="105" src="https://github.com/user-attachments/assets/432d0617-57a0-475b-9c6b-de933d474ed3" />
+> <img width="451" height="234" alt="106" src="https://github.com/user-attachments/assets/f914dbff-0910-4acd-b695-975eee1815ef" />
+> <img width="546" height="476" alt="107" src="https://github.com/user-attachments/assets/79241456-d313-4819-96a0-50eeede78107" />
+
+> Moving onto the second question, i had to figure out the packet number where "empty password" was submitted. To figure this out, i navigated to packet number 41 becuase it had
+the Reguest of "Pass:...," then navigated to the bottom-left, selected "File Transfer Protocol (FTP)" drop-down menu, expanded it, then selected "Request command: PASS," dragged
+it to the top input field, which then retrieved packet number 170 that appeared to have the "empty password" request.
+>
+> <img width="966" height="132" alt="108" src="https://github.com/user-attachments/assets/eee74598-fe23-41c2-97a2-7544b43edfec" />
+> <img width="613" height="314" alt="109" src="https://github.com/user-attachments/assets/120026e4-b99f-43d5-8cd0-7a2dff48609b" />
+> <img width="552" height="699" alt="110" src="https://github.com/user-attachments/assets/7aa1e952-8cea-4139-80e7-ee634927b8de" />
+
+*** Bonus: Actionable Results! ***
+
+> For the last section of the room, i had to investigate the "Desktop/exercise-pcaps/bonus/Bonus-exercise.pcap" file. For the the first question i had to figure out the rule for
+"denying source IPv4 address" by creating a rule for packet number 99. To figure this out i first selected packet number 99, then navigated to the top of Wireshark, selected Tools,
+then "Firewall ACL Rules," then selected "IPFirewall (ipfw)" for the "Create rules for" request, and saw that the rule for "denying source IPv4 address" was
+"add deny ip from 10.121.70.151 to any in."
+>
+> <img width="664" height="105" alt="111" src="https://github.com/user-attachments/assets/0cced636-fe00-41ab-a7aa-e4eedcb19382" />
+> <img width="486" height="203" alt="112" src="https://github.com/user-attachments/assets/53adbafd-b51d-4866-9699-9e6c64608b49" />
+> <img width="539" height="390" alt="113" src="https://github.com/user-attachments/assets/50d6a579-daa0-47c8-b32b-3647962288df" />
+> <img width="611" height="248" alt="114" src="https://github.com/user-attachments/assets/062ea276-d90b-4b35-bd67-6423d5c313b6" />
+
+> For the last question, i had to figure out the rule for "allowing destination MAC address" by creating a rule for packet number 231. To figure this out i first selected packet
+number 231, then navigated to the top of Wireshark, selected tools, then "Firewall ACL Rules," then selected "IPFirewall (ipfw)" for the "Create rules for" request, then deselected
+the "Deny" checkbox, and saw that the rule for "allowing destination MAC address" was "add allow MAC 00:d0:59:aa:af:80 any in."
+>
+> <img width="716" height="160" alt="115" src="https://github.com/user-attachments/assets/a45a9376-d2e5-42cf-9bb6-d6f199de2484" />
+> <img width="420" height="257" alt="116" src="https://github.com/user-attachments/assets/45a9584e-2aae-494c-9ae1-a95d6e9de798" />
+> <img width="542" height="425" alt="117" src="https://github.com/user-attachments/assets/416547f9-a729-49a3-98f9-5f85e5adf4ae" />
+> <img width="274" height="150" alt="118" src="https://github.com/user-attachments/assets/22ebb3f7-7d92-401d-bd94-9377fbdfa723" />
+> <img width="501" height="238" alt="119" src="https://github.com/user-attachments/assets/c36b7035-6072-4b4d-8fde-e75c88eeffde" />
 ---
 
 ## Reflection
