@@ -260,8 +260,56 @@ in defanged format the IP address would be "62[.]210[.]130[.]250."
 
 *** Encrypted Protocol Analysis: Decrypting HTTPS ***
 
-> For this section,
+> For this section, i had to investigate the "Desktop/exercise-pcaps/https/Exercise.pcap" file. For the first question i had to figure out the frame number of the "Client Hello"
+message sent to "accounts.google.com." To figure this out i first launched the "Desktop/exercise-pcaps/https/Exercise.pcap" file using Wireshark. I then navigated to packet number
+13 because it had the message "Client Hello" within the "info" column but after further investigation it wasnt the packet i was looking for. So after selecting packet number 13
+i navigated to the bottom-left, selected "Handshake Protocol" drop-down menu, then expanded the "Server Name indication extension," selected the full "Server Name:...," dragged it
+to the input field above, changed server name from "clientservices.googleapis.com" to "accounts.google.com" which gave me the correct packet of number 16.
+>
+> <img width="451" height="306" alt="84" src="https://github.com/user-attachments/assets/0f17ea92-e68b-408b-9226-67e880859f0c" />
+> <img width="347" height="246" alt="85" src="https://github.com/user-attachments/assets/7d49bf78-6d58-4b17-87f3-bc8529dd774e" />
+> <img width="846" height="155" alt="86" src="https://github.com/user-attachments/assets/5cb93d03-64f2-45d7-b6cf-5eb1af0ffaee" />
+> <img width="601" height="223" alt="87" src="https://github.com/user-attachments/assets/915f8346-c342-4c5d-a4aa-d870db02c84f" />
+> <img width="593" height="224" alt="88" src="https://github.com/user-attachments/assets/d0e2c5cb-4142-4568-bbe9-5fbce9784ab2" />
+> <img width="649" height="151" alt="89" src="https://github.com/user-attachments/assets/0cb6fa71-7720-4e9d-b566-9e37fa62ef1c" />
+> <img width="781" height="894" alt="90" src="https://github.com/user-attachments/assets/790a6aaf-0bfc-4f50-9575-e2aa9ca49760" />
 
+> Moving on to the second question i had to figure the number of HTTP2 packets by decrypting the traffic with the "KeysLogFile.txt" file. To figure this out i navigated to the top
+of the Wireshark application, selected "Edit," then "Preferences," then scrolled down to "TLS," selected that, then clicked on the "Browse..." button under
+"(Pre)-Master-Secret log filename," navigated to the "https" directory, selected "KeysLogFile.txt" file, then clicked the "Open" button at the bottom of the pop-up window. After
+adding the file i clicked the "OK" button at the bottom, then navigated to the top of the Wireshark application, entered "http2" within the input field, pressed the "enter" button.
+After doing all of this i found the total number of HTTP2 packets to be "115."
+>
+> <img width="506" height="624" alt="91" src="https://github.com/user-attachments/assets/0d54c6d0-348e-4c4b-adf0-33fe217f3bdb" />
+> <img width="862" height="577" alt="92" src="https://github.com/user-attachments/assets/a40ecc98-2266-40e5-a28d-48317fed814c" />
+> <img width="1186" height="945" alt="93" src="https://github.com/user-attachments/assets/ceb66a69-7700-408f-8847-190aae25b68a" />
+> <img width="796" height="557" alt="94" src="https://github.com/user-attachments/assets/f9736fee-ac55-4993-b0ee-a3bd85aa5ec5" />
+> <img width="373" height="139" alt="95" src="https://github.com/user-attachments/assets/a1e6a3a3-546c-4a4b-8abc-884a743c5c75" />
+> <img width="446" height="200" alt="96" src="https://github.com/user-attachments/assets/e1010527-2727-4250-b8cd-e70343fc89e6" />
+
+> Moving on to the thrid question i had to figure out the authority header of the HTTP2 packet for frame 322 and enter the address in defanged format. To figure this out i simply
+navigated to packet number 322, selected it, navigated to the bottom-left, selected the drop-down header "HyperText Transfer Protocol 2," expanded it, then selected the 
+drop-down header "Header: :authority: safebrowsing.googleapis.com," copied it, launched CyberChef on Google Chrome, selected the Defang URL recipe, dragged it into the "Recipe"
+field, pasted the URL "safebrowsing.googleapis.com" into the input field to retrieve the defanged URL of "safebrowsing[.]googleapis[.]com."
+>
+> <img width="772" height="155" alt="97" src="https://github.com/user-attachments/assets/0c883726-8b94-4a77-bef0-fde9a928cfd4" />
+> <img width="497" height="164" alt="98" src="https://github.com/user-attachments/assets/f5a0fe8d-5da0-4d80-a98a-ee22f575e8cc" />
+> <img width="540" height="102" alt="99" src="https://github.com/user-attachments/assets/f7ccd51b-07b4-4eb9-a4a0-1b6d379271e4" />
+> <img width="904" height="334" alt="100" src="https://github.com/user-attachments/assets/c20db748-cd83-490c-9c79-4f8d98fcd8f4" />
+> <img width="1193" height="715" alt="101" src="https://github.com/user-attachments/assets/1e30e0e0-aec6-444a-b499-20626b3e4e70" />
+
+> Moving on to the last question for this section i had to investigate the decrypted packets and find a hidden flag. To go about this i first navigated to the top of the
+Wireshark application, clicked on the small search icon, selected "Narrow (UTF-8 / ASCII)," then within the "string" input field i entered "flag{," then clicked the "Find" button.
+After doing this i was able to retrieve the flag of "FLAG{THM-PACKETMASTER}" which was located under the "Line-based text data: text/plain (38 lines)" drop-down menu.
+>
+> <img width="1482" height="168" alt="102" src="https://github.com/user-attachments/assets/49bfc290-ea46-4731-ac95-c0a96974ccc6" />
+> <img width="766" height="281" alt="103" src="https://github.com/user-attachments/assets/e7e29ad4-5a93-4c0b-b2e3-1cd7b6ab30c9" />
+
+*** Bonus: Hunt Cleartext Credentials! ***
+
+> For this section, i had to investigate the "Desktop/exercise-pcaps/bonus/Bonus-exercise.pcap" file to answer the following questions. For the first question i had to figure out
+the packet number of the credentials using "HTTP Basic Auth." To figure this out, i first launched the "Desktop/exercise-pcaps/bonus/Bonus-exercise.pcap" file from the Desktop,
+then 
 ---
 
 ## Reflection
