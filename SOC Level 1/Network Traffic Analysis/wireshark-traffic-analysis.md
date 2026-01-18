@@ -208,7 +208,11 @@ total number of incorrect login attempts to be 737.
 > <img width="836" height="585" alt="63" src="https://github.com/user-attachments/assets/2a36da43-e23b-4fa2-a1ea-cdf671d7b107" />
 > <img width="1056" height="387" alt="64" src="https://github.com/user-attachments/assets/730d1202-b370-4483-8528-6530b0b7858e" />
 
-> Moving on to the next question, i had to figure out the filename of the document the adversary uploaded to the FTP server. To figure this out,
+> Moving on to the next question, i had to figure out the filename of the document the adversary uploaded to the FTP server. To figure this out, i just went back to the previous
+question and saw that the file name was "resume.doc."
+
+> For the last question within this section i had to figure out the command used by the adversary when they tried to assign special flags to change the executing permissions of the
+uploaded file. To fiugre this out, 
 
 
 
