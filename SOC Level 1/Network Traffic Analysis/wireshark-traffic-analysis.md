@@ -212,14 +212,55 @@ total number of incorrect login attempts to be 737.
 question and saw that the file name was "resume.doc."
 
 > For the last question within this section i had to figure out the command used by the adversary when they tried to assign special flags to change the executing permissions of the
-uploaded file. To fiugre this out, 
+uploaded file. To fiugre this out, i just scrolled through the filtered packets, and noticed that packet 19832 had the command used by the adversary which was "CHMOD 777."
+>
+> <img width="1085" height="382" alt="65" src="https://github.com/user-attachments/assets/46114d31-991d-43d2-856d-5c2de6827caf" />
 
+*** Cleartext Protocol Analysis: HTTP ***
 
+> For this section, i had to investigate the "~/Desktop/exercise-pcaps/http/user-agent.pcap" file to answer the first 2 questions. For the first question i had to investigate the
+user agents, and figure out the number of anomalous "user-agent" types. To figure this out i first launched the pcap file from the Desktop, selected the first packet from the pcap
+file, navigated down to the bottom-left seleted the "user-agent" from the "HTTP" drop-down menu, right-clicked it, then selected "Apply as Column." After applying the filter, i
+navigated through all the "user-agents" and found a total of 6 different of anomalous "user-agent" types.
+>
+> <img width="510" height="305" alt="66" src="https://github.com/user-attachments/assets/65a17741-ff14-4894-af72-ef555c4a2ae7" />
+> <img width="438" height="252" alt="67" src="https://github.com/user-attachments/assets/a7710b31-33f2-4807-8cbc-c06b86934945" />
+> <img width="923" height="685" alt="68" src="https://github.com/user-attachments/assets/e31975e0-3f9c-40b4-9bac-a720b8b75498" />
+> <img width="882" height="698" alt="69" src="https://github.com/user-attachments/assets/192a33b1-5108-4972-a6a2-67b453fb94ff" />
+> <img width="610" height="294" alt="70" src="https://github.com/user-attachments/assets/c6557ce8-0634-4436-baf5-c79a490cf00a" />
+> <img width="693" height="253" alt="71" src="https://github.com/user-attachments/assets/fdd86b44-af74-4470-9720-23a46b192e22" />
+> <img width="655" height="144" alt="72" src="https://github.com/user-attachments/assets/7423ba49-70f0-4d80-9c9e-41b97b2833e3" />
+> <img width="685" height="168" alt="73" src="https://github.com/user-attachments/assets/388f4439-7582-4da9-967d-22a338a95217" />
+> <img width="496" height="164" alt="74" src="https://github.com/user-attachments/assets/734c1052-c73b-4695-ba26-97a1f8f8a05e" />
+> <img width="557" height="181" alt="75" src="https://github.com/user-attachments/assets/4466b3e3-9851-463b-85c0-2dbf2d471b43" />
 
+> Moving on to the next question, i had to figure out the packet number with the subtle spelling difference in the user agent field. To figure this out i just went back to the
+6 different user-agent types, and saw the packet number was number 52.
+>
+> <img width="1031" height="149" alt="76" src="https://github.com/user-attachments/assets/ed0d5362-0cdb-4e74-8789-8117e553339f" />
 
+> For the next qeustion, i had to figure out the packet number of the "Log4j" attack starting phase. To figure this out i had to first launch the
+"~/Desktop/exercise-pcaps/http/http.pcapng" file, then navigated to the "User-Agent," selected it then right-clicked, selected "Remove This Column." After removing the "User-Agent"
+column i navigated to the top of the input field, entered "http contains 'jndi'", and saw that at packet number 444 had the attack starting phase for "Log4j" with the
+"POST" request.
+>
+> <img width="394" height="280" alt="77" src="https://github.com/user-attachments/assets/973f82e8-64c2-455f-97a2-45907e76982e" />
+> <img width="903" height="833" alt="78" src="https://github.com/user-attachments/assets/5c5d01d6-9fa2-4d1f-b11f-a87cace6d31c" />
+> <img width="446" height="207" alt="79" src="https://github.com/user-attachments/assets/8094c5c9-2187-4054-ae36-0c1cfe816ae9" />
+> <img width="622" height="396" alt="80" src="https://github.com/user-attachments/assets/67320880-97c4-458c-a26c-93383896167c" />
 
+Moving on to the last question for this section, i had to decode the base64 for the "Log4j" attack starting phase, and figure out the IP address contacted by the adversary then
+list the IP in defanged format. To figure this out i selected packet 444, navigated to the bottom-left, selected "user-agent," right-clicked it, selected "Copy,"
+then "Value." I then lauched CyberChef, selected the recipe "From Base 64," then pasted the value i copied from Wireshark, then IP address of 62.210.130.250 in the output. So
+in defanged format the IP address would be "62[.]210[.]130[.]250."
+>
+> <img width="1346" height="244" alt="81" src="https://github.com/user-attachments/assets/b3d312dd-6f9b-4bbe-a9af-2b522d0da398" />
+> <img width="1059" height="477" alt="82" src="https://github.com/user-attachments/assets/44f1b63c-1af8-4f9e-a579-3cf5f01a5d36" />
+> <img width="1299" height="649" alt="83" src="https://github.com/user-attachments/assets/a2b1d788-a0dd-4e28-ae00-5e68f1762a5c" />
 
+*** Encrypted Protocol Analysis: Decrypting HTTPS ***
 
+> For this section,
 
 ---
 
