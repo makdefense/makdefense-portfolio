@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Wireshark: Traffic Analysis]  
-**Date Completed**: [01//2026]
+**Date Completed**: [01/20/2026]
 
 ---
 
