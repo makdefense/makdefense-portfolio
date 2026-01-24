@@ -13,19 +13,23 @@
 ---
 
 ## 🎯 Objectives
-- [ ]  
-- [ ]  
+- [ ] Understand what a network is and identify its key components.
+- [ ] Explore the concept of the network perimeter and its importance.
+- [ ] Identify the key perimeter threats.
+- [ ] Examine the firewall logs to monitor normal and suspicious logs.
 
 ---
 
 ## 🧰 Tools Used
-- THM 
+- THM Splunk
+- THM Mozilla Firefox
+- THM Terminal
 
 ---
 
 ## 📊 Analysis & Screenshots
 
-***  ***
+*** Network Perimeters: Monitoring and Protecting ***
 
 > For this room, 
 
@@ -33,4 +37,4 @@
 
 ## Reflection
 
-> This lab provided me with knowledge on 
+> This lab provided me with knowledge of the key aspects of network security essentials and how to monitor and protect against adversaries.
