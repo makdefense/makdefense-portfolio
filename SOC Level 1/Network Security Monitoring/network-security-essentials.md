@@ -1,4 +1,4 @@
-# [Network Traffic Analysis]
+# [Network Security Monitoring]
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Network Security Essentials]  
