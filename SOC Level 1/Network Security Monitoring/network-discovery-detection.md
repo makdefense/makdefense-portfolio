@@ -13,7 +13,10 @@
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] What is network discovery
+- [ ] Why attackers perform network discovery
+- [ ] What are the different types of network discovery
+- [ ] How network discovery techniques work, and how we can detect them
 
 ---
 
