@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Snort]  
-**Date Completed**: [02//2026]
+**Date Completed**: [02/05/2026]
 
 ---
 
@@ -15,12 +15,17 @@ credible and job-ready as a security analyst.
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] Overview of IDS / IPS
+- [ ] Snort Overview
+- [ ] Writing IDS rules
+- [ ] Detecting Intrusion with Snort
 
 ---
 
 ## 🧰 Tools Used
-- THM 
+- THM AttackBox
+- THM Snort
+- THM Terminal
 
 ---
 
@@ -164,11 +169,11 @@ After reviewing the output, I determined that 1 packet was detected.
 > <img width="1498" height="106" alt="38" src="https://github.com/user-attachments/assets/4069f667-e250-4418-b2fe-d4528ef7032a" />
 > <img width="839" height="184" alt="39" src="https://github.com/user-attachments/assets/f5e8bbb3-beaa-41bf-97bb-a88b2f8f757a" />
 
-> Moving on to the next question i had to figure out the number of detected packets by writing a rule to filter packets with Push-Ack flags and run it against the same pcap file.
-To go about this i inputted the command synthax "sudo gedit local.rules," then "enter." On line 9, i entered
-"alert tcp any any <> any any (msg: "FLAG TEST"; flags:P,A;sid: 1000003; rev:1;)", clicked "Save," then entered the command syntax
-"snort -c local.rules -A full -l . -r task9.pcap," navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command syntax of
-"sudo snort -r snort.log.1770148526," then "enter." After scrolling through the retrieved output i saw the number of detected packets to be 218.
+> Moving on to the next question, I needed to determine the number of detected packets by writing a rule to filter packets with the PSH-ACK flags and running it against the same
+PCAP file. To do this, I opened the local rules file by executing sudo gedit local.rules and pressed Enter. On line 9, I added the following rule: alert tcp any any <> any any
+(msg:"FLAG TEST"; flags:P,A; sid:1000003; rev:1;), then saved the file. Next, I ran the rule against the PCAP file using the command snort -c local.rules -A full -l . -r
+task9.pcap. I then navigated to the TASK-9 directory within the Exercise-Files directory and analyzed the generated log file by executing sudo snort -r snort.log.1770148526.
+After reviewing the output, I determined that a total of 218 packets were detected.
 >
 > <img width="1012" height="51" alt="40" src="https://github.com/user-attachments/assets/f7c6d22b-ec53-446b-9fba-5e76012b38b5" />
 > <img width="921" height="879" alt="41" src="https://github.com/user-attachments/assets/0c2e4568-4b63-4d5c-822b-af8a0abd44ab" />
@@ -176,12 +181,11 @@ To go about this i inputted the command synthax "sudo gedit local.rules," then "
 > <img width="1167" height="177" alt="43" src="https://github.com/user-attachments/assets/5d7c6007-4ea2-4e22-9739-5b6d7e8323dc" />
 > <img width="853" height="241" alt="44" src="https://github.com/user-attachments/assets/bdb25bb6-7f6b-4213-a6da-9c6bbc3bfead" />
 
-> Moving on to the next question i had to figure out the number of packets that show the same source and destination address by creating a rule to filter UDP packets with the
-same source and destination IP and run it against the same pcap file. To go about this i inputted the command syntax "sudo gedit local.rules," then "enter." On line 10, i entered
-"alert udp any any <> any any (msg:"UDP Same IP"; sameip; sid:1000004; rev:1;)", clicked "Save," then entered the command syntax
-"snort -c local.rules -A full -l . -r task9.pcap," navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command syntax
-"sudo snort -r snort.log.1770151832," then "enter." After scrolling through the retrieved output i saw the number of packets that show the same source and destination address
-to be 7.
+> Moving on to the next question, I needed to determine the number of packets that had the same source and destination IP address. This was done by creating a rule to filter UDP
+packets with identical source and destination IPs and running it against the same PCAP file. To begin, I opened the local rules file by executing sudo gedit local.rules and
+pressed Enter. On line 10, I added the following rule: alert udp any any <> any any (msg:"UDP Same IP"; sameip; sid:1000004; rev:1;), then saved the file. Next, I ran the rule
+against the PCAP file using the command snort -c local.rules -A full -l . -r task9.pcap. I then navigated to the TASK-9 directory within the Exercise-Files directory and analyzed
+the generated log file by executing sudo snort -r snort.log.1770151832. After reviewing the output, I determined that 7 packets showed the same source and destination address.
 >
 > <img width="896" height="25" alt="48" src="https://github.com/user-attachments/assets/c9992e47-6764-453f-9af6-3485321346d4" />
 > <img width="918" height="368" alt="49" src="https://github.com/user-attachments/assets/1b3e09ac-d82e-49ae-a4eb-77a5975ba95c" />
@@ -193,4 +197,4 @@ to be 7.
 
 ## Reflection
 
-> This lab provided me with knowledge 
+> This lab provided me with hands-on experience using Snort to detect real-time threats, analyze recorded traffic files, and identify anomalous behavior.
