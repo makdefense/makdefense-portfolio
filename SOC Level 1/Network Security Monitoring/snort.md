@@ -154,8 +154,8 @@ command sythax "snort -c local.rules -A full -l . -r task9.pcap," navigated to t
 
 > Moving on to the next question i had to figure out the number of detected packets by creating a rule to filter packets with Syn flag and run it against the same pcap file.
 To go about this i inputted the command synthax "sudo gedit local.rules," then "enter." On line 10, i entered
-"alert tcp any any <> any any(msg: "FLAG TEST"; flags:S;sid: 1000002; rev:1;)", clicked "Save," then entered the command synthax "snort -c local.rules -A full -l . -r task9.pcap,"
-navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command synthax of "sudo snort -r snort.log.1770146213," then "enter." After scrolling through the
+"alert tcp any any <> any any(msg: "FLAG TEST"; flags:S;sid: 1000002; rev:1;)", clicked "Save," then entered the command syntax "snort -c local.rules -A full -l . -r task9.pcap,"
+navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command syntax of "sudo snort -r snort.log.1770146213," then "enter." After scrolling through the
 retrieved output i saw the number of the detected packets to be 1.
 >
 > <img width="945" height="34" alt="36" src="https://github.com/user-attachments/assets/83754711-618e-40cd-a914-176d3df5d5be" />
@@ -163,7 +163,24 @@ retrieved output i saw the number of the detected packets to be 1.
 > <img width="1498" height="106" alt="38" src="https://github.com/user-attachments/assets/4069f667-e250-4418-b2fe-d4528ef7032a" />
 > <img width="839" height="184" alt="39" src="https://github.com/user-attachments/assets/f5e8bbb3-beaa-41bf-97bb-a88b2f8f757a" />
 
-> 
+> Moving on to the next question i had to figure out the number of detected packets by writing a rule to filter packets with Push-Ack flags and run it against the same pcap file.
+To go about this i inputted the command synthax "sudo gedit local.rules," then "enter." On line 9, i entered
+"alert tcp any any <> any any (msg: "FLAG TEST"; flags:P,A;sid: 1000003; rev:1;)", clicked "Save," then entered the command syntax
+"snort -c local.rules -A full -l . -r task9.pcap," navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command syntax of
+"sudo snort -r snort.log.1770148526," then "enter." After scrolling through the retrieved output i saw the number of detected packets to be 218.
+>
+> <img width="1012" height="51" alt="40" src="https://github.com/user-attachments/assets/f7c6d22b-ec53-446b-9fba-5e76012b38b5" />
+> <img width="921" height="879" alt="41" src="https://github.com/user-attachments/assets/0c2e4568-4b63-4d5c-822b-af8a0abd44ab" />
+> <img width="1495" height="174" alt="42" src="https://github.com/user-attachments/assets/55bccc6d-df2b-454e-a2b5-d794b2297cad" />
+> <img width="1167" height="177" alt="43" src="https://github.com/user-attachments/assets/5d7c6007-4ea2-4e22-9739-5b6d7e8323dc" />
+> <img width="853" height="241" alt="44" src="https://github.com/user-attachments/assets/bdb25bb6-7f6b-4213-a6da-9c6bbc3bfead" />
+
+> Moving on to the next question i had to figure out the number of packets that show the same source and destination address by creating a rule to filter UDP 
+
+
+
+
+
 
 
 
