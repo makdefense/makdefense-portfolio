@@ -113,7 +113,72 @@ headers extracted.
 >
 > <img width="768" height="208" alt="23" src="https://github.com/user-attachments/assets/539efc9b-388b-4cb0-a41a-88ad702b24ec" />
 
-> Moving on to the next question i had to figure out the number of generated alerts 
+> Moving on to the next question i had to figure out the number of generated alerts by investigating the mx-1.pcap file with the second configuaration file using the command
+synthax "sudo snort -c /etc/snort/snortv2.conf -A full -l . -r mx-1.pcap." To go about this, since i was already within the directory "Exercise-Files/TASK-8," i inputted the
+command synthax "sudo snort -c /etc/snort/snortv2.conf -A full -l . -r mx-1.pcap," then "enter," then scrolled through the retrieved output and saw a total number of 68 alerts.
+>
+> <img width="1364" height="151" alt="24" src="https://github.com/user-attachments/assets/e13fc44e-668f-418f-a74f-51026d045035" />
+> <img width="709" height="165" alt="25" src="https://github.com/user-attachments/assets/0746448a-3fed-4cfa-a03a-aa552358bdeb" />
+
+> Moving on to the next question i had to figure out the number of generated alerts by investigating the mx-2.pcap file with the default configuration file using the command
+synthax "sudo snort -c /etc/snort/snort.conf -A full -l . -r mx-2.pcap." To go about this, i inputted the command synthax
+"sudo snort -c /etc/snort/snort.conf -A full -l . -r mx-2.pcap," then "enter" which retrieved a total of "340" alerts.
+>
+> <img width="1398" height="151" alt="26" src="https://github.com/user-attachments/assets/046bb0c2-91fc-4075-b899-33349c15ac4e" />
+> <img width="753" height="132" alt="27" src="https://github.com/user-attachments/assets/e10ebed1-dc8e-421c-9aaf-08f6f2d7bbbc" />
+
+> For the next question i had to figure out the number of detected TCP packets. To figure this out i simply scrolled through the output and saw a total of 82 TCP packets.
+>
+> <img width="454" height="598" alt="28" src="https://github.com/user-attachments/assets/5ebbaa6c-9b62-4706-b4ce-8c6143f498b8" />
+
+> For the last question i had to figure out the number of generated alerts by investigating the mx-2.pcap and mx-3.pcap files with the default configuration file by using the
+command synthax "sudo snort -c /etc/snort/snort.conf -A full -l . --pcap-list='mx-2.pcap mx-3.pcap.'" After inputting the command sythax, then pressing "enter," i went through
+the output, and saw a total of 1020 generated alerts.
+>
+> <img width="1433" height="152" alt="29" src="https://github.com/user-attachments/assets/48dd1009-be01-4afb-8c45-2c9ed2b7b349" />
+> <img width="812" height="140" alt="30" src="https://github.com/user-attachments/assets/1757acd0-5de5-46fb-b0ab-dfa609269704" />
+
+*** Snort Rule Structure ***
+
+> Moving on to this section i had to answer a set of questions related to "Snort Rule Structure." For the first question i had to figure out the request name of the detected
+packet by using the "task9.pcap" file, writing a rule to filter IP ID "35369," and run it against the given pcap file. To go about this i first inputted the command synthax
+"sudo gedit local.rules," then "enter." On line 8, i entered "alert icmp any any <> (msg: "Sus IP ID found"; id:35369; sid:1000001; rev:1;)", clicked "Save," then entered the
+command sythax "snort -c local.rules -A full -l . -r task9.pcap," navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command sythax of
+"sudo snort -r snort.log.1770146213," then "enter." After scrolling through the retrieved output i saw the request name of the detected packet to be "TIMESTAMP REQUEST."
+>
+> <img width="1048" height="44" alt="31" src="https://github.com/user-attachments/assets/65e2cc54-2d35-45f5-be19-ac4517277904" />
+> <img width="933" height="336" alt="32" src="https://github.com/user-attachments/assets/84f7c58a-e91a-4006-8144-733831c93a8d" />
+> <img width="1235" height="102" alt="33" src="https://github.com/user-attachments/assets/d1f0d50c-ea16-4ebe-9dac-ffad8051d063" />
+> <img width="1136" height="175" alt="34" src="https://github.com/user-attachments/assets/9319f381-3fb4-4738-ad77-19fbc00cdb13" />
+> <img width="713" height="265" alt="35" src="https://github.com/user-attachments/assets/920d3148-a026-45d4-8548-c465505093c5" />
+
+> Moving on to the next question i had to figure out the number of detected packets by creating a rule to filter packets with Syn flag and run it against the same pcap file.
+To go about this i inputted the command synthax "sudo gedit local.rules," then "enter." On line 10, i entered
+"alert tcp any any <> any any(msg: "FLAG TEST"; flags:S;sid: 1000002; rev:1;)", clicked "Save," then entered the command synthax "snort -c local.rules -A full -l . -r task9.pcap,"
+navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command synthax of "sudo snort -r snort.log.1770146213," then "enter." After scrolling through the
+retrieved output i saw the number of the detected packets to be 1.
+>
+> <img width="945" height="34" alt="36" src="https://github.com/user-attachments/assets/83754711-618e-40cd-a914-176d3df5d5be" />
+> <img width="927" height="303" alt="37" src="https://github.com/user-attachments/assets/1db55d35-a70b-4a67-8a5d-23859b5381b3" />
+> <img width="1498" height="106" alt="38" src="https://github.com/user-attachments/assets/4069f667-e250-4418-b2fe-d4528ef7032a" />
+> <img width="839" height="184" alt="39" src="https://github.com/user-attachments/assets/f5e8bbb3-beaa-41bf-97bb-a88b2f8f757a" />
+
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
