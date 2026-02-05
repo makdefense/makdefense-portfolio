@@ -175,52 +175,19 @@ To go about this i inputted the command synthax "sudo gedit local.rules," then "
 > <img width="1167" height="177" alt="43" src="https://github.com/user-attachments/assets/5d7c6007-4ea2-4e22-9739-5b6d7e8323dc" />
 > <img width="853" height="241" alt="44" src="https://github.com/user-attachments/assets/bdb25bb6-7f6b-4213-a6da-9c6bbc3bfead" />
 
-> Moving on to the next question i had to figure out the number of packets that show the same source and destination address by creating a rule to filter UDP 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> Moving on to the next question i had to figure out the number of packets that show the same source and destination address by creating a rule to filter UDP packets with the
+same source and destination IP and run it against the same pcap file. To go about this i inputted the command syntax "sudo gedit local.rules," then "enter." On line 10, i entered
+"alert udp any any <> any any (msg:"UDP Same IP"; sameip; sid:1000004; rev:1;)", clicked "Save," then entered the command syntax
+"snort -c local.rules -A full -l . -r task9.pcap," navigated to the directory "TASK-9" within the "Exercise-Files," inputted the command syntax
+"sudo snort -r snort.log.1770151832," then "enter." After scrolling through the retrieved output i saw the number of packets that show the same source and destination address
+to be 7.
+>
+> <img width="896" height="25" alt="48" src="https://github.com/user-attachments/assets/c9992e47-6764-453f-9af6-3485321346d4" />
+> <img width="918" height="368" alt="49" src="https://github.com/user-attachments/assets/1b3e09ac-d82e-49ae-a4eb-77a5975ba95c" />
+> <img width="1508" height="100" alt="50" src="https://github.com/user-attachments/assets/37cac292-7a97-48d0-a340-69d47d52fbab" />
+> <img width="1161" height="140" alt="51" src="https://github.com/user-attachments/assets/630787e8-eb64-4fcd-9c88-c7476a0b87a1" />
+> <img width="1119" height="149" alt="52" src="https://github.com/user-attachments/assets/9ff6778a-4f12-4c92-803f-eb87016e6716" />
+> <img width="522" height="272" alt="53" src="https://github.com/user-attachments/assets/a4dc5282-90c6-4efe-844d-5402642f689e" />
 --- 
 
 ## Reflection
