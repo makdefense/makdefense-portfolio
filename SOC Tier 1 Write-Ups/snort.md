@@ -4,7 +4,6 @@ TryHackMe Path: SOC Level 1
 Lab Topic: Snort
 Date Completed: 02/05/2026
 
--
 
 Executive Summary
 
@@ -13,7 +12,6 @@ traffic through PCAP files, and identifying anomalous network behavior. Through 
 skills directly aligned with SOC Tier 1 responsibilities such as alert triage, traffic validation, and investigation documentation. Overall, this lab bridged the gap between 
 theoretical knowledge and real-world network security monitoring.
 
--
 
 Objectives (Completed)
 
@@ -25,7 +23,6 @@ Objectives (Completed)
 
 > Detect and investigate network activity using Snort
 
--
 
 Tools Used
 
@@ -35,11 +32,8 @@ Tools Used
 
 - Linux Terminal
 
--
 
 Analysis & Investigation
-
--
 
 *** Interactive Material and VM ***
 Objective
@@ -59,7 +53,6 @@ Verdict
 > Successful environment validation.
 No security concerns identified.
 
--
 
 *** First Interaction with Snort ***
 Objective
@@ -87,7 +80,6 @@ Verdict
 > Expected behavior.
 This confirms proper Snort installation and configuration parsing.
 
--
 
 *** Operation Mode 2: Packet Logger Mode ***
 Objective
@@ -124,7 +116,6 @@ Verdict
 > Benign traffic.
 No escalation required.
 
--
 
 *** Operation Mode 3: IDS / IPS ***
 Objective
@@ -147,7 +138,6 @@ Verdict
 
 > Benign activity.
 
--
 
 *** Operation Mode 4: PCAP Investigation ***
 Objective
@@ -195,7 +185,6 @@ Verdict
 > Expected detection behavior.
 Highlights the operational impact of IDS configuration choices.
 
--
 
 *** Snort Rule Structure and Custom Detection ***
 Objective
@@ -230,7 +219,6 @@ Verdict
 
 > Successful rule creation and validation.
 
--
 
 SOC Level 1 Skills Demonstrated
 
@@ -246,10 +234,9 @@ SOC Level 1 Skills Demonstrated
 
 > Clear technical documentation and evidence collection
 
-- 
 
 Reflection
 
-> This lab strengthened my ability to operate Snort as a network-based detection tool within a SOC context. I gained hands-on experience with live traffic monitoring, offline PCAP 
-analysis, and custom rule development, while also learning how configuration differences impact alert generation. These skills directly translate to SOC Tier 1 responsibilities 
-such as alert triage, investigation, and documentation, and provide a strong foundation for more advanced threat-hunting and incident-response work.
+> This lab strengthened my ability to operate Snort as a network-based detection tool within a SOC context. I gained hands-on experience with live traffic monitoring, offline
+PCAP analysis, and custom rule development, while also learning how configuration differences impact alert generation. These skills directly translate to SOC Tier 1
+responsibilities such as alert triage, investigation, and documentation, and provide a strong foundation for more advanced threat-hunting and incident-response work.
