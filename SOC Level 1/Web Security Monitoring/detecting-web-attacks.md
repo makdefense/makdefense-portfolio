@@ -151,4 +151,4 @@ Based on log + traffic correlation:
 📌 Key Takeaway
 
 Understanding how to analyze logs and network traffic is fundamental to detecting real-world cyberattacks. These artifacts provide the evidence required to identify attacker 
-activity, determine impact, and support incident response efforts. Mastery of these techniques is essential for SOC analysts and defensive security professionals..
+activity, determine impact, and support incident response efforts. Mastery of these techniques is essential for SOC analysts and defensive security professionals.
