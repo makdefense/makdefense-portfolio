@@ -46,7 +46,7 @@ down to the last "GET" request, copied + pasted "/account/changeusername.php?q=%
 decoded SQLi payload of "%' OR '1'='1."
 >
 > <img width="1119" height="215" alt="4" src="https://github.com/user-attachments/assets/0d0412ab-9cc1-475e-92d6-78a1a4fdddab" />
-> <img width="1395" height="796" alt="Screenshot 2026-02-14 at 10 25 33 PM" src="https://github.com/user-attachments/assets/64ad9045-7d88-4090-a17d-c3047e6ffeea" />
+> <img width="1395" height="796" alt="Screenshot 2026-02-14 at 10 25 33 PM" src="https://github.com/user-attachments/assets/f2fe3682-312a-433b-ae9c-fda341e94fb7" />
 
 
 > 
