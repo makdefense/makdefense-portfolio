@@ -131,6 +131,7 @@ Based on log + traffic correlation:
 - Performed brute-force login attempts
 - Exploited SQL injection vulnerability
 - Extracted database data
+
 ➡️ Conclusion: This represents a full web application compromise lifecycle.
 
 ---
