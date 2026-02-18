@@ -16,9 +16,9 @@ especially SOC analysts, because it turns theoretical knowledge into real-world 
 
 ## 🎯 Objectives
 - [ ] Understand how to find and interpret important Windows event logs
-- [ ] Learn invaluable for monitoring log sources like Sysmon and PowerShell
-- [ ] Prepare for using the mentioned logs in SOC-SIM and the following rooms
-- [ ] Practice your log analysis skills on multiple event log datasets
+- [ ] Learn how to monitor log sources like Sysmon and PowerShell
+- [ ] Prepare to use the mentioned logs in SOC-SIM and upcoming rooms
+- [ ] Practice log analysis skills using multiple event log datasets
 
 ---
 
@@ -37,7 +37,6 @@ especially SOC analysts, because it turns theoretical knowledge into real-world 
 which IP performed a brute-force attack on THM-PC. To do this, I launched the file, navigated to the top of Event Viewer, selected View → Sort By → Event ID. After doing this, I
 discovered that Event ID 4625 indicates a failed login. Upon further investigation of that specific log, I retrieved the IP 10.10.53.248, which performed the brute-force attack
 against THM-PC.
->
 > <img width="716" height="372" alt="1" src="https://github.com/user-attachments/assets/c64454a0-41fb-4481-910f-ae8ddf62bb04" />
 > <img width="661" height="311" alt="2" src="https://github.com/user-attachments/assets/16001e43-a7ac-43a9-952b-386549250bbf" />
 > <img width="650" height="299" alt="3" src="https://github.com/user-attachments/assets/1f385a44-62a4-4823-883c-9b0ddf6a267e" />
@@ -62,9 +61,7 @@ svc_sysrestore.
 
 > Next, I needed to identify which two privileged groups the backdoor user was added to. I navigated to events with timestamps 5/17/2025 10:55:24 PM and 5/17/2025 10:55:12 PM, both
 with Event ID 4732. After reviewing the logs, I found the user was added to:
-
 "Backup Operators"
-
 "Remote Desktop Users"
 >
 > <img width="679" height="511" alt="8" src="https://github.com/user-attachments/assets/0a9bbd32-89a2-4f04-889b-c7e19229f580" />
@@ -89,6 +86,7 @@ C:\Users\sarah.miller\Downloads\ckjg.exe
 > For the final question in this section, I had to determine the URL from which the file was downloaded. I navigated to the event with timestamp 5/18/2025 4:07:38 PM and Event ID
 15, which showed the source URL:
 http://gettsveriff.com/bgj3/ckjg.exe
+>
 > <img width="1113" height="185" alt="15" src="https://github.com/user-attachments/assets/59ccb3a7-8796-4794-968d-67848008b607" />
 > <img width="907" height="471" alt="16" src="https://github.com/user-attachments/assets/3e2a8e43-8582-415d-a5b3-499c41182b51" />
 
@@ -134,8 +132,8 @@ May 18, 2025
 retrieved the hidden flag:
 THM{it_was_me!}
 >
-> <img width="954" height="440" alt="27" src="https://github.com/user-attachments/assets/fff8c31f-2962-4cfa-a693-a924a4a62346" />
-> <img width="848" height="544" alt="28" src="https://github.com/user-attachments/assets/c8abc1e5-6d80-4dee-833b-4064e6ba16bd" />
+> <img width="954" height="440" alt="27" src="https://github.com/user-attachments/assets/4da1975b-5a7b-4dc9-8288-9ec37bd15d9f" />
+> <img width="848" height="544" alt="28" src="https://github.com/user-attachments/assets/d41d175a-80ba-4166-bed6-c709bfac1416" />
 
 --- 
 
