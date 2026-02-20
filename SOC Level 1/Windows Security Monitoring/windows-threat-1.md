@@ -8,19 +8,22 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned the importance of understanding
+> In this lab, I learned the importance of Understanding common Initial Access methods on Windows is important because it helps defenders recognize how attackers first enter systems
+and stop them early. Detecting signs like suspicious logins, malicious files, or unusual activity prevents attackers from escalating privileges or causing damage. This knowledge
+builds essential SOC analyst skills, strengthens incident response, and improves an organization’s overall security posture.
 
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] Explore how threat actors access and breach Windows machines
+- [ ] Learn common Initial Access techniques via real-world examples
+- [ ] Practice detecting every technique using Windows event logs
 
 ---
 
 ## 🧰 Tools Used
 - THM Attackbox
-- THM 
-
+  
 ---
 
 ## 📊 Analysis & Screenshots
@@ -104,32 +107,13 @@ timestamp of 5/20/2025 7:34:06 PM, to discover that the malicoius file the malwa
 >
 > <img width="1319" height="430" alt="22" src="https://github.com/user-attachments/assets/710e4853-bb86-4bb9-9741-878bc6ae9303" />
 
-> For the last question i had to figure out to which other
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
+> For the last question i had to figure out to which other USB did the malware propogate to. To figure this out i navigated then selected Event 11 with the timestamp of
+5/20/2025 7:34:06 PM, to discover that the other USB that the malware propogates to is "F:."
+>
+> <img width="1277" height="583" alt="23" src="https://github.com/user-attachments/assets/f7389395-2e97-408f-bcbc-aa9f206a43e3" />
 
 --- 
 
 ## Reflection
 
-> This lab strengthened my ability to 
+> This lab strengthened my ability to explore common initial access methods on Windows and learn how to detect them.
