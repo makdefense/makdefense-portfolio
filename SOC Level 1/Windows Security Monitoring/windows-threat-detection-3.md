@@ -72,16 +72,51 @@ of "07/02/2025 9:01:38 PM," expanded it, then discovered the backdoor user creat
 
 *** Persistence: Task and Services ***
 
+> Moving on to the next section, i had to uncover two backdoors that were left by the attackers using Security and Sysmon logs with the pathway
+"C:\Users\Administrator\Desktop\Practice\Task 4\." For the first question i had to figure out which Windows service was created to persist the Nessie malware. To figure this out i
+first launched the "Task 4" folder on the Desktop, then navigated to Event 4697 with the timestamp of 07/02/2025 7:09:16 PM, expanded it, and saw the service created to be
+"Data Protection Services."
+>
+> <img width="1129" height="357" alt="13" src="https://github.com/user-attachments/assets/2d5431d3-7be6-4543-9de6-1c27baec0ddf" />
+> <img width="722" height="753" alt="14" src="https://github.com/user-attachments/assets/a1c49424-0bb2-416a-8e52-07c1c44c7111" />
 
+> For the next question i had to figure out which scheduled task was created to persist the Troy malware. To figure this out i navigated to the Event with ID 4698, timestamp of
+"07/02/2025 7:10:09 PM," expanded it, and discovered the scheduled task to be "AmazonSync."
+>
+> <img width="647" height="720" alt="15" src="https://github.com/user-attachments/assets/c05fd1c6-0b24-45ac-b07c-e7e83012763f" />
 
+> Moving on to the last question, i had to figure out the hidden flag after running the Troy malware. To figure this out i launched the "try.exe" that was stored within the
+"Program Files" folder, entered the parent commandline: "C:\Windows\system32\svchost.exe -k netsvcs -p -s Schedule," then pressed "enter." After doing so i was able to retrieve
+the hidden flag of "THM{c2_is_on_schedule!}."
+>
+> <img width="740" height="412" alt="16" src="https://github.com/user-attachments/assets/944ba59f-c66b-4bed-aebe-797605ba83e8" />
+> <img width="1032" height="451" alt="17" src="https://github.com/user-attachments/assets/35718f3b-99c6-4a71-a925-0af7c722e170" />
+> <img width="1026" height="322" alt="18" src="https://github.com/user-attachments/assets/a4a82016-a960-4017-9617-08a7be384b48" />
+> <img width="1104" height="876" alt="19" src="https://github.com/user-attachments/assets/374f3475-4bb0-45e2-8858-69f83eb6cfeb" />
 
+*** Persistence: Run Keys and Startup ***
 
+> Moving on to this section, i had to answer a few questions related to uncovering the newly learned backdoors from witin the pathway of
+"C:\Users\Administrator\Desktop\Practice\Task 5\." For the first question, i had to figure out the parent process image of the "Odin" malware. To figure this out i first launched
+the "Task 5" folder located on the Desktop, navigated to the Sysmon log, selected Event 1 with the timestamp of "07/04/2025 10:16:49 PM," expanded it, which led me to discover
+the parent process image to be "C:\Windows\explorer.exe."
+>
+> <img width="931" height="362" alt="20" src="https://github.com/user-attachments/assets/58fcddc3-1bfc-4c2e-84bb-d02ffa03c337" />
+> <img width="956" height="761" alt="21" src="https://github.com/user-attachments/assets/66eecd74-3f45-48cd-ab44-cd6b7c6cc8ea" />
 
+> For the next question i had to figure out the last line that the "Odin" malware output. To figure this out i simply navigated to Event 1 with the timestamp of
+07/04/2025 10:16:49 PM, expanded it, then discovered that the last line was "Done doing bad stuff!"
+>
+> <img width="866" height="699" alt="22" src="https://github.com/user-attachments/assets/d03a7c54-e922-424a-a273-f34346c46b39" />
 
-
-
-
-
+> For the last question i had to figure out the hidden flag after running the "Kitten" malware. To figure this out i first located where the "Kitten" malware was, then launched it,
+then entered the run key "basket." Which led to me retrieving the flag of "THM{persisting_in_basket!}"
+>
+> <img width="821" height="757" alt="23" src="https://github.com/user-attachments/assets/f00aabea-8cf8-48e5-892a-f95969c5f162" />
+> <img width="809" height="390" alt="24" src="https://github.com/user-attachments/assets/4f9efbc6-d73c-4654-944c-afd8964f819b" />
+> <img width="930" height="379" alt="25" src="https://github.com/user-attachments/assets/04e9be7d-ac6f-4c99-af46-648b348d7b81" />
+> <img width="826" height="408" alt="26" src="https://github.com/user-attachments/assets/64666d89-be30-4643-a5c5-6b387f7ed290" />
+> <img width="1019" height="580" alt="27" src="https://github.com/user-attachments/assets/970d00fe-c122-403b-9c74-70d5d95b8e5d" />
 
 --- 
 
