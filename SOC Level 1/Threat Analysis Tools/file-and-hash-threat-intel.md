@@ -78,7 +78,45 @@ to the Behavior tab, then further down to MITRE ATT&Ck Tactics & Techniques, the
 
 *** Sandbox Analysis ***
 
-> 
+> Moving on to this section, i had to answer a few questions related to the "bl0gger.exe" file using Hybrid Analysis. For the first question i had to figure out the
+tags used to identify the bl0gger.exe using Hybrid Analysis. To figure this out i copied and pasted the SHA256 hash into Hybrid Analysis, then clicked "enter," which
+then led me to discover the tags "BlackMoon, Discovery, windows-server-utility."
+>
+> <img width="1961" height="596" alt="17" src="https://github.com/user-attachments/assets/4ef9f52c-4296-4985-888f-b823b72ab070" />
+
+> For the next question i had to figur out the stealth command line executed from the file. To figure this out i navigated to the "Indicators" section, which led me
+to discover the stealth command to be "regsvr32 %WINDIR%\Media\ActiveX.ocx /s."
+>
+> <img width="1088" height="497" alt="18" src="https://github.com/user-attachments/assets/d0332122-74f9-4acf-a967-08b776447ea3" />
+
+> I then had to figure out which other process was spawned according to the process tree. To figure this out i navigated further down to the "Hybrid Analysis" section,
+only to discover the other process to be "werfault.exe."
+>
+> <img width="863" height="477" alt="19" src="https://github.com/user-attachments/assets/9d28217c-70fb-4e73-bab7-e1661b7f0dad" />
+
+> Moving on to the next question i had to answer a few questions related to analyzing the "payroll.pdf" application within the CTI Files folder. For the first
+question i had to figure out which known Windows file it was masquerading as. To figure this out i first retrieved the SHA256 hash for the payroll.pdf application,
+then copied and pasted it into VirusTotal, which led me to discover the Windows file "svchost.exe."
+>
+> <img width="992" height="207" alt="20" src="https://github.com/user-attachments/assets/1052d20f-9e6d-429a-bc14-7f52b2f3fdd5" />
+> <img width="1381" height="431" alt="21" src="https://github.com/user-attachments/assets/8f40f644-3606-4396-934b-189770b8cba4" />
+
+> I then had to figure out what associated URL is linked to the file. To figure this out i launched Hybrid Analysis, then copied and pasted the SHA256 hash of the
+"payroll.pdf" application into it, then clicked "enter," then navigated to the "Additional Context" section, only to discover the associated URL to be
+"hxxp://121.182.174.27:3000/server.exe."
+>
+> <img width="1464" height="459" alt="23" src="https://github.com/user-attachments/assets/6bc6d1cf-b6a8-41db-bda3-9b08952d84c2" />
+
+> For the last question i had to figure out how many extracted strings were identified from the sandbox analysis of the file. To figure this out i navigated to the
+"Extracted Strings" section which led me to discover a total of "454" extracted strings.
+>
+> <img width="1142" height="803" alt="22" src="https://github.com/user-attachments/assets/f826f02a-9f4f-42bf-8e08-0a5b72cb1de3" />
+
+*** Threat Intelligence Challenge ***
+
+
+
+
 
 
 
