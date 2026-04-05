@@ -92,7 +92,24 @@ sub-header.
 
 *** Reputation Checks and Passive DNS ***
 
-> For this section, i had to answer a few questions based on investigating the "166[.]1.160[.]118" IP address using Virus Total. 
+> For this section, i had to answer a few questions based on investigating the "166[.]1.160[.]118" IP address using Virus Total. For the first question i had to figure out what file
+has been linked to the 166[.]1.160[.]118 IP address. To figure this out i launched VirusTotal, then inputted the IP address into the input field, pressed "enter," then navigated to
+the "Relations" section only to discover that the file "ff4c287c60ede1990442115bddd68201d25a735458f76786a938a0aa881d14ef.exe" was linked to 166[.]1.160[.]118 IP address.
+>
+> <img width="1065" height="756" alt="16" src="https://github.com/user-attachments/assets/aa0ee73a-89a0-49de-923e-f6b35811a408" />
+> <img width="1341" height="681" alt="17" src="https://github.com/user-attachments/assets/fd67345e-290b-4b28-9dc3-ce421b5f1415" />
+
+> For the last question i had to figure out which organisation was identified on historical WHOIS lookups. Upon further investigation, navigating to the sub-header
+"Historical WHOIS lookups," i retrieved the organization "Ace Data Centers, Inc."
+>
+> <img width="934" height="275" alt="18" src="https://github.com/user-attachments/assets/02861fcd-d367-48d6-b342-3127fda19f39" />
+
+*** Challenge ***
+
+> For the final section of this room, i had to complete a challenge by answering a set of questions based on enriching three indicators. For the first question i had figure out the
+RIR associated with 170[.]130[.]202[.]134 IP. To figure this out 
+
+
 
 
 
