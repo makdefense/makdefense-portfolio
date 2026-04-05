@@ -64,6 +64,40 @@ and retrieved the Autonomous System "AS136258."
 >
 > <img width="953" height="261" alt="9" src="https://github.com/user-attachments/assets/2f927c58-d70d-4ccb-8438-4b180a2644fb" />
 
+*** Service Exposure ***
+
+> Moving on to this section, i had to use several services to investigate the "85[.]188[.]1[.]133" IP address. For the first question, i had to use shodan.io to figure out the first
+exposed service name of the 85[.]188[.]1[.]133 IP. After launching shodan.io, i inputted the IP within the input field, then pressed "enter." Upon further investigation i was able
+to discover the first exposed service name to be "FTP."
+>
+> <img width="1496" height="536" alt="10" src="https://github.com/user-attachments/assets/da6e3fb0-81a7-4b7a-a2f7-4d079c8dac5c" />
+
+> I then had to figure out how many open ports there were on the exposed server. Upon further investigation i was able to retrieve 6 open ports on the exposed server.
+>
+> <img width="632" height="214" alt="11" src="https://github.com/user-attachments/assets/3486470a-387a-44c3-83f6-4432866d533a" />
+
+> Moving on to the next question, i had to use "search.censys.io" to figure out the TLS certificate fingerprint for the 85[.]188[.]1[.]133 IP. After launching the "search.censys.io"
+web service, then inputting the IP addresses into the input field, then pressing "enter." I was able to retrieve the TLS certificate fingerprint
+"5ea8e6046bdabaa8e23a1a012c01d1be5ccd42c66ef2577a59f3b3f0f056d12e."
+>
+> <img width="1129" height="475" alt="12" src="https://github.com/user-attachments/assets/beade5ee-3a9c-427c-b560-d36f962021da" />
+> <img width="653" height="276" alt="13" src="https://github.com/user-attachments/assets/8f25a258-1e97-4774-bce5-b1475ad5f58f" />
+
+> For the last question i had to figure out the Subject's commonName of the identified TLS certificate using the web service "crt.sh." Upon launching the service, then inputting the
+TLS certificate into the input field, then pressing "enter" i was able to retrieve the Subject's commonName to be "archive.scene.org" under the "X509v3 Subject Alternative Name"
+sub-header.
+>
+> <img width="854" height="406" alt="14" src="https://github.com/user-attachments/assets/034aa3c7-2c0c-4899-8a9c-ca09fbb95dfc" />
+> <img width="866" height="298" alt="15" src="https://github.com/user-attachments/assets/cb6fa65d-a8fd-4c82-8925-606f0bcbfd6c" />
+
+*** Reputation Checks and Passive DNS ***
+
+> For this section, i had to answer a few questions based on investigating the "166[.]1.160[.]118" IP address using Virus Total. 
+
+
+
+
+
 
 
 
