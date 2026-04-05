@@ -107,23 +107,22 @@ the "Relations" section only to discover that the file "ff4c287c60ede1990442115b
 *** Challenge ***
 
 > For the final section of this room, i had to complete a challenge by answering a set of questions based on enriching three indicators. For the first question i had figure out the
-RIR associated with 170[.]130[.]202[.]134 IP. To figure this out 
+RIR associated with 170[.]130[.]202[.]134 IP. To figure this out i launched the domain "client.rdap.org," then inputted the 170[.]130[.]202[.]134 IP into the input field, pressed
+"enter," navigated down to the sub-header "Entites," and was able to retireve the RIR "ARIN."
+>
+> <img width="1108" height="281" alt="19" src="https://github.com/user-attachments/assets/b69cd811-6ead-432e-b601-97869cb3ec19" />
+> <img width="876" height="316" alt="20" src="https://github.com/user-attachments/assets/36e6bbc1-0292-4c96-bf0b-6ca5d04e6642" />
 
+> I then had to figure out what ASN the 170[.]130[.]202[.]134 IP was connected with. To figure this out i launched the we service "shodan.io," then inputted the
+170[.]130[.]202[.]134 IP into the input field, pressed "enter," and upon further investigation i was able to retireve the ASN "AS62904."
+>
+> <img width="654" height="612" alt="21" src="https://github.com/user-attachments/assets/ea4cc6fe-d745-497a-9c63-6ab34747ee46" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+> Moving on to the next question, i had to figure out the number of NS records for the domain "santagift[.]shop." After launching the web service "NS lookup," then inputting the
+domain into the input field, then pressing "enter," iwas able to retrieve the total number of  NS records of 4.
+>
+> <img width="997" height="559" alt="22" src="https://github.com/user-attachments/assets/ab187b3f-f0b3-4b94-91da-b5d6bbb576b6" />
+> <img width="1274" height="781" alt="23" src="https://github.com/user-attachments/assets/e186be9b-9594-4dc0-9a9b-8c2b9dd1b5c8" />
 --- 
 
 ## Reflection
