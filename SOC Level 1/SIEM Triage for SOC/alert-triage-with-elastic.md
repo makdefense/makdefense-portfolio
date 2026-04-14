@@ -26,7 +26,7 @@
 
 ## 📊 Analysis & Screenshots
 
-***  ***
+*** Scenario Briefing ***
 
 > In this section, i had to answer a few questions related to using Kibana. For the first question i had to figure out how many logs were available for analysis after inputting the
 query:
@@ -41,6 +41,10 @@ of 203.0.113.55.
 >
 > <img width="662" height="274" alt="3" src="https://github.com/user-attachments/assets/7e3e0188-4ecc-4e78-89ff-45fc13225868" />
 > <img width="1758" height="194" alt="4" src="https://github.com/user-attachments/assets/9c89df50-9882-48ce-b03a-79c0451ba69d" />
+
+*** Investigating Web Attacks ***
+
+> 
 
 
 
