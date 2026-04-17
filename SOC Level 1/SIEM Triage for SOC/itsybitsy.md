@@ -25,9 +25,9 @@
 
 ## 📊 Analysis & Screenshots
 
-***  ***
+*** Scenario - Investigate a potential C2 communication alert ***
 
-> In this section, 
+> In this room, 
 
 --- 
 
