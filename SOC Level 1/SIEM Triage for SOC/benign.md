@@ -27,7 +27,47 @@
 
 *** Scenario: Identify and Investigate an Infected Host ***
 
-> In this room, 
+> In this room, i had to use the logs ingested into the index "win_eventlogs" and conduct a investigation on one of the hosts from the HR department being compromised. For the first
+question i had to i figure out how many logs were ingested from the month of March, 2022. To figure this out i launched the Splunk application using the given IP address, then
+inputted the query:
+"index=win_eventlogs"
+which returned "13959."
+>
+> <img width="722" height="395" alt="1" src="https://github.com/user-attachments/assets/9ce3191b-c3f5-4300-a4ce-8e1a57668fc6" />
+> <img width="643" height="416" alt="2" src="https://github.com/user-attachments/assets/cbb22c76-ed86-43be-84b6-1ed4d3ec1d9c" />
+
+> I then identified an imposter account within logs to be "Amel1a."
+>
+> <img width="1035" height="566" alt="3" src="https://github.com/user-attachments/assets/a735cc8a-54f8-4e62-b551-32fe20f19771" />
+> <img width="1022" height="311" alt="4" src="https://github.com/user-attachments/assets/199f86b5-d22a-48fa-a19e-cadf31c8f6f6" />
+> <img width="1458" height="795" alt="5" src="https://github.com/user-attachments/assets/192e52a1-5c28-4d5f-9235-1c3e67ac76b6" />
+
+> Moving on to the next question i observed "Chris.fort" from the HR department to be running scheduled tasks.
+>
+> <img width="1344" height="809" alt="6" src="https://github.com/user-attachments/assets/34e7c9be-42f9-4257-842c-76a62c992507" />
+
+> I then retrieved the user "haroon" from the HR department that executed a system process (LOLBIN) in order to download a payload from a file-sharing host.
+The system process identified to download a payload from the internet in order to bypass security controls was "certutil.exe."
+>
+> <img width="1203" height="799" alt="7" src="https://github.com/user-attachments/assets/c3cde2a8-40bc-4fc8-b324-bd3bb6779c6e" />
+> <img width="1080" height="688" alt="11" src="https://github.com/user-attachments/assets/9d47b027-645c-46a2-9d78-8c11cbea06a6" />
+
+> I then identified the date this binary was executed by the infected host to be "2022-03-04."
+>
+> <img width="939" height="539" alt="8" src="https://github.com/user-attachments/assets/40693ad8-a523-417e-855f-5b67d79a236b" />
+
+> The third party site accessed to download the malicious payload was identified as "controlc.com."
+>
+> <img width="338" height="179" alt="9" src="https://github.com/user-attachments/assets/ab4fd842-cbcd-4796-913d-1b86bc6d460a" />
+
+> The file saved on the host machine from the C2 server during the post-exploitation phase was "benign.exe."
+>
+> <img width="590" height="306" alt="10" src="https://github.com/user-attachments/assets/fe8f75d9-5518-486c-8927-980a37774518" />
+
+> The suspicious file downloaded from the C2 server contained malicious content with the pattern THM{......}; the pattern identified was "THM{KJ&*H^B0}."
+Finally, the URL that the infected host connected to was "https://controlc.com/e4d11035."
+>
+> <img width="399" height="353" alt="12" src="https://github.com/user-attachments/assets/78e1dc0c-e308-4836-941f-33ab629861b0" />
 
 --- 
 
