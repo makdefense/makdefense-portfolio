@@ -8,7 +8,7 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned how to 
+> In this lab, I learned how to conduct an investigation from a workstation affected by a full attack chain.
 
 ---
 
@@ -20,6 +20,12 @@
 ## 🧰 Tools Used
 - THM AttackBox
 - Splunk
+- VirusTotal
+- Event Viewer
+- Brim
+- Timeline Explorer
+- Wireshark
+- PowerShell
 
 ---
 
@@ -171,10 +177,67 @@ chisel
 
 *** Privilege Escalation - Exploiting Privileges ***
 
-> 
+> Moving on to this section i had to answer questions related to the attacker gaining a stable shell through a reverse socks proxy. For the first question i had to figure out the
+name and the SHA256 hash of the binary the attacker downloaded after gaining privilege escalation of the current user. To figure this out i inputted the user "benimaru" within the
+input field of the Timeline Explorer application, then investigated all the events based on the "benimaru" user which led me to discover the name and the SHA256 hash of the binary
+to be:
+spf.exe, and 8524FBC0D73E711E69D60C64F1F1B7BEF35C986705880643DD4D5E17779E586D
+>
+> <img width="1253" height="403" alt="40" src="https://github.com/user-attachments/assets/fa779303-1a0c-43c2-bb97-d4d2ac862759" />
+> <img width="1142" height="397" alt="41" src="https://github.com/user-attachments/assets/c8707f9e-c6f0-4359-bc0c-69200dbc92f4" />
+
+> Based on the SHA256 hash of the binary i identifed the name of the tool used to be "printspoofer" by inputting it in VirusTotal.
+>
+> <img width="993" height="661" alt="42" src="https://github.com/user-attachments/assets/935be8b4-b537-414f-bf76-1a03f5310c01" />
+> <img width="919" height="525" alt="43" src="https://github.com/user-attachments/assets/97bda5ee-65d8-4e9d-84be-469e121ea63b" />
+
+> I then identified the privilege the tool exploited owned by the user to be "SeImpersonatePrivilege" with the help of ChatGPT.
+>
+> <img width="899" height="419" alt="44" src="https://github.com/user-attachments/assets/68d69a88-e069-4b22-bc4d-2c051337960f" />
+
+> Moving on i discovered the name of the binary used to execute the "SeImpersonatePrivilege" tool to establish a C2 connection to be "final.exe." I found this by investigating
+further Events within the Timeline Explorer Application.
+>
+> <img width="966" height="247" alt="45" src="https://github.com/user-attachments/assets/d5cc4530-0012-415a-b6b4-fa00de5a7e67" />
+
+> Finally, i identified the secondary port the binary connected to as "8080" by using the Brim filter:
+_path=="http" | cut id.orig_h, id.resp_h, id.resp_p, method, host, uri | uniq -c
+>
+> <img width="1250" height="396" alt="46" src="https://github.com/user-attachments/assets/4db6766c-adf2-47c0-b958-3819d92b3fb0" />
+
+*** Actions on Objective - Fully-owned Machine ***
+
+> For this final section i had to answer questions related to the attacker gaining administrative privileges inside the machine. I had to identify all persistence techniques used by
+the attacker. For the first question i had to figure out the two users created by the attacker upon gaining SYSTEM access. To figure this out i launched the Windows Event Logs with
+the Event Viewer application and upon further investigation of the Event IDs i discovered the two users created by the attacker to be:
+shion, and shuna
+>
+> <img width="1241" height="646" alt="47" src="https://github.com/user-attachments/assets/ab8aa6ac-6e28-4dd1-b729-b3de3b70e0cb" />
+> <img width="1305" height="651" alt="48" src="https://github.com/user-attachments/assets/87505fbb-fff8-4bd4-80dd-c94d74c39f17" />
+
+> I then identified the missing option that made the attempt fail by the attacker to be "/add."
+>
+> <img width="1121" height="875" alt="49" src="https://github.com/user-attachments/assets/00f326e5-1954-437c-9e98-d8a26b83b380" />
+
+> I identified the Event ID to be 4720 which demonstrated the creation of these accounts by the attacker.
+
+> Moving on i discovered the command used by the attacker to add one of the accounts in the local administrator group to be:
+net localgroup administrators /add shion
+>
+> <img width="1328" height="372" alt="50" src="https://github.com/user-attachments/assets/1180e9c9-2ed7-4688-a768-97096ad596f5" />
+
+> The Event ID that indicated the addition to a senstive group was discovered to be:
+4732
+>
+> <img width="1329" height="517" alt="51" src="https://github.com/user-attachments/assets/dcce2185-aff4-4084-9b10-d997ca6568db" />
+
+> The attacker then executed a technique to establish persistent administrative access. The command identified by the attacker to achieve this was:
+C:\Windows\system32\sc.exe \\TEMPEST create TempestUpdate2 binpath= C:\ProgramData\final.exe start= auto
+>
+> <img width="1416" height="744" alt="52" src="https://github.com/user-attachments/assets/6fe01088-50cc-4c7b-b241-43c6c58cc46c" />
 
 --- 
 
 ## Reflection
 
-> This lab strengthened my ability to 
+> This lab strengthened my ability to conduct an investigation from a workstation affected by a full attack chain.
