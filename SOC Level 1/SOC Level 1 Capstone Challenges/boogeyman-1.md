@@ -93,19 +93,49 @@ which returned the encoding to be "hex," along with the tool used which was "nsl
 > <img width="508" height="318" alt="21" src="https://github.com/user-attachments/assets/604ecb9b-ae66-406b-9d74-95dcb3ec55c8" />
 > <img width="645" height="348" alt="22" src="https://github.com/user-attachments/assets/01baed77-0385-482c-89b0-eaaa5104b071" />
 
+*** [Network Traffic Analysis] They got us. Call the bank immediately! ***
 
+> For the last section, i had to finalize the investigation by answering some questions related to understanding the network traffic caused by the attack. For the first question,
+i had to figure out the software used by the attacker to host its presumed file/payload server. To figure this out i launched the Wireshark application, then opened the
+"capture.pcapng," inputted the query:
+http contains 'files.bpakcaging.xyz'
+then followed the TCP stream of the 4 result which led me to discover the software used to be "python."
+>
+> <img width="1010" height="287" alt="23" src="https://github.com/user-attachments/assets/5fc64e04-ac9f-430c-8cef-21799154f7bb" />
+> <img width="1109" height="471" alt="24" src="https://github.com/user-attachments/assets/dee258a7-d48b-44b6-84fc-dff3e2ba12ef" />
+> <img width="692" height="328" alt="25" src="https://github.com/user-attachments/assets/daf18c04-5123-46f0-ab7a-48c13b5bbc90" />
 
+> The HTTP method used by the C2 for the output of the commands executed by the attacker was obviously "POST." The protocol used was "DNS" as we identified that earlier in our
+powershell log investigation.
 
+> I then identified the password of the exfiltrated file to be "%p9^3!lL^Mz47E2GaT^y" by using the query:
+http contains "sq3.exe"
+in Wireshark, then following the TCP stream of the 4th result, then copying and pasting the numbers retrieved into CyberChef, then using "From Decimal" recipe.
+>
+> <img width="668" height="229" alt="26" src="https://github.com/user-attachments/assets/36ee89d3-395a-47d9-9d92-5e56ff671c67" />
+> <img width="1000" height="598" alt="27" src="https://github.com/user-attachments/assets/4fe21975-45b1-485d-b2a8-852295735f87" />
+> <img width="1001" height="877" alt="28" src="https://github.com/user-attachments/assets/5c04b24f-e8c8-4e60-b816-372454e2806c" />
+> <img width="1500" height="742" alt="29" src="https://github.com/user-attachments/assets/0b8db0f9-6e98-4be6-8b2c-31dd73a1e1ae" />
 
-
-
-
-
-
-
-
-
-
+> Finally to figure out the credit card number stored inside the exfiltrated file, i first created a query to run in Wireshark which was:
+dns.qry.type == 1 && ip.addr == 167.71.211.113
+After doing this i found it difficult to parse the data to get the credit card number so i then launched the Terminal application, then ran the command syntax:
+tshark -r capture.pcapng  -Y 'dns' -T fields -e dns.qry.name |grep ".bpakcaging.xyz"
+which resulted in alot of duplicated, unneccesary strings and characters, so i used the modified command syntax:
+tshark -r capture.pcapng  -Y 'dns' -T fields -e dns.qry.name |grep ".bpakcaging.xyz" | cut -f1 -d '.'|grep -v -e "files" -e "cdn" | uniq
+then used the command syntax:
+tshark -r capture.pcapng  -Y 'dns' -T fields -e dns.qry.name |grep ".bpakcaging.xyz" | cut -f1 -d '.'|grep -v -e "files" -e "cdn" | uniq | tr -d '\\n'
+to remove empty spaces and new lines, then finally ran the command syntax:
+tshark -r capture.pcapng  -Y 'dns' -T fields -e dns.qry.name |grep ".bpakcaging.xyz" | cut -f1 -d '.'|grep -v -e "files" -e "cdn" | uniq | tr -d '\\n' > extracted.txt
+to save the result into a text file. I then opened the text file using the master password retrieved from the previous question and identified the card number to be:
+"4024007128269551."
+>
+> <img width="677" height="257" alt="30" src="https://github.com/user-attachments/assets/a4a37fd5-eb94-4a23-a4ec-f372ffe776ff" />
+> <img width="1101" height="1077" alt="31" src="https://github.com/user-attachments/assets/3763e695-68af-4dc4-b6e9-eeda7cea50ed" />
+> <img width="744" height="347" alt="32" src="https://github.com/user-attachments/assets/e5f86c54-1eb5-467f-b75d-2db9b84b968d" />
+> <img width="1455" height="692" alt="33" src="https://github.com/user-attachments/assets/6fbeefd3-e295-4213-a6de-4fccfe8d4f94" />
+> <img width="1499" height="388" alt="34" src="https://github.com/user-attachments/assets/e140695d-e88c-4f2d-beb9-e496a6a5fc81" />
+> <img width="1503" height="774" alt="35" src="https://github.com/user-attachments/assets/81a23528-c7fc-421c-925b-4d7400d74b37" />
 
 --- 
 
