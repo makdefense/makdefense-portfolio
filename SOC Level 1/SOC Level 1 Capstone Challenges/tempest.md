@@ -1,4 +1,4 @@
-# [SIEM Triage for SOC]
+# [SOC Level 1 Capstone Challenges]
 
 **TryHackMe Path**: [SOC Level 1]  
 **Lab Topic**: [Tempest]  
