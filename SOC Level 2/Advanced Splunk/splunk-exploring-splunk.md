@@ -1,7 +1,7 @@
-# [Log Analysis]
+# [Advanced Splunk]
 
 **TryHackMe Path**: [SOC Level 2]  
-**Lab Topic**: [Intro to Log Analysis]  
+**Lab Topic**: [Splunk: Exploring SPL]  
 **Date Completed**: [05//2026]
 
 ---
