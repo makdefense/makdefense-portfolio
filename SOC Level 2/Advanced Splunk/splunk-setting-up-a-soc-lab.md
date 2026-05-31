@@ -25,6 +25,7 @@ both Linux system logs and web server logs into Splunk, allowing for centralized
 - THM AttackBox
 - Splunk
 - Mozilla FireFox
+- Command Line
 
 ---
 
