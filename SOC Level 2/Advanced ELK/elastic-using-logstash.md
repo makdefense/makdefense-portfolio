@@ -2,8 +2,9 @@
 
 **TryHackMe Path**: [SOC Level 2]  
 **Lab Topic**: [Elastic: Using Logstash]  
-**Lab Link**: [https://tryhackme.com/room/logstash]
 **Date Completed**: [06//2026]
+
+**Lab Link**: [https://tryhackme.com/room/logstash]
 
 ---
 
