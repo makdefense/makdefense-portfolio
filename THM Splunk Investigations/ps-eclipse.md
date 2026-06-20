@@ -40,7 +40,8 @@ OUTSTANDING_GUTTER.exe
 
 > I then identified the address that the binary was downloaded from to be:
 hxxp[://]886e-181-215-214-32[.]ngrok[.]io
->
+> 
+> <img width="1495" height="800" alt="9" src="https://github.com/user-attachments/assets/46c57248-1c61-4fc6-b4c9-b2ee75352c6c" />
 > <img width="2048" height="888" alt="5" src="https://github.com/user-attachments/assets/0ad2c859-6a3b-4c76-922c-dac9d202d198" />
 
 > The Windows executable that was used to download the suspicious binary was identified as:
@@ -50,6 +51,12 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
 > The command that was executed to configure the suspicious binary to run with elevated privileges, i identified as:
 "C:\Windows\system32\schtasks.exe" /Create /TN OUTSTANDING_GUTTER.exe /TR C:\Windows\Temp\COUTSTANDING_GUTTER.exe /SC ONEVENT /EC Application /MO *[System/EventID=777] /RU SYSTEM /f
+> <img width="710" height="441" alt="7" src="https://github.com/user-attachments/assets/e7ef16b6-5e1d-4112-b77a-e368ebc29f75" />
+> <img width="1185" height="315" alt="8" src="https://github.com/user-attachments/assets/6d0119cf-e7c6-489a-90e6-7c9c94666933" />
+
+> 
+ 
+
 
 
 
