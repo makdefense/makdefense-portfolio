@@ -54,7 +54,17 @@ C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 > <img width="710" height="441" alt="7" src="https://github.com/user-attachments/assets/e7ef16b6-5e1d-4112-b77a-e368ebc29f75" />
 > <img width="1185" height="315" alt="8" src="https://github.com/user-attachments/assets/6d0119cf-e7c6-489a-90e6-7c9c94666933" />
 
-> 
+> Moving on i then identified the permissions and the command to runthe suspicious binary as:
+NT AUTHORITY\SYSTEM;"C:\Windows\system32\schtasks.exe" /Run /TN OUTSTANDING_GUTTER.exe
+>
+> <img width="1114" height="952" alt="10" src="https://github.com/user-attachments/assets/5648d082-e66e-4e05-a121-90bb89930274" />
+
+> The suspicious binary then connected to a remote server. The address it connected to was:
+hxxp[://]9030-181-215-214-32[.]ngrok[.]io
+>
+> <img width="1253" height="799" alt="11" src="https://github.com/user-attachments/assets/0381660e-07df-42c8-8431-286aea8fcdd7" />
+
+
  
 
 
