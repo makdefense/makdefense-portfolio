@@ -51,52 +51,66 @@ C:\Users\Administrator\Documents\cmd.exe
 > <img width="752" height="490" alt="2" src="https://github.com/user-attachments/assets/726fd01d-f758-46b9-a984-5d93228cfe59" />
 > <img width="1139" height="643" alt="3" src="https://github.com/user-attachments/assets/64642c10-78e0-49b3-b2f9-bd07d7084b4f" />
 
-> I then identified the Sysmon event ID for the related file creation event to be:
+> I then identified the Sysmon event ID for the related file creation event:
+
 11
 >
 > <img width="1037" height="851" alt="4" src="https://github.com/user-attachments/assets/7c0b20cf-24b7-4dc2-8471-1d71fe2d22be" />
 
-> The MD5 hash of the ransomeware was identified as:
+> The MD5 hash of the ransomware was identified as:
+
 290c7dfb01e50cea9e19da81a781af2c
 >
 > <img width="770" height="557" alt="5" src="https://github.com/user-attachments/assets/91435539-733e-4271-967b-f6f929e04ae5" />
 > <img width="691" height="692" alt="6" src="https://github.com/user-attachments/assets/ff080b99-bdae-4d54-941e-3069c2246f58" />
 
-> The file discovered that was saved to multiple location was:
+> The file that was saved to multiple locations was:
+
 readme.txt
 >
 > <img width="1117" height="594" alt="7" src="https://github.com/user-attachments/assets/c806f8db-e116-41bf-acd7-c43507ed5d2a" />
 
 > The attacker used a specific command to add a new user to the compromised system. The command identified was:
+
 net user /add securityninja hardToHack123$
 >
 > <img width="625" height="479" alt="8" src="https://github.com/user-attachments/assets/e31c9c95-696b-46f8-9404-72342c85528b" />
 > <img width="863" height="285" alt="9" src="https://github.com/user-attachments/assets/20c6c266-70a3-4723-a39b-508feaa644f8" />
 
-> The attacker then migrated the process for better persistence. The migrated process image, and the original process image when the attacker got on the system was identified as:
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,C:\Windows\System32\wbem\unsecapp.exe
+> The attacker then migrated the process for better persistence. The migrated process image and the original process image used when the attacker accessed the system were
+identified as:
+
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+C:\Windows\System32\wbem\unsecapp.exe
 >
 > <img width="1164" height="1019" alt="10" src="https://github.com/user-attachments/assets/33a861cb-2855-4128-8091-9c5fbf2562be" />
 
-> The attacker retrieved system hashes. The process image used for getting the system hashes was identified as:
+> The attacker retrieved system hashes. The process image used to retrieve the system hashes was identified as:
+
 C:\Windows\System32\lsass.exe
 >
 > <img width="1095" height="991" alt="11" src="https://github.com/user-attachments/assets/0776e456-b84f-4fee-9da3-dbaac30cd5b3" />
 
-> The web shell exploit that was deployed to the system was identified as:
+> The web shell exploit deployed to the system was identified as:
+
 i3gfPctK1c2x.aspx
 >
 > <img width="1172" height="634" alt="12" src="https://github.com/user-attachments/assets/3a26a75f-0ceb-497a-9bcc-bd264a05b769" />
 
 > The command line that executed this web shell was identified as:
-attrib.exe  -r \\\\win-aoqkg2as2q7.bellybear.local\C$\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\i3gfPctK1c2x.aspx
-after using the query:
+
+attrib.exe -r \\win-aoqkg2as2q7.bellybear.local\C$\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\i3gfPctK1c2x.aspx
+
+This was found using the query:
+
 index=* "i3gfPctK1c2x.aspx"
 >
 > <img width="1484" height="763" alt="13" src="https://github.com/user-attachments/assets/9203b58a-0f9c-4d43-94d8-8015a1302ded" />
 
-> Finally, the three CVEs this exploit leveraged was identified as:
-CVE-2018-13374,CVE-2018-13379,CVE-2020-0796
+> Finally, the three CVEs leveraged by this exploit were identified as:
+
+CVE-2018-13374, CVE-2018-13379, CVE-2020-0796
 >
 > <img width="511" height="617" alt="14" src="https://github.com/user-attachments/assets/f5486bcb-3395-459b-8f30-dfc5904c3ce4" />
 
