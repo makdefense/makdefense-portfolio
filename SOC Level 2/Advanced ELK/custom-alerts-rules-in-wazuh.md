@@ -10,12 +10,22 @@
 
 ## 🧠 Summary
 
-> In this lab, I learned how to 
+> In this lab, I learned how to create custom rules in Wazuh to improve detection and alerting within a security environment. The room focused on understanding how Wazuh rules
+work, how alerts are generated, and how custom rule logic can be used to detect specific events or suspicious activity.
+
+I practiced analyzing logs, identifying important fields, and building rules that match certain patterns or behaviors. This helped me better understand how security teams can 
+tune Wazuh to their environment, reduce noise, and create more meaningful alerts for incident detection and response.
+
+This room reinforced the importance of rule creation in a SIEM/XDR platform and showed how custom detections can help organizations monitor activity more effectively based on 
+their own systems, threats, and security needs.
 
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] Learn how important data is extracted from logs using Decoders
+- [ ] Learn how alerts are triggered using custom Wazuh Rules
+- [ ] Learn how to add new rules to extend detection capabilities
+- [ ] Learn how to simulate a real-world attack to test existing rules
       
 ---
 
@@ -75,23 +85,35 @@ within the sysmon_rule.xml file.
 > Going through this section, adding local rules, i was able to identify the regex field name used in the local_rules.xml to be:
 audit.cwd
 >
-> ![Uploading 11.png…]()
+> <img width="990" height="222" alt="13" src="https://github.com/user-attachments/assets/52ea782c-bbbe-4103-bda6-d2c813a11534" />
+> <img width="940" height="608" alt="11" src="https://github.com/user-attachments/assets/0c9350fd-b10a-46f8-b4cd-955b909760ec" />
+> <img width="1501" height="813" alt="12" src="https://github.com/user-attachments/assets/0187e9f5-916b-4a82-8287-fba756ebd133" />
 
+> After looking at the added log within Wazuh, the current working directory from where the (cwd) command was executed was discovered to be:
+/var/log/audit
+>
+> <img width="932" height="645" alt="14" src="https://github.com/user-attachments/assets/d322eb51-e77a-4e20-aa3a-0064b1e97e5c" />
 
+*** Fine-Tuning ***
 
+> After going through this section, from fine-tuning the custom rule by adding more child rules to testing the updated custom rules within Wazuh. I was able to figure out that
+when the filename in the logs is "test.php," the rule ID that will be triggered is:
+100003
+>
+> <img width="467" height="164" alt="15" src="https://github.com/user-attachments/assets/3c1f7430-f104-4233-80b2-ee54c278e4d3" />
 
-
-
-
-
-
-
-
-
+> Then finally if the filename in the logs is "malware-checker.sh," the rule classification level in the generated alert will be:
+12
+>
+> <img width="417" height="166" alt="16" src="https://github.com/user-attachments/assets/e0569ef8-41d4-44af-9814-2eec304e8c37" />
 
 --- 
 
 ## Reflection
 
-> This lab strengthened my ability to
+> This lab strengthened my ability to create and customize Wazuh rules for detecting security events within an environment. It helped me better understand how Wazuh processes
+logs, matches rule conditions, and generates alerts based on specific activity.
+
+I also improved my ability to analyze log data, identify important fields, and build detection logic that can be used to monitor suspicious behavior. This lab reinforced the 
+importance of tuning SIEM/XDR rules to reduce noise, improve alert quality, and support more effective incident detection and response.
 
