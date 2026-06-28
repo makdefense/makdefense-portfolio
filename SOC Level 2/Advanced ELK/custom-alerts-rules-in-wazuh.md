@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [SOC Level 2]  
 **Lab Topic**: [Custom Alert Rules in Wazuh]  
-**Date Completed**: [06//2026]
+**Date Completed**: [06/27/2026]
 
 **Lab Link**: [https://tryhackme.com/room/customalertrulesinwazuh]
 
