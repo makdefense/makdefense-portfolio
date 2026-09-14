@@ -133,6 +133,127 @@ user testuser added by root to group sudo
 > <img width="1078" height="93" alt="23 4" src="https://github.com/user-attachments/assets/7fab06bd-9178-45e9-a2fc-4400e699f90b" />
 > <img width="1314" height="603" alt="23 5" src="https://github.com/user-attachments/assets/d0e2a01d-869f-4536-8282-a3cac4c7f227" />
 
+*** Integrating Apache Web Logs ***
+
+> Moving onto this section, i then had to ingest apache web logs. First i navigated to a specific website and browsed it for a bit. I then navigated back to the VM terminal, entered:
+tail /var/log/apache2/access.log
+after doing this i was able to pull all the activity from the website i played around with earlier.
+>
+> <img width="629" height="206" alt="24" src="https://github.com/user-attachments/assets/b16a432f-1955-4fb5-9f23-66773cf8d114" />
+> <img width="750" height="753" alt="25" src="https://github.com/user-attachments/assets/9f1117a0-937c-41d1-bb0f-7a8b8ff843a9" />
+> <img width="1511" height="296" alt="26" src="https://github.com/user-attachments/assets/ff2702ec-5ab9-491d-a199-73bc7d7be8f8" />
+
+> I then moved onto Elastic Integrations to ingest Apache web logs.
+>
+> <img width="550" height="395" alt="27" src="https://github.com/user-attachments/assets/996efbe7-b85b-424f-9b6d-abcfab37e9bc" />
+> <img width="1380" height="419" alt="28" src="https://github.com/user-attachments/assets/d43d0a42-887f-4560-9460-2d2b6e86921d" />
+> <img width="1306" height="798" alt="29" src="https://github.com/user-attachments/assets/5ba0b068-83ca-4e7e-8684-2754bc51c37b" />
+> <img width="1012" height="505" alt="30" src="https://github.com/user-attachments/assets/fd0ea5c4-40c8-4562-ae0d-2cac75e9e147" />
+> <img width="1497" height="478" alt="31" src="https://github.com/user-attachments/assets/9be4edc1-8ac7-4516-8000-7aa0f8d4ebcd" />
+
+> After completing the steps to ingest the Apache web logs into Elastic, i then comnirmed the ingestion by using the query:
+event.module: "apache"
+within the logs-* Data view.
+>
+> <img width="836" height="411" alt="32" src="https://github.com/user-attachments/assets/4bd6b57c-b47c-42cc-a79d-1760bc3405af" />
+
+> I then had to answer a few questions. For the first question i identified the "event.dataset" of the Apache access logs to be:
+apache.access
+>
+> <img width="1208" height="654" alt="33" src="https://github.com/user-attachments/assets/b781fad3-720c-4412-bbb0-69feff4f1422" />
+
+> For the last question, i navigated back to the website i was browsing earlier but added "/secret.html" at the end of the link within the input field. This then led me to discover the
+hidden flag value:
+THM{access_log_secrets!}
+which was under the user_agent.original field.
+>
+> <img width="1179" height="761" alt="34" src="https://github.com/user-attachments/assets/8dbb696f-b307-46eb-8313-ca6cd53cab20" />
+> <img width="1280" height="589" alt="35" src="https://github.com/user-attachments/assets/1ee43988-66b3-40f5-814a-7cd01c33c7df" />
+
+*** Managing Custom Log Types ***
+
+> Moving onto this section, i was tasked to ingest my custom VPN logs within Elastic. To set this up i first navigated to the /scripts directory using the VM Terminal, then ran the
+python script:
+python3 /home/ubuntu/Downloads/scripts/vpnlog.py
+then the command:
+tail /var/log/vpnlog
+>
+> <img width="1109" height="197" alt="36" src="https://github.com/user-attachments/assets/5d4f1d91-8198-445e-80c1-caa37f18fc9c" />
+> <img width="889" height="302" alt="37" src="https://github.com/user-attachments/assets/b701ab8e-59ba-4fd4-80f0-cc2134dbcb04" />
+this basically created a file containing 500 VPN log entries.
+
+> I then built an ingest pipeline, and added two processors within Elastic.
+>
+> <img width="504" height="993" alt="38" src="https://github.com/user-attachments/assets/65057e37-8e17-4078-ba8b-798f63245009" />
+> <img width="403" height="370" alt="39" src="https://github.com/user-attachments/assets/d0d9e7b1-5c20-48dd-8479-5467ddf98d41" />
+> <img width="635" height="307" alt="40" src="https://github.com/user-attachments/assets/fe00e554-04c1-4563-9e85-0a096ac24470" />
+> <img width="1498" height="922" alt="41" src="https://github.com/user-attachments/assets/dd794b45-6669-47b8-b019-0a36961e2947" />
+> <img width="786" height="900" alt="42" src="https://github.com/user-attachments/assets/15bf8215-03fb-4a95-81e0-dbbd4f0667f7" />
+> <img width="732" height="930" alt="43" src="https://github.com/user-attachments/assets/15285fa3-0c9f-4b34-9cfc-ccaadd65c457" />
+> <img width="787" height="954" alt="44" src="https://github.com/user-attachments/assets/4d3c1248-5676-48e3-b0aa-41c26ae90cfd" />
+> <img width="735" height="936" alt="45" src="https://github.com/user-attachments/assets/0367d5ce-6785-434e-98d6-8c786173372a" />
+> <img width="1034" height="685" alt="46" src="https://github.com/user-attachments/assets/b8cd0b3e-c914-459b-87db-c4f0ef8033db" />
+> <img width="862" height="1029" alt="47" src="https://github.com/user-attachments/assets/770a82df-ad0f-4f25-ab42-27dc96f96035" />
+
+> After building the ingest pipeline, i then conducted Filestream Integration, then applied the integration to my created vpnlog file.
+>
+> <img width="358" height="808" alt="48" src="https://github.com/user-attachments/assets/01bfcf8e-4903-41c0-b425-245715900939" />
+> <img width="984" height="650" alt="49" src="https://github.com/user-attachments/assets/5d9d5ade-5083-49f4-87c5-76e12b7ecfbb" />
+> <img width="1499" height="391" alt="50" src="https://github.com/user-attachments/assets/486a32f8-fafa-457f-a6b4-ea6551453473" />
+> <img width="1453" height="865" alt="51" src="https://github.com/user-attachments/assets/843db7e3-f632-4704-8675-ad946510d005" />
+> <img width="1268" height="360" alt="52" src="https://github.com/user-attachments/assets/780ed2fa-0f0b-4985-8e65-1064e3c38dd2" />
+> <img width="1496" height="518" alt="53" src="https://github.com/user-attachments/assets/1366fc4a-34d0-494c-9d55-76bdd1f59737" />
+
+> I then validated the integration and my ingest pipeline by pivoting back to "Discover," then entering the query:
+event.module: "filestream"
+along with setting the time range to last 24 hours, building a table with several fields, and saving the Discover session.
+>
+> <img width="1496" height="992" alt="54" src="https://github.com/user-attachments/assets/8bfd50f9-79be-4bb7-8477-1d3bea216242" />
+> <img width="730" height="745" alt="55" src="https://github.com/user-attachments/assets/f9fc5dbf-afc3-42a0-9bc3-b5f08b14ff6a" />
+
+> I then had to answer a few questions. For the first question, i had to investigate the newly ingested VPN log data and figure out the most active user on the network. After
+investigating i was able to discover the most active user on the network to be:
+s.summer
+>
+> <img width="953" height="972" alt="56" src="https://github.com/user-attachments/assets/8c44866b-c18e-426b-ab06-0a3301380766" />
+
+> I then identifed the "source.ip" of the user i identified previously to be:
+72.14.24.1
+>
+> <img width="724" height="852" alt="57" src="https://github.com/user-attachments/assets/bad85371-9309-474c-acad-e7ffd6aa7af5" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
