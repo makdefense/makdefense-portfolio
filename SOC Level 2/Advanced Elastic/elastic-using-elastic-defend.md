@@ -15,7 +15,11 @@
 ---
 
 ## 🎯 Objectives
-- [ ] 
+- [ ] Configure the Elastic Defend integration
+- [ ] Understand what Elastic Defend monitors and protects
+- [ ] Explore endpoint telemetry data in Kibana Discover
+- [ ] Analyze key fields and events within endpoint logs
+- [ ] Investigate alerts in Elastic Security
       
 ---
 
@@ -29,7 +33,7 @@
 
 ***  ***
 
-> For this section, 
+> For this section,
 
 ---
 
