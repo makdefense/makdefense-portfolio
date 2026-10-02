@@ -27,7 +27,7 @@ techniques to detect possible security threats in an Active Directory environmen
 
 ## 🧰 Tools Used
 - THM AttackBox
-- 
+- Splunk
 
 ---
 
