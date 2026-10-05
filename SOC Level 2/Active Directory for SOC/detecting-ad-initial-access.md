@@ -27,7 +27,7 @@ multiple log sources, recognize abnormal access patterns, and investigate potent
 
 ## 🧰 Tools Used
 - THM AttackBox
-- 
+- Splunk
 
 ---
 
