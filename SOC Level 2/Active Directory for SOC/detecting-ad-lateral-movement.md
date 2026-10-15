@@ -1,7 +1,7 @@
 # [Active Directory for SOC]
 
 **TryHackMe Path**: [SOC Level 2]  
-**Lab Topic**: [Detecting AD Credential Attacks]  
+**Lab Topic**: [Detecting AD Lateral Movement]  
 **Date Completed**: [10/14/2026]
 
 **Lab Link**: [https://tryhackme.com/room/detectingadlateralmovement]
