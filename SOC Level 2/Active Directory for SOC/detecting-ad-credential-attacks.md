@@ -31,7 +31,7 @@ and detect these techniques.
 
 ## 🧰 Tools Used
 - THM AttackBox
-- 
+- Splunk
 
 ---
 
