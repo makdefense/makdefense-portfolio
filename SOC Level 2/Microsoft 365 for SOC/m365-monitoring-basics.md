@@ -16,14 +16,17 @@
 
 ## 🎯 Objectives
 
-- [ ] 
+- [ ] Understand the risks of identities and why attackers target them in modern environments.
+- [ ] Understand Entra ID and M365 as critical log sources for modern SOC investigations.
+- [ ] Understand Entra ID and M365 log types and core structure.
+- [ ] Basic understanding of how to use logs to identify attacks with Entra ID and M365 logs.
 
 ---
 
 
 ## 🧰 Tools Used
 - THM AttackBox
-- 
+- Splunk
 
 ---
 
