@@ -31,7 +31,8 @@
 
 ***  ***
 
-> For this section, 
+> For this section,
+
 ---
 
 ## Reflection
