@@ -28,7 +28,7 @@ threats.
 
 ## 🧰 Tools Used
 - THM AttackBox
-- SPlunk
+- Splunk
 
 ---
 
