@@ -10,7 +10,7 @@
 
 ## 🧠 Summary
 
-> n this lab, I learned how applications run within Amazon Web Services (AWS) and explored the key components involved in hosting, managing, and monitoring cloud-based applications.
+> In this lab, I learned how applications run within Amazon Web Services (AWS) and explored the key components involved in hosting, managing, and monitoring cloud-based applications.
 I gained a better understanding of AWS infrastructure, application architecture, and the importance of monitoring logs, performance metrics, and security events. This lab
 strengthened my knowledge of cloud security monitoring and helped me understand how security analysts can identify suspicious activity, investigate potential threats, and maintain
 visibility into applications operating in AWS environments.
