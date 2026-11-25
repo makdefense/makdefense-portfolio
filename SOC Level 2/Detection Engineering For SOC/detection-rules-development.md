@@ -16,7 +16,10 @@
 
 ## 🎯 Objectives
 
-- [ ] 
+- [ ] Understand what detection rules are and the role they play in a SOC workflow.
+- [ ] Apply a structured detection research process to investigate attacker behavior before writing rules.
+- [ ] Differentiate between atomic, stateful, correlation-based, and anomaly detection types, and select the appropriate type for a given scenario.
+- [ ] Perform basic detection tuning to reduce false positives while preserving true positive coverage.
 
 ---
 
