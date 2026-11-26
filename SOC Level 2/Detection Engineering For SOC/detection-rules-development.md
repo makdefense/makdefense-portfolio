@@ -2,7 +2,7 @@
 
 **TryHackMe Path**: [SOC Level 2]  
 **Lab Topic**: [Detection Rules Development]  
-**Date Completed**: [11//2026]
+**Date Completed**: [11/26/2026]
 
 **Lab Link**: [https://tryhackme.com/room/detectionrulesdevelopment]
 
@@ -10,7 +10,9 @@
 
 ## 🧠 Summary
 
-> In this lab, 
+> n this lab, I explored different types of threat detection, how to implement them using Elastic, and the process behind developing effective detection rules. I gained a deeper
+understanding of detection logic, rule creation, and how to identify suspicious activities within security event data. This lab strengthened my understanding of detection engineering,
+including the importance of minimizing false positives, improving detection accuracy, and developing reliable rules to identify potential security threats.
 
 ---
 
@@ -26,6 +28,7 @@
 
 ## 🧰 Tools Used
 - THM AttackBox
+- Elastic
 
 
 ---
@@ -34,29 +37,33 @@
 
 *** The Research Process ***
 
-> For this section of the lab, i was tasked with researching internal reconnaissance within Elastic, then had to answer a select set of questions. To go about this i first used the
-query:
+> For this section of the lab, I was tasked with investigating internal reconnaissance within Elastic and answering a series of questions. To accomplish this, I first used the following
+query within the Elastic application:
 event.code: 1 AND (winlog.event_data.Image:*whoami* OR *net* OR *ipconfig* OR *systeminfo*)
-within the Elastic application. For the first question i had to figure out what user executed the recon commands. Upon further investigation i was able to determine that the user that
-executed those commands were:
+For the first question, I had to determine which user executed the reconnaissance commands. Upon further investigation, I was able to identify the user responsible for executing these
+commands as:
+
 tryhatme.thm\sysadmin
 >
 > <img width="524" height="494" alt="1" src="https://github.com/user-attachments/assets/4fd6f892-f26a-4b7a-b885-924d88f9e5e7" />
 > <img width="1410" height="639" alt="2" src="https://github.com/user-attachments/assets/5952c486-c9d8-48d5-84db-3cd572cc6983" />
 
-> I then identified the image of a false-positive that was identified in the results of the suggested query to be:
+> I then reviewed the results of the suggested query and identified the following process image path as a false positive:
+
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngentask.exe
 >
 > <img width="1283" height="768" alt="3" src="https://github.com/user-attachments/assets/5bf51e5f-d692-4ba3-bf64-49615cd04d5e" />
 
-> The executable name of the recon tool used by the attacker that is missing in the suggested query was identified as:
+> I then identified the reconnaissance tool used by the attacker that was not included in the suggested query. The executable was identified as:
+
 nltest.exe
 >
 > <img width="1535" height="935" alt="4" src="https://github.com/user-attachments/assets/1237b354-7587-4f51-a17f-d4bc61bb8cc5" />
 
 *** Atomic Detections ***
 
-> For this section, i was tasked with building an atomic detection with elastic which was basically to create a custom query rule.
+> For this section of the lab, I was tasked with building an atomic detection in Elastic by creating a custom query rule designed to identify specific suspicious activities within
+security event data.
 >
 > <img width="1110" height="722" alt="5" src="https://github.com/user-attachments/assets/d84e48f9-315b-43fd-a60e-a5633eca5279" />
 > <img width="952" height="631" alt="6" src="https://github.com/user-attachments/assets/01c44341-b28e-4a86-8e47-2c2842a7655c" />
@@ -70,9 +77,9 @@ nltest.exe
 
 *** Stateful Detections ***
 
-> Moving onto this section, i was tasked with creating a threshold rule then defining a query. I then had to answer a select set of questions after creating the rule and defining the
-query. For the first question i had to figure out how many alerts were generated related to a password spraying pattern. Upon creating the rule and defining the query i was able to
-identify 1 alert.
+> Moving on to this section of the lab, I was tasked with creating a threshold rule in Elastic and defining a query to detect suspicious activity. After creating the rule and defining the
+query, I was required to answer a series of questions. For the first question, I had to determine how many alerts were generated in relation to a password-spraying pattern. Upon reviewing
+the results, I was able to identify a total of one alert.
 >
 > <img width="845" height="351" alt="14" src="https://github.com/user-attachments/assets/42df07ee-a3e2-4710-891b-e201f7b27448" />
 > <img width="726" height="671" alt="15" src="https://github.com/user-attachments/assets/677d7639-cb13-44db-a148-d70ae0950fc6" />
@@ -83,21 +90,23 @@ identify 1 alert.
 > <img width="606" height="790" alt="20" src="https://github.com/user-attachments/assets/c62bddfa-5ba8-4224-82fb-94d7eeed93c2" />
 > <img width="784" height="354" alt="21" src="https://github.com/user-attachments/assets/fdc77107-17cb-4472-8b79-1ce3c28f5a51" />
 
-> The attack IP identified and the total number of failure attempts the attacker IP have was:
-5.62.18.132, 50
+> I then identified the attacker's IP address and determined the total number of failed authentication attempts originating from that IP address.
+- Attacker IP address: 5.62.18.132
+- Total failed authentication attempts: 50
 >
 > <img width="628" height="344" alt="22" src="https://github.com/user-attachments/assets/db7a5c9c-ee23-40ed-9a32-10fcbc4c971a" />
 > <img width="801" height="514" alt="23" src="https://github.com/user-attachments/assets/d83f0f97-0836-4340-a3a3-271b84f0592c" />
 
-> The attacker tested a total of 10 usernames.
+> Upon further investigation, I determined that the attacker attempted to authenticate using a total of 10 distinct usernames.
 >
 > <img width="840" height="531" alt="24" src="https://github.com/user-attachments/assets/2b4f01d9-685d-4d69-ab72-a16645a64cc2" />
 
 *** Correlation-Based Detections ***
 
-> For this section, i was tasked with building an event correlation rule within Elastic. After creating the rule i was then tasked with answering a few questions. For the first question
-i had to figure out the field that would be best to be configured as a suppression field for my detection. After playing around with the configurations within the rule the field identifed
-was:
+> For this section of the lab, I was tasked with building an event correlation rule within Elastic. After creating the rule, I was required to answer a series of questions. For the first
+question, I had to determine which field would be most appropriate to configure for alert suppression. After experimenting with the rule's configuration settings, I identified the
+following field as the most suitable option:
+
 source.ip
 >
 > <img width="572" height="371" alt="25" src="https://github.com/user-attachments/assets/fa5600c0-e308-4af2-b0b7-5ba8508863c9" />
@@ -107,14 +116,14 @@ source.ip
 > <img width="1101" height="221" alt="29" src="https://github.com/user-attachments/assets/20cd2438-003d-470a-b4a6-30a87521f39a" />
 > <img width="590" height="1010" alt="30" src="https://github.com/user-attachments/assets/5119847a-1f52-44e1-9c40-d574b8c51244" />
 
-> After removing the "with runs" condition from the EQL sequence which would reduce the number of duplicate alerts. The type of alerts that my detection would be more susceptible to
-generating would be:
-false positive
+> After removing the with runs condition from the EQL sequence to reduce the number of duplicate alerts, I determined that my detection rule would become more susceptible to generating
+false-positive alerts.
 
 *** Detection Tuning ***
 
-> For this final section, i was tasked with tuning the atomic recon rule by converting it to a threshold rule. After doing so i had to figure out the attacker's LogonId. Which was
-identified as:
+> For this final section of the lab, I was tasked with tuning the atomic reconnaissance rule by converting it into a threshold rule. After completing the configuration, I was required to
+determine the attacker's Logon ID, which I identified as:
+
 0x557e9
 >
 > <img width="1112" height="566" alt="31" src="https://github.com/user-attachments/assets/6017baeb-fd4a-458f-80a3-54075b451d7d" />
@@ -126,4 +135,7 @@ identified as:
 
 ## Reflection
 
-> 
+> This lab reinforced my understanding of how effective detection rules play a critical role in identifying and responding to security threats. I learned that detection engineering
+requires more than simply creating rules; it involves understanding attacker behavior, analyzing security event data, and continuously refining detection logic to minimize false
+positives. Working with Elastic strengthened my technical and analytical skills while highlighting the importance of balancing detection accuracy with operational efficiency. The
+knowledge gained from this lab will help me develop more effective detection strategies and improve my capabilities as a future SOC analyst and cybersecurity professional.
